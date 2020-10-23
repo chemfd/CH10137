@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Workshop1 Week 1 - Part 1: Preliminaries | CH10137 Thermodynamics</title>
+  <meta name="description" content="Workshop1 Week 1 - Part 1: Preliminaries | CH10137 Thermodynamics" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Workshop1 Week 1 - Part 1: Preliminaries | CH10137 Thermodynamics" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Workshop1 Week 1 - Part 1: Preliminaries | CH10137 Thermodynamics" />
+  <meta name="github-repo" content="chemfd/CH10137Workshop" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Workshop1 Week 1 - Part 1: Preliminaries | CH10137 Thermodynamics" />
+  
+  <meta name="twitter:description" content="Workshop1 Week 1 - Part 1: Preliminaries | CH10137 Thermodynamics" />
+  
+
+<meta name="author" content="Fiona Dickinson" />
+
+
+<meta name="date" content="2020-10-23" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">CH10137 Thermodynamics</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#notes-and-workshops-for-ch10137"><i class="fa fa-check"></i>Notes and Workshops for CH10137</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#recommended-text"><i class="fa fa-check"></i>Recommended text</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#version-history"><i class="fa fa-check"></i>Version history</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="ch-Workshop1.html"><a href="ch-Workshop1.html"><i class="fa fa-check"></i><b>1</b> Week 1 - Part 1: Preliminaries</a><ul>
+<li class="chapter" data-level="1.1" data-path="ch-Workshop1.html"><a href="ch-Workshop1.html#sec:state"><i class="fa fa-check"></i><b>1.1</b> State functions - (products - reactants)</a></li>
+<li class="chapter" data-level="1.2" data-path="ch-Workshop1.html"><a href="ch-Workshop1.html#sec:equations1"><i class="fa fa-check"></i><b>1.2</b> Useful equations - State functions</a></li>
+<li class="chapter" data-level="1.3" data-path="ch-Workshop1.html"><a href="ch-Workshop1.html#sec:extensiveintensive"><i class="fa fa-check"></i><b>1.3</b> Extensive and intensive properties</a><ul>
+<li class="chapter" data-level="1.3.1" data-path="ch-Workshop1.html"><a href="ch-Workshop1.html#sec:intenstive"><i class="fa fa-check"></i><b>1.3.1</b> Intensive properties</a></li>
+<li class="chapter" data-level="1.3.2" data-path="ch-Workshop1.html"><a href="ch-Workshop1.html#sec:extensive"><i class="fa fa-check"></i><b>1.3.2</b> Extensive properties</a></li>
+</ul></li>
+<li class="chapter" data-level="1.4" data-path="ch-Workshop1.html"><a href="ch-Workshop1.html#sec:classicalstat"><i class="fa fa-check"></i><b>1.4</b> Classical vs. Statistical thermodynamics</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">CH10137 Thermodynamics</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="ch:Workshop1" class="section level1">
+<h1><span class="header-section-number">Workshop1</span> Week 1 - Part 1: Preliminaries</h1>
+<div id="sec:state" class="section level2">
+<h2><span class="header-section-number">1.1</span> State functions - (products - reactants)</h2>
+<p>Many properties in thermodynamics are <span style="color: deeppink;"><em>state functions</em><span style="color: black;">, that is properties that only depend upon the current state of the system. State functions are completely independent of the path by which that final state was reached.</p>
+<p>Enthalpy (H) is a state function, as are entropy (S), internal energy (U), Gibbs’ free energy (G), Helmholtz free energy (F), temperature (T), pressure (p), and chemical composition.</p>
+<p>Path functions are unlike state functions in that they depend on the path taken to determine their value.
+Heat (q) and work (w) are both examples of path functions.</p>
+<div style="text-align: center;">
+<iframe width="640" height="360" src="https://www.youtube.com/embed/PiTaVpkYxek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<ul>
+<li><p><span style="color: deeppink;">Internal energy, U<span style="color: black;"> The internal energy is the sum of all of the kinetic and potential energy contributions of the molecules in the system.</p></li>
+<li><p><span style="color: deeppink;">Enthalpy, H<span style="color: black;"> The enthalpy is related to the internal energy, but also takes into account any expansion work done by the system, formally ΔH = ΔU + Δ(pV).</p></li>
+<li><p><span style="color: deeppink;">Entropy, S<span style="color: black;"> The entropy is a measure of the number of possible arrangements of a system (multiplicity, Ω), formally S = k<sub>B</sub> ln Ω</p></li>
+<li><p><span style="color: deeppink;">Gibbs’ free energy, G<span style="color: black;"> The Gibbs’ free energy is a measure of the energy available to ‘do work’ in a reaction system. It accounts for both the enalpic and entropic contributions of the reaction. ΔG = ΔH − TΔS</p></li>
+</ul>
+<div class="figure" style="text-align: center"><span id="fig:bpy"></span>
+<img src="images/mountain.png" alt="State functions - no matter how you got here, here you are… …altitude is a good analogy for a state function, whether climbing the mountain or flying on the balloon if your altitude is 1000 m it is 1000 m!." width="30%" />
+<p class="caption">
+Figure 1.1: State functions - no matter how you got here, here you are… …altitude is a good analogy for a state function, whether climbing the mountain or flying on the balloon if your altitude is 1000 m it is 1000 m!.
+</p>
+</div>
+</div>
+<div id="sec:equations1" class="section level2">
+<h2><span class="header-section-number">1.2</span> Useful equations - State functions</h2>
+<p>Hess’ Law (Equation <a href="ch-Workshop1.html#eq:enthalpystate">(1.1)</a>) is something most will be familiar with already. You should try to think about it in terms of an equation however, not the cylces of which you may already be familiar.</p>
+<p><span class="math display" id="eq:enthalpystate">\[\begin{equation}
+\Delta_r H^{\ominus} = \sum_{products}v \Delta H^{\ominus}_\textrm{X}-\sum_{reactants}v \Delta H^{\ominus}_\textrm{X}
+\tag{1.1}
+\end{equation}\]</span></p>
+<p>Similar equations can be used for heat capacity (Equation <a href="ch-Workshop1.html#eq:heatcapacitystate">(1.2)</a>), this equation for heat capacity will then be used later in the course when we look at the effect of temperature on the enthalpy and entropy of reaction.</p>
+<p><span class="math display" id="eq:heatcapacitystate">\[\begin{equation}
+\Delta_r C_p^{\ominus} = \sum_{products}vC_{p,n}^{\ominus}-\sum_{reactants}vC_{p,n}^{\ominus}
+\tag{1.2}
+\end{equation}\]</span></p>
+<p>Entropy, just like enthalpy is a state function.</p>
+<p><span class="math display" id="eq:entropystate">\[\begin{equation}
+\Delta_r S^{\ominus} = \sum_{products}v S^{\ominus}-\sum_{reactants}v S^{\ominus}
+\tag{1.3}
+\end{equation}\]</span></p>
+<p>As is Gibbs’ free energy.</p>
+<p><span class="math display" id="eq:Gibbsstate">\[\begin{equation}
+\Delta _ r G^\ominus = \sum_{prod} v G_n^\ominus - \sum_{react} v  G_n^\ominus 
+\tag{1.4}
+\end{equation}\]</span></p>
+<p>The value of each of these variables is independent of the path used to form them. Hence, the same <span style="color: deeppink;"><em>‘products − reactants’</em><span style="color: black;"> approach always works!</p>
+</div>
+<div id="sec:extensiveintensive" class="section level2">
+<h2><span class="header-section-number">1.3</span> Extensive and intensive properties</h2>
+<p>The difference between extensive and intensive properties is whether the property depends upon the amount of ‘stuff’ you have.</p>
+<div style="text-align: center;">
+<iframe width="640" height="360" src="https://www.youtube.com/embed/t8oMZXqtEDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<div id="sec:intenstive" class="section level3">
+<h3><span class="header-section-number">1.3.1</span> Intensive properties</h3>
+<p>Properties which are <em>independent</em> of the amount of stuff are called <span style="color: deeppink;">‘intensive properties’.</p>
+<p>Temperature is an example of an intensive property as are all of ‘molar’ properties (the quantity of something ‘per mole’): molar heat capacity, molar enthalpy, molar entropy, molar Gibbs’ energy, <em>etc</em>… in physics the term ‘specific’ is often used such as specific heat capacity and specific enthalpy, these are also intensive properties based on the fixed amount of a ‘gram’ (g).</p>
+</div>
+<div id="sec:extensive" class="section level3">
+<h3><span class="header-section-number">1.3.2</span> Extensive properties</h3>
+<p>Conversely, properties which are <em>dependent</em> on the amount of stuff you have are called extensive properties.</p>
+<p>Many intensive properties have extensive equivalents, so whilst we have ‘molar heat capacity’ we also have ‘heat capacity’; one looks at the amount of energy it takes to raise one mole of a thing by one kelvin, whereas the other looks at how much energy it takes to raise the temperature how ever much of a thing we have by on kelvin.</p>
+<p>Consequently extensive properties have different units to their ‘equivalent’ intensive property.</p>
+<p>Other examples of extensive properties are unsurprisingly: volume, mass, amount (as in moles), and length.</p>
+<p>Whilst knowing the terms extensive and intensive isn’t vital it is hugely important to recognise that sometimes terms will appear with different units to suit the particular situation.</p>
+</div>
+</div>
+<div id="sec:classicalstat" class="section level2">
+<h2><span class="header-section-number">1.4</span> Classical vs. Statistical thermodynamics</h2>
+<p>Thermodynamics is quite an old subject, much of our understanding of why chemical reactions happen is based in 19th century science. This understanding was based on emperical observation of things like steam engines and battery piles. It scientists trying to understand how things work in order to make them better, make them more efficient, and make them safer.</p>
+<p>This 19th century (and earlier) view of the world didn’t even consider things we take for granted now, nowhere in thermodynamics do we ever really think about atoms. We talk about ideal systems (those that follow the rules nicely), but never really care about the reaction taking place, it is all just the bulk average behaviour of the system.</p>
+<p>Then in the late 19th century Ludwig Boltzmann proposed a different way of thinking about thermodynamics. He started to think about the ‘average’ behaviour of individual atoms. This version of statistical mechanics gave an explanation of what concepts like entropy were and it helped explain macroscopic phenomena (such as pressure and temperature) on an atomic and molecular level.</p>
+<p>Statistical thermodynamics started to be able to explain the values of what had until then been emperical constants.</p>
+<p>Consequently in this course we will look at thermodynamics from both a classical and statistical point of view.</p>
+<div style="text-align: center;">
+<iframe width="640" height="360" src="https://www.youtube.com/embed/odOkb-NhxVI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": null,
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["CH10009 Maths.pdf", "CH10009 Maths.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

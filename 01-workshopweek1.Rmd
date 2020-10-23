@@ -1,0 +1,95 @@
+# Week 1  - Part 1: Preliminaries {#ch:Workshop1}
+
+## State functions - (products - reactants) {#sec:state}
+
+Many properties in thermodynamics are <span style="color: deeppink;">*state functions*<span style="color: black;">, that is properties that only depend upon the current state of the system. State functions are completely independent of the path by which that final state was reached.
+
+Enthalpy (H) is a state function, as are entropy (S), internal energy (U), Gibbs’ free energy (G), Helmholtz free energy (F), temperature (T), pressure (p), and chemical composition.
+
+Path functions are unlike state functions in that they depend on the path taken to determine their value. 
+Heat (q) and work (w) are both examples of path functions.
+
+<div style="text-align: center;"><iframe width="640" height="360" src="https://www.youtube.com/embed/PiTaVpkYxek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+- <span style="color: deeppink;">Internal energy, U<span style="color: black;"> The internal energy is the sum of all of the kinetic and potential energy contributions of the molecules in the system.
+
+- <span style="color: deeppink;">Enthalpy, H<span style="color: black;"> The enthalpy is related to the internal energy, but also takes into account any expansion work done by the system, formally ΔH = ΔU + Δ(pV).
+
+- <span style="color: deeppink;">Entropy, S<span style="color: black;"> The entropy is a measure of the number of possible arrangements of a system (multiplicity, Ω), formally S = k~B~ ln Ω
+
+- <span style="color: deeppink;">Gibbs' free energy, G<span style="color: black;"> The Gibbs’ free energy is a measure of the energy available to ‘do work’ in a reaction system. It accounts for both the enalpic and entropic contributions of the reaction. ΔG = ΔH − TΔS
+
+```{r echo=FALSE, bpy, out.width='30%', fig.show='hold', fig.align='center', fig.cap='State functions - no matter how you got here, here you are… …altitude is a good analogy for a state function, whether climbing the mountain or flying on the balloon if your altitude is 1000 m it is 1000 m!.'}
+knitr::include_graphics("images/mountain.png")
+```
+
+
+## Useful equations - State functions {#sec:equations1}
+
+Hess' Law (Equation \@ref(eq:enthalpystate)) is something most will be familiar with already. You should try to think about it in terms of an equation however, not the cylces of which you may already be familiar.
+
+\begin{equation}
+\Delta_r H^{\ominus} = \sum_{products}v \Delta H^{\ominus}_\textrm{X}-\sum_{reactants}v \Delta H^{\ominus}_\textrm{X}
+(\#eq:enthalpystate)
+\end{equation}
+
+Similar equations can be used for heat capacity (Equation \@ref(eq:heatcapacitystate)), this equation for heat capacity will then be used later in the course when we look at the effect of temperature on the enthalpy and entropy of reaction.
+
+\begin{equation}
+\Delta_r C_p^{\ominus} = \sum_{products}vC_{p,n}^{\ominus}-\sum_{reactants}vC_{p,n}^{\ominus}
+(\#eq:heatcapacitystate)
+\end{equation}
+
+Entropy, just like enthalpy is a state function.
+
+\begin{equation}
+\Delta_r S^{\ominus} = \sum_{products}v S^{\ominus}-\sum_{reactants}v S^{\ominus}
+(\#eq:entropystate)
+\end{equation}
+
+As is Gibbs' free energy.
+
+\begin{equation}
+\Delta _ r G^\ominus = \sum_{prod} v G_n^\ominus - \sum_{react} v  G_n^\ominus 
+(\#eq:Gibbsstate)
+\end{equation}
+
+The value of each of these variables is independent of the path used to form them. Hence, the same <span style="color: deeppink;">*‘products − reactants’*<span style="color: black;"> approach always works!
+
+## Extensive and intensive properties {#sec:extensiveintensive}
+
+The difference between extensive and intensive properties is whether the property depends upon the amount of ‘stuff’ you have.
+
+<div style="text-align: center;"><iframe width="640" height="360" src="https://www.youtube.com/embed/t8oMZXqtEDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Intensive properties {#sec:intenstive}
+
+Properties which are *independent* of the amount of stuff are called <span style="color: deeppink;">'intensive properties'.
+
+Temperature is an example of an intensive property as are all of 'molar' properties (the quantity of something 'per mole'): molar heat capacity, molar enthalpy, molar entropy, molar Gibbs' energy, *etc*... in physics the term 'specific' is often used such as specific heat capacity and specific enthalpy, these are also intensive properties based on the fixed amount of a 'gram' (g).
+
+### Extensive properties {#sec:extensive}
+
+Conversely, properties which are *dependent* on the amount of stuff you have are called extensive properties.
+
+Many intensive properties have extensive equivalents, so whilst we have 'molar heat capacity' we also have 'heat capacity'; one looks at the amount of energy it takes to raise one mole of a thing by one kelvin, whereas the other looks at how much energy it takes to raise the temperature how ever much of a thing we have by on kelvin.
+
+Consequently extensive properties have different units to their 'equivalent' intensive property.
+
+Other examples of extensive properties are unsurprisingly: volume, mass, amount (as in moles), and length.
+
+Whilst knowing the terms extensive and intensive isn't vital it is hugely important to recognise that sometimes terms will appear with different units to suit the particular situation.
+
+## Classical vs. Statistical thermodynamics {#sec:classicalstat}
+
+Thermodynamics is quite an old subject, much of our understanding of why chemical reactions happen is based in 19th century science. This understanding was based on emperical observation of things like steam engines and battery piles. It scientists trying to understand how things work in order to make them better, make them more efficient, and make them safer.
+
+This 19th century (and earlier) view of the world didn't even consider things we take for granted now, nowhere in thermodynamics do we ever really think about atoms. We talk about ideal systems (those that follow the rules nicely), but never really care about the reaction taking place, it is all just the bulk average behaviour of the system.
+
+Then in the late 19th century Ludwig Boltzmann proposed a different way of thinking about thermodynamics. He started to think about the 'average' behaviour of individual atoms. This version of statistical mechanics gave an explanation of what concepts like entropy were and it helped explain macroscopic phenomena (such as pressure and temperature) on an atomic and molecular level.
+
+Statistical thermodynamics started to be able to explain the values of what had until then been emperical constants.
+
+Consequently in this course we will look at thermodynamics from both a classical and statistical point of view.
+
+<div style="text-align: center;"><iframe width="640" height="360" src="https://www.youtube.com/embed/odOkb-NhxVI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -1,0 +1,6 @@
+book_filename: "CH10009 Maths"
+language:
+  ui:
+    chapter_name: "Workshop"
+delete_merged_file: true
+output_dir: "docs"

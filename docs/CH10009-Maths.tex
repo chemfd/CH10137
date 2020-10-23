@@ -1,0 +1,236 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={CH10137 Thermodynamics},
+  pdfauthor={Fiona Dickinson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{CH10137 Thermodynamics}
+\author{Fiona Dickinson}
+\date{2020-10-23}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{welcome}{%
+\chapter*{Welcome}\label{welcome}}
+\addcontentsline{toc}{chapter}{Welcome}
+
+The notes have been prepared in a package called BookDown for RStudio so that the equations are accessible to screen readers. However, by providing the notes as a .html webpage I can also embed short videos to further describe some of the topics. If you want videos on any topic please ask and I will do my best to produce the most requested ones.
+
+Further you can download the notes in a format that suits you (either pdf or epub) to view offline, or change the way this document appears for ease of reading.
+
+This document is written in markdown, and particularly in equations typos can creep in. If you spot any typos or think there are any errors please let me know and I will do my best to fix them.
+
+\hypertarget{notes-and-workshops-for-ch10137}{%
+\section*{Notes and Workshops for CH10137}\label{notes-and-workshops-for-ch10137}}
+\addcontentsline{toc}{section}{Notes and Workshops for CH10137}
+
+This `book' will be updated weekly with content and embedded `micro lecture' video content.
+
+Questions and answers will be provided and some answers will include `process' as well as answer. Please contact me if you need help. Questions on later topics will rely on earlier knowledge.
+
+I am using this format as it is an accessible format. However I have moved over to this format this year and so I would appreciate you pointing out any areas of confusion or where error may have crept in.
+
+\hypertarget{recommended-text}{%
+\section*{Recommended text}\label{recommended-text}}
+\addcontentsline{toc}{section}{Recommended text}
+
+There is no single recommended text for this section of the course because multiple books can offer valuable extra insight. It may be useful for you to refer to any of the following:
+
+\href{https://bath-ac-primo.hosted.exlibrisgroup.com/primo-explore/search?query=any,contains,Elements\%20of\%20physical\%20chemistry\&tab=local\&sortby=date\&vid=44BAT_VU1\&facet=frbrgroupid,include,978286819\&offset=0\&pcAvailability=false}{The Elements of Physical Chemistry}
+
+\href{https://bath-ac-primo.hosted.exlibrisgroup.com/primo-explore/search?query=any,contains,physical\%20chemistry\%20de\%20paula\&tab=local\&search_scope=CSCOP_44BAT_DEEP\&sortby=date\&vid=44BAT_VU1\&facet=frbrgroupid,include,978327499\&offset=0\&pcAvailability=false}{Atkins' Physical Chemistry}
+
+\href{https://bath-ac-primo.hosted.exlibrisgroup.com/primo-explore/search?query=any,contains,chemistry3\&tab=local\&search_scope=CSCOP_44BAT_DEEP\&sortby=date\&vid=44BAT_VU1\&facet=frbrgroupid,include,978293871\&offset=0\&pcAvailability=false}{Chemistry\textsuperscript{3}}
+
+\hypertarget{version-history}{%
+\section*{Version history}\label{version-history}}
+\addcontentsline{toc}{section}{Version history}
+
+The initial commit of this book is dated 16nd October 2020.
+
+\hypertarget{ch:Workshop1}{%
+\chapter{Week 1 - Part 1: Preliminaries}\label{ch:Workshop1}}
+
+\hypertarget{sec:state}{%
+\section{State functions - (products - reactants)}\label{sec:state}}
+
+Many properties in thermodynamics are \emph{state functions}, that is properties that only depend upon the current state of the system. State functions are completely independent of the path by which that final state was reached.
+
+Enthalpy (H) is a state function, as are entropy (S), internal energy (U), Gibbs' free energy (G), Helmholtz free energy (F), temperature (T), pressure (p), and chemical composition.
+
+Path functions are unlike state functions in that they depend on the path taken to determine their value.
+Heat (q) and work (w) are both examples of path functions.
+
+\begin{itemize}
+\item
+  Internal energy, U The internal energy is the sum of all of the kinetic and potential energy contributions of the molecules in the system.
+\item
+  Enthalpy, H The enthalpy is related to the internal energy, but also takes into account any expansion work done by the system, formally ΔH = ΔU + Δ(pV).
+\item
+  Entropy, S The entropy is a measure of the number of possible arrangements of a system (multiplicity, Ω), formally S = k\textsubscript{B} ln Ω
+\item
+  Gibbs' free energy, G The Gibbs' free energy is a measure of the energy available to `do work' in a reaction system. It accounts for both the enalpic and entropic contributions of the reaction. ΔG = ΔH − TΔS
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.3\linewidth]{images/mountain} 
+
+}
+
+\caption{State functions - no matter how you got here, here you are… …altitude is a good analogy for a state function, whether climbing the mountain or flying on the balloon if your altitude is 1000 m it is 1000 m!.}\label{fig:bpy}
+\end{figure}
+
+\hypertarget{sec:equations1}{%
+\section{Useful equations - State functions}\label{sec:equations1}}
+
+Hess' Law (Equation \eqref{eq:enthalpystate}) is something most will be familiar with already. You should try to think about it in terms of an equation however, not the cylces of which you may already be familiar.
+
+\begin{equation}
+\Delta_r H^{\ominus} = \sum_{products}v \Delta H^{\ominus}_\textrm{X}-\sum_{reactants}v \Delta H^{\ominus}_\textrm{X}
+\label{eq:enthalpystate}
+\end{equation}
+
+Similar equations can be used for heat capacity (Equation \eqref{eq:heatcapacitystate}), this equation for heat capacity will then be used later in the course when we look at the effect of temperature on the enthalpy and entropy of reaction.
+
+\begin{equation}
+\Delta_r C_p^{\ominus} = \sum_{products}vC_{p,n}^{\ominus}-\sum_{reactants}vC_{p,n}^{\ominus}
+\label{eq:heatcapacitystate}
+\end{equation}
+
+Entropy, just like enthalpy is a state function.
+
+\begin{equation}
+\Delta_r S^{\ominus} = \sum_{products}v S^{\ominus}-\sum_{reactants}v S^{\ominus}
+\label{eq:entropystate}
+\end{equation}
+
+As is Gibbs' free energy.
+
+\begin{equation}
+\Delta _ r G^\ominus = \sum_{prod} v G_n^\ominus - \sum_{react} v  G_n^\ominus 
+\label{eq:Gibbsstate}
+\end{equation}
+
+The value of each of these variables is independent of the path used to form them. Hence, the same \emph{`products − reactants'} approach always works!
+
+\hypertarget{sec:extensiveintensive}{%
+\section{Extensive and intensive properties}\label{sec:extensiveintensive}}
+
+The difference between extensive and intensive properties is whether the property depends upon the amount of `stuff' you have.
+
+\hypertarget{sec:intenstive}{%
+\subsection{Intensive properties}\label{sec:intenstive}}
+
+Properties which are \emph{independent} of the amount of stuff are called `intensive properties'.
+
+Temperature is an example of an intensive property as are all of `molar' properties (the quantity of something `per mole'): molar heat capacity, molar enthalpy, molar entropy, molar Gibbs' energy, \emph{etc}\ldots{} in physics the term `specific' is often used such as specific heat capacity and specific enthalpy, these are also intensive properties based on the fixed amount of a `gram' (g).
+
+\hypertarget{sec:extensive}{%
+\subsection{Extensive properties}\label{sec:extensive}}
+
+Conversely, properties which are \emph{dependent} on the amount of stuff you have are called extensive properties.
+
+Many intensive properties have extensive equivalents, so whilst we have `molar heat capacity' we also have `heat capacity'; one looks at the amount of energy it takes to raise one mole of a thing by one kelvin, whereas the other looks at how much energy it takes to raise the temperature how ever much of a thing we have by on kelvin.
+
+Consequently extensive properties have different units to their `equivalent' intensive property.
+
+Other examples of extensive properties are unsurprisingly: volume, mass, amount (as in moles), and length.
+
+Whilst knowing the terms extensive and intensive isn't vital it is hugely important to recognise that sometimes terms will appear with different units to suit the particular situation.
+
+\hypertarget{sec:classicalstat}{%
+\section{Classical vs.~Statistical thermodynamics}\label{sec:classicalstat}}
+
+Thermodynamics is quite an old subject, much of our understanding of why chemical reactions happen is based in 19th century science. This understanding was based on emperical observation of things like steam engines and battery piles. It scientists trying to understand how things work in order to make them better, make them more efficient, and make them safer.
+
+This 19th century (and earlier) view of the world didn't even consider things we take for granted now, nowhere in thermodynamics do we ever really think about atoms. We talk about ideal systems (those that follow the rules nicely), but never really care about the reaction taking place, it is all just the bulk average behaviour of the system.
+
+Then in the late 19th century Ludwig Boltzmann proposed a different way of thinking about thermodynamics. He started to think about the `average' behaviour of individual atoms. This version of statistical mechanics gave an explanation of what concepts like entropy were and it helped explain macroscopic phenomena (such as pressure and temperature) on an atomic and molecular level.
+
+Statistical thermodynamics started to be able to explain the values of what had until then been emperical constants.
+
+Consequently in this course we will look at thermodynamics from both a classical and statistical point of view.
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}
