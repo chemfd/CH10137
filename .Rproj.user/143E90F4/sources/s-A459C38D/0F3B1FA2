@@ -3,22 +3,22 @@
     "path": "~/Documents/GitHub/CH10137/01-workshopweek1.Rmd",
     "project_path": "01-workshopweek1.Rmd",
     "type": "r_markdown",
-    "hash": "793670317",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1603551263025.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
-        "cursorPosition": "156,0",
-        "scrollLine": "144"
+        "cursorPosition": "78,0",
+        "scrollLine": "62"
     },
     "folds": "",
-    "lastKnownWriteTime": 1603579172,
+    "lastKnownWriteTime": 1603581676,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1603579172744,
+    "last_content_update": 1603581676909,
     "read_only": false,
     "read_only_alternatives": []
 }

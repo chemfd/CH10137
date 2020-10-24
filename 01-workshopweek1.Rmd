@@ -1,5 +1,15 @@
 # Week 1  - Part 1: Preliminaries {#ch:Workshop1}
 
+## Why thermodynamics matters {#sec:whyjustwhy}
+
+<div style="text-align: center;"><iframe width="847" height="476" src="https://www.youtube.com/embed/6CpPo2491AA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div style="text-align: left;">
+
+The laws of thermodynamics are some of the most fundamental laws of nature, and in this course I hope you will learn to understand these laws and be able to apply them to explain the world around you.
+ 
+Thermodynamics is fundamental to the way we live, to our dream of living a better, less impactful life and to how we as ‘life’ work.
+
 ## State functions - (products - reactants) {#sec:state}
 
 Many properties in thermodynamics are <span style="color: deeppink;">*state functions*<span style="color: black;">, that is properties that only depend upon the current state of the system. State functions are completely independent of the path by which that final state was reached.
@@ -60,6 +70,17 @@ The value of each of these variables is independent of the path used to form the
 
 
 <div style="text-align: left;">
+
+## Types of thermodynamic system {#sec:typesofsystem}
+
+When we consider anything in thermodynamics we have to consider both the system and its surroundings. The relationship between the system and the surroundings defines the different types of thermodynamic system.
+
+<div style="text-align: center;"><iframe width="847" height="476" src="https://www.youtube.com/embed/Y1y-dg8Z6ok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div style="text-align: left;">
+
+
+
 
 ## Extensive and intensive properties {#sec:extensiveintensive}
 
@@ -202,10 +223,9 @@ Determine the enthalpy of reaction for this process given the following data.
 
 $ΔH^⦵_{f, \textrm{(NH}_4\textrm{)Cr}_2\textrm{O}_7\textrm{ (s)}} = −1810 \textrm{ kJ mol}^{−1}$ 
 
+$ΔH^⦵_{f, \textrm{H}_2 \textrm{O (g)}} = −240  \textrm{ kJ mol}^{−1}$ 
 
-ΔHf⦵ H2O (g) = −240 kJ mol−1   
-
-ΔHf⦵ Cr2O3 (s) = −1140 kJ mol−1
+$ΔH^⦵_{f, \textrm{Cr}_2 \textrm{O}_3 \textrm{ (g)}} = −1140  \textrm{ kJ mol}^{−1}$ 
 
 How would the enthalpy of reaction differ if liquid water was formed? Justify your answer.
 
@@ -213,5 +233,5 @@ How would the enthalpy of reaction differ if liquid water was formed? Justify yo
 
 1. $ΔG_{rxn}^⦵$  = −239.86 kJ mol^−1^$_{NH_3}$ (per mole of NH~3~)
 1. $ΔH_{rxn}^⦵$ = -11.2 kJ cm^-3^
-1. 
+1. $ΔH_{rxn}^⦵$ = -290 kJ mol^−1^, become more negative as heat is released upon condensing (we will cover this later in the course if you don't understant this last part, please don't stress).
 
