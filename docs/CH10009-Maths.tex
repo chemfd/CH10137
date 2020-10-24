@@ -80,7 +80,7 @@
 
 \title{CH10137 Thermodynamics}
 \author{Fiona Dickinson}
-\date{2020-10-23}
+\date{2020-10-24}
 
 \begin{document}
 \maketitle
@@ -161,7 +161,7 @@ Heat (q) and work (w) are both examples of path functions.
 \end{figure}
 
 \hypertarget{sec:equations1}{%
-\section{Useful equations - State functions}\label{sec:equations1}}
+\subsection{Useful equations - State functions}\label{sec:equations1}}
 
 Hess' Law (Equation \eqref{eq:enthalpystate}) is something most will be familiar with already. You should try to think about it in terms of an equation however, not the cylces of which you may already be familiar.
 
@@ -230,6 +230,146 @@ Then in the late 19th century Ludwig Boltzmann proposed a different way of think
 Statistical thermodynamics started to be able to explain the values of what had until then been emperical constants.
 
 Consequently in this course we will look at thermodynamics from both a classical and statistical point of view.
+
+\hypertarget{example-calculations}{%
+\section{Example calculations}\label{example-calculations}}
+
+\hypertarget{sec:examplehess}{%
+\subsection{Example calculation - Hess's Law}\label{sec:examplehess}}
+
+How much energy is released when 4.60 g of sodium reacts with excess water to give NaOH (aq) \& H\textsubscript{2} (g)?
+
+\begin{itemize}
+\tightlist
+\item
+  ΔH\textsubscript{f}\textsuperscript{⦵} NaOH = −425.61 kJ mol\textsuperscript{−1}
+\item
+  ΔH\textsubscript{f}\textsuperscript{⦵} H\textsubscript{2}O = −285.83 kJ mol\textsuperscript{−1}
+\end{itemize}
+
+The enthalpy of formation of elements in their standard state (\emph{e.g.} Na (s) \& H\textsubscript{2} (g)) is zero.
+
+Therefore using equation \eqref{eq:enthalpystate}:
+
+\begin{equation*}
+\Delta H_{rxn}^{\ominus}= \Delta H_{f}^{\ominus}(\textrm{NaOH})-\Delta H_{f}^{\ominus}(\textrm{H}_2\textrm{O})= −425.61 \textrm{ kJ mol}^{−1} − −285.83 \textrm{ kJ mol}^{−1} = −139.78 \textrm{ kJ mol}^{−1}
+\end{equation*}
+
+\(R_M \textrm{ Na} = 22.989769 \textrm{ g mol}^{−1}\)
+Therefore:
+
+\begin{equation*}
+n \textrm{(Na)} = \frac{m}{R_M} = \frac{4.60 \textrm{ g}}{ 22.989769 \textrm{ g mol}^{−1}} = 0.200 \textrm{ mol}
+\end{equation*}
+
+\emph{note sf!}
+
+Therefore if 4.60g reacts:
+
+\begin{equation*}
+\Delta H_{rxn}^⦵ ( \textrm{kJ}) = \Delta H_{rxn}^⦵ ( \textrm{kJ mol}^{−1}) × \textrm{mol} = −139.78 \textrm{kJ mol}^{-1} × 0.200 \textrm{mol} = −28.0 \textrm{ kJ}
+\end{equation*}
+
+The `−' sign indicates that heat is released (evolved) and the temperature of the surroundings increases.
+
+\hypertarget{subsec:examplekirchoff}{%
+\subsection{Example Calculation - Kirchoff's law}\label{subsec:examplekirchoff}}
+
+Kirchoff's laws may be used to adjust calculated values of enthalpy and entropy of reaction to different temperatures, they use the difference in heat capacity of products and reactants to do this. Determine \(ΔC_{p,m}\) for the following reaction:
+
+CH\textsubscript{3}CH\textsubscript{2}OH (aq) + CH\textsubscript{3}COOH (aq) ⟶ CH\textsubscript{3}COOCH\textsubscript{2}CH\textsubscript{3} (aq) + H\textsubscript{2}O (l)
+
+\begin{longtable}[]{@{}cc@{}}
+\toprule
+& \(ΔC_{p,m}\) / J K\(^{−1}\) mol\(^{−1}\)\tabularnewline
+\midrule
+\endhead
+CH\textsubscript{3}CH\textsubscript{2}OH (aq) & 111.46\tabularnewline
+CH\textsubscript{3}COOH (aq) & 124.3\tabularnewline
+CH\textsubscript{3}COOCH\textsubscript{2}CH\textsubscript{3} (aq) & 170.1\tabularnewline
+H\textsubscript{2}O (l) & 33.58\tabularnewline
+\bottomrule
+\end{longtable}
+
+\begin{equation*}
+ΔC_{p,m \textrm{ rxn}} = (C_{p,m} \textrm{CH$_3$COOCH$_2$CH$_3$ (aq)} + C_{p,m} \textrm{H$_2$O (l)}) − (C_{p,m} \textrm{CH$_3$CH$_2$OH (aq)} + C_{p,m} \textrm{CH$_3$COOH (aq)})
+\end{equation*}
+
+\begin{equation*}
+ΔC_\textrm{p,m rxn} = (170.1 + 33.58) − (111.46 + 124.3) \textrm{ J K$^{-1}$ mol}^{−1}) = − 32.1 \textrm{ J K$^{-1}$ mol}^{−1}
+\end{equation*}
+
+\hypertarget{sec:Questions1}{%
+\section{Questions}\label{sec:Questions1}}
+
+Later in this course you will learn about the origin of these equations, for now it is enough to be able to balance chemical equations and use the fact that each of the variables in teh following equations are state functions.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  What is the standard Gibbs' free energy of the oxidation of ammonia (NH\textsubscript{3}) to nitric acid (NO)?
+\end{enumerate}
+
+Hint: This is a redox reaction.
+
+\(ΔG^⦵_{f, \textrm{NH}_3} = −16.45 \textrm{ kJ mol}^{−1}\)
+
+\(ΔG^⦵_{f, \textrm{NO}} = +86.55 \textrm{ kJ mol}^{−1}\)
+
+\(ΔG^⦵_{f, \textrm{H}_2 \textrm{O}} = −228.57 \textrm{ kJ mol}^{−1}\)
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  Methanol fuel cells have been proposed as replacements for internal combustion engines. Methanol (density, ρ = 792 kg m\textsuperscript{−3}) is reacted in a fuel cell to be completely oxidised.
+\end{enumerate}
+
+Given the enthalpies of formation required are listed below determine the amount of energy released per mL of methanol.
+
+\(ΔH^⦵_{f, \textrm{CH}_3\textrm{OH}} = −425.61 \textrm{ kJ mol}^{−1}\)
+
+\(ΔH^⦵_{f, \textrm{H}_2 \textrm{O}} = −241.82 \textrm{ kJ mol}^{−1}\)
+
+\(ΔH^⦵_{f, \textrm{CO}_2} = −393.51 \textrm{ kJ mol}^{−1}\)
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Ammonium dichromate decomposes upon heating in a spectacular `volcano' reaction:
+\end{enumerate}
+
+(NH\textsubscript{4})Cr\textsubscript{2}O\textsubscript{7} (s) ⟶ N\textsubscript{2} (g) + 4 H\textsubscript{2}O (g) + Cr\textsubscript{2}O\textsubscript{3} (s)
+
+Determine the enthalpy of reaction for this process given the following data.
+
+\(ΔH^⦵_{f, \textrm{(NH}_4\textrm{)Cr}_2\textrm{O}_7\textrm{ (s)}} = −1810 \textrm{ kJ mol}^{−1}\)
+
+ΔHf⦵ H2O (g) = −240 kJ mol−1
+
+ΔHf⦵ Cr2O3 (s) = −1140 kJ mol−1
+
+How would the enthalpy of reaction differ if liquid water was formed? Justify your answer.
+
+\hypertarget{sec:Answers1}{%
+\section{Answers}\label{sec:Answers1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \(ΔG_{rxn}^⦵\) = −239.86 kJ mol\textsuperscript{−1}\(_{NH_3}\) (per mole of NH\textsubscript{3})
+\item
+  \(ΔH_{rxn}^⦵\) = -11.2 kJ cm\textsuperscript{-3}
+\item
+\end{enumerate}
 
   \bibliography{book.bib,packages.bib}
 
