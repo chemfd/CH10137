@@ -1,0 +1,25 @@
+# Glossary of terms {-}
+
+## A-F  {-}
+
+- Adiabatic system: An adiabatic system can have no exchange of matter, and energy can only be exchanged in the form of work between the system and surroundings.
+
+- Closed system: A closed system is one where there can be no exchnage of matter, but energy in either the form of heat or work may be exchanged between the system and surroundings.
+
+- Extensive property: a property which is dependent upon the amount of 'stuff' you have, such as mass, volume, and enthalpy.
+
+## G-M {-}
+
+- Intensive property: a property which is independent of the amount of 'stuff' you have, such as temperature, molar volume, and molar enthalpy.
+
+- Isolated system: An isolated system is one where there can be no exchange of either matter or energy between the system and surroundings.
+
+## N-S {-}
+
+- Open system: In an open system both matter and energy may be exchanged between the system and surroundings.
+
+- Path function: a path function is one which depends upon the route taken to go between the initial and final states. Functions such as work are path functions.
+
+- State function: a state function is one where only the current state of the system matters, for functions such as enthalpy change we only need to know the initial and final states and not how it got between those states.
+
+## T-Z {-}

@@ -1,4 +1,6 @@
-# Week 1  - Part 1: Preliminaries {#ch:Workshop1}
+# Week 1  - Part 1: Preliminaries {#ch:Part1}
+
+The 'content' videos are all very short, any equations or important images are contained in the text of this document and so pdf slides will not be shared (as these are not an accessible document).
 
 ## Why thermodynamics matters {#sec:whyjustwhy}
 
@@ -31,7 +33,7 @@ Heat (q) and work (w) are both examples of path functions.
 
 - <span style="color: deeppink;">Gibbs' free energy, G<span style="color: black;"> The Gibbs’ free energy is a measure of the energy available to ‘do work’ in a reaction system. It accounts for both the enalpic and entropic contributions of the reaction. ΔG = ΔH − TΔS
 
-```{r echo=FALSE, bpy, out.width='30%', fig.show='hold', fig.align='center', fig.cap='State functions - no matter how you got here, here you are… …altitude is a good analogy for a state function, whether climbing the mountain or flying on the balloon if your altitude is 1000 m it is 1000 m!.'}
+```{r echo=FALSE, mountain, out.width='30%', fig.show='hold', fig.align='center', fig.cap='State functions - no matter how you got here, here you are… …altitude is a good analogy for a state function, whether climbing the mountain or flying on the balloon if your altitude is 1000 m it is 1000 m!.'}
 knitr::include_graphics("images/mountain.png")
 ```
 
