@@ -167,6 +167,41 @@ Consequently in this course we will look at thermodynamics from both a classical
 <div style="text-align: center;"><iframe width="640" height="360" src="https://www.youtube.com/embed/odOkb-NhxVI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <div style="text-align: left;">
+### Degrees of Freedom 
+
+NOTE - I've also added this to the week1 part1 so this section is duplicated.
+
+Perhaps unsurprisingly the structure of molecules is an important concept when we consider thermodynamics from the molecule up perspective, but perhaps surprisingly classical thermodynamics does not care at all the structure of the molecules in the system we are considering.
+
+```{r echo=FALSE, atomdegrees, out.width='80%', fig.show='hold', fig.align='center', fig.cap='Every atom has three degrees of freedom, these are movement along the x, y and z axis.'}
+knitr::include_graphics("images/atomdegrees.png")
+```
+
+When atoms combine to form moleucules the total number of degrees of freedom must be conserved, and so new types of degrees of freedom are introduced, namely molecular rotations and molecular vibrations (figure \@ref(fig:typesdegree), and equations \@ref(eq:lineardof) and \@ref(eq:nonlineardof)).
+
+```{r echo=FALSE, typesdegree, out.width='80%', fig.show='hold', fig.align='center', fig.cap='Translations, molecular rotations and molecular vibrations are all degrees of freedom.'}
+knitr::include_graphics("images/typesdegree.png")
+```
+
+For linear molecules there are three translational degrees of freedom, two rotational degrees of freedom (figure \@ref(fig:linear)) and the number of vibrational degrees of freedom is given by equation \@ref(eq:lineardof), where N is the total number of atoms in the molecule:
+
+\begin{equation}
+x = 3N-5
+(\#eq:lineardof)
+\end{equation}
+
+```{r echo=FALSE, linear, out.width='80%', fig.show='hold', fig.align='center', fig.cap='In linear molecules there are only two rotational degrees of freedom as rotaion around the z-axis (the long axis of the molecule) are equivalent and therefore dont contribute to the degrees of freedom.'}
+knitr::include_graphics("images/linear.png")
+```
+
+For non-linear molecules there are three translational degrees of freedom, three rotational degrees of freedom and the number of vibrational degrees of freedom is given by equation \@ref(eq:nonlineardof), again where N is the total number of atoms in the molecule:
+
+\begin{equation}
+x = 3N-6
+(\#eq:nonlineardof)
+\end{equation}
+
+
 ## Example calculations
 
 

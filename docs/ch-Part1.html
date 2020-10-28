@@ -90,7 +90,9 @@
 <li class="chapter" data-level="1.4.1" data-path="ch-Part1.html"><a href="ch-Part1.html#sec:intenstive"><i class="fa fa-check"></i><b>1.4.1</b> Intensive properties</a></li>
 <li class="chapter" data-level="1.4.2" data-path="ch-Part1.html"><a href="ch-Part1.html#sec:extensive"><i class="fa fa-check"></i><b>1.4.2</b> Extensive properties</a></li>
 </ul></li>
-<li class="chapter" data-level="1.5" data-path="ch-Part1.html"><a href="ch-Part1.html#sec:classicalstat"><i class="fa fa-check"></i><b>1.5</b> Classical vs. Statistical thermodynamics</a></li>
+<li class="chapter" data-level="1.5" data-path="ch-Part1.html"><a href="ch-Part1.html#sec:classicalstat"><i class="fa fa-check"></i><b>1.5</b> Classical vs. Statistical thermodynamics</a><ul>
+<li class="chapter" data-level="1.5.1" data-path="ch-Part1.html"><a href="ch-Part1.html#degrees-of-freedom"><i class="fa fa-check"></i><b>1.5.1</b> Degrees of Freedom</a></li>
+</ul></li>
 <li class="chapter" data-level="1.6" data-path="ch-Part1.html"><a href="ch-Part1.html#example-calculations"><i class="fa fa-check"></i><b>1.6</b> Example calculations</a><ul>
 <li class="chapter" data-level="1.6.1" data-path="ch-Part1.html"><a href="ch-Part1.html#sec:examplehess"><i class="fa fa-check"></i><b>1.6.1</b> Example calculation - Hess’s Law</a></li>
 <li class="chapter" data-level="1.6.2" data-path="ch-Part1.html"><a href="ch-Part1.html#subsec:examplekirchoff"><i class="fa fa-check"></i><b>1.6.2</b> Example Calculation - Kirchoff’s law</a></li>
@@ -101,7 +103,10 @@
 <li class="chapter" data-level="2" data-path="ch-Part2.html"><a href="ch-Part2.html"><i class="fa fa-check"></i><b>2</b> Week 1 - Part 2</a><ul>
 <li class="chapter" data-level="2.1" data-path="ch-Part2.html"><a href="ch-Part2.html#zeroth-law-of-thermodynamics"><i class="fa fa-check"></i><b>2.1</b> Zeroth Law of Thermodynamics</a></li>
 <li class="chapter" data-level="2.2" data-path="ch-Part2.html"><a href="ch-Part2.html#what-is-temperature"><i class="fa fa-check"></i><b>2.2</b> What is temperature?</a></li>
-<li class="chapter" data-level="2.3" data-path="ch-Part2.html"><a href="ch-Part2.html#internal-energy-u"><i class="fa fa-check"></i><b>2.3</b> Internal energy, U</a></li>
+<li class="chapter" data-level="2.3" data-path="ch-Part2.html"><a href="ch-Part2.html#internal-energy-u"><i class="fa fa-check"></i><b>2.3</b> Internal energy, U</a><ul>
+<li class="chapter" data-level="2.3.1" data-path="ch-Part1.html"><a href="ch-Part1.html#degrees-of-freedom"><i class="fa fa-check"></i><b>2.3.1</b> Degrees of Freedom</a></li>
+<li class="chapter" data-level="2.3.2" data-path="ch-Part2.html"><a href="ch-Part2.html#equipartition-theory"><i class="fa fa-check"></i><b>2.3.2</b> Equipartition theory</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="glossary-of-terms.html"><a href="glossary-of-terms.html"><i class="fa fa-check"></i>Glossary of terms</a><ul>
 <li class="chapter" data-level="" data-path="glossary-of-terms.html"><a href="glossary-of-terms.html#a-f"><i class="fa fa-check"></i>A-F</a></li>
@@ -281,6 +286,40 @@ Figure 1.5: Adiabatic system: in an adiabatic system only energy in the form of 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/odOkb-NhxVI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 <div style="text-align: left;">
+<div id="degrees-of-freedom" class="section level3">
+<h3><span class="header-section-number">1.5.1</span> Degrees of Freedom</h3>
+<p>NOTE - I’ve also added this to the week1 part1 so this section is duplicated.</p>
+<p>Perhaps unsurprisingly the structure of molecules is an important concept when we consider thermodynamics from the molecule up perspective, but perhaps surprisingly classical thermodynamics does not care at all the structure of the molecules in the system we are considering.</p>
+<div class="figure" style="text-align: center"><span id="fig:atomdegrees"></span>
+<img src="images/atomdegrees.png" alt="Every atom has three degrees of freedom, these are movement along the x, y and z axis." width="80%" />
+<p class="caption">
+Figure 1.6: Every atom has three degrees of freedom, these are movement along the x, y and z axis.
+</p>
+</div>
+<p>When atoms combine to form moleucules the total number of degrees of freedom must be conserved, and so new types of degrees of freedom are introduced, namely molecular rotations and molecular vibrations (figure <a href="ch-Part1.html#fig:typesdegree">1.7</a>, and equations <a href="ch-Part1.html#eq:lineardof">(1.5)</a> and <a href="ch-Part1.html#eq:nonlineardof">(1.6)</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:typesdegree"></span>
+<img src="images/typesdegree.png" alt="Translations, molecular rotations and molecular vibrations are all degrees of freedom." width="80%" />
+<p class="caption">
+Figure 1.7: Translations, molecular rotations and molecular vibrations are all degrees of freedom.
+</p>
+</div>
+<p>For linear molecules there are three translational degrees of freedom, two rotational degrees of freedom (figure <a href="ch-Part1.html#fig:linear">1.8</a>) and the number of vibrational degrees of freedom is given by equation <a href="ch-Part1.html#eq:lineardof">(1.5)</a>, where N is the total number of atoms in the molecule:</p>
+<p><span class="math display" id="eq:lineardof">\[\begin{equation}
+x = 3N-5
+\tag{1.5}
+\end{equation}\]</span></p>
+<div class="figure" style="text-align: center"><span id="fig:linear"></span>
+<img src="images/linear.png" alt="In linear molecules there are only two rotational degrees of freedom as rotaion around the z-axis (the long axis of the molecule) are equivalent and therefore dont contribute to the degrees of freedom." width="80%" />
+<p class="caption">
+Figure 1.8: In linear molecules there are only two rotational degrees of freedom as rotaion around the z-axis (the long axis of the molecule) are equivalent and therefore dont contribute to the degrees of freedom.
+</p>
+</div>
+<p>For non-linear molecules there are three translational degrees of freedom, three rotational degrees of freedom and the number of vibrational degrees of freedom is given by equation <a href="ch-Part1.html#eq:nonlineardof">(1.6)</a>, again where N is the total number of atoms in the molecule:</p>
+<p><span class="math display" id="eq:nonlineardof">\[\begin{equation}
+x = 3N-6
+\tag{1.6}
+\end{equation}\]</span></p>
+</div>
 </div>
 <div id="example-calculations" class="section level2">
 <h2><span class="header-section-number">1.6</span> Example calculations</h2>

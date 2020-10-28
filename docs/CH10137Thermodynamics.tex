@@ -125,6 +125,8 @@ There is no single recommended text for this section of the course because multi
 \section*{Version history}\label{version-history}}
 \addcontentsline{toc}{section}{Version history}
 
+Degrees of freedom section added to week1part1, week1part2 finished
+
 Week1Part2 started 28th October 2020.
 
 The initial commit of this book is dated 16th October 2020.
@@ -312,6 +314,56 @@ Then in the late 19th century Ludwig Boltzmann proposed a different way of think
 Statistical thermodynamics started to be able to explain the values of what had until then been emperical constants.
 
 Consequently in this course we will look at thermodynamics from both a classical and statistical point of view.
+
+\hypertarget{degrees-of-freedom}{%
+\subsection{Degrees of Freedom}\label{degrees-of-freedom}}
+
+NOTE - I've also added this to the week1 part1 so this section is duplicated.
+
+Perhaps unsurprisingly the structure of molecules is an important concept when we consider thermodynamics from the molecule up perspective, but perhaps surprisingly classical thermodynamics does not care at all the structure of the molecules in the system we are considering.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/atomdegrees} 
+
+}
+
+\caption{Every atom has three degrees of freedom, these are movement along the x, y and z axis.}\label{fig:atomdegrees}
+\end{figure}
+
+When atoms combine to form moleucules the total number of degrees of freedom must be conserved, and so new types of degrees of freedom are introduced, namely molecular rotations and molecular vibrations (figure \ref{fig:typesdegree}, and equations \eqref{eq:lineardof} and \eqref{eq:nonlineardof}).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/typesdegree} 
+
+}
+
+\caption{Translations, molecular rotations and molecular vibrations are all degrees of freedom.}\label{fig:typesdegree}
+\end{figure}
+
+For linear molecules there are three translational degrees of freedom, two rotational degrees of freedom (figure \ref{fig:linear}) and the number of vibrational degrees of freedom is given by equation \eqref{eq:lineardof}, where N is the total number of atoms in the molecule:
+
+\begin{equation}
+x = 3N-5
+\label{eq:lineardof}
+\end{equation}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/linear} 
+
+}
+
+\caption{In linear molecules there are only two rotational degrees of freedom as rotaion around the z-axis (the long axis of the molecule) are equivalent and therefore dont contribute to the degrees of freedom.}\label{fig:linear}
+\end{figure}
+
+For non-linear molecules there are three translational degrees of freedom, three rotational degrees of freedom and the number of vibrational degrees of freedom is given by equation \eqref{eq:nonlineardof}, again where N is the total number of atoms in the molecule:
+
+\begin{equation}
+x = 3N-6
+\label{eq:nonlineardof}
+\end{equation}
 
 \hypertarget{example-calculations}{%
 \section{Example calculations}\label{example-calculations}}
@@ -532,7 +584,7 @@ Therefore temperature is a measure of the population of energy levels within a m
 \hypertarget{internal-energy-u}{%
 \section{Internal energy, U}\label{internal-energy-u}}
 
-Internal energy is a state function, which describes the `total internal energy' of a system. We are already aware that there is thermal energy within the system from the population of the energy levels as described in figure \ref{fig:energylevels}. However internal energy also accounts for the `potential energy' from the interactions between particles in the system (figure \ref{fig:internalenergy}).
+Internal energy is a state function (equation \eqref{eq:internal}), which describes the `total internal energy' of a system. We are already aware that there is thermal energy within the system from the population of the energy levels as described in figure \ref{fig:energylevels}. However internal energy also accounts for the `potential energy' from the inter- and intra- molecular interactions between particles in the system (figure \ref{fig:internalenergy}).
 
 \begin{figure}
 
@@ -542,6 +594,76 @@ Internal energy is a state function, which describes the `total internal energy'
 
 \caption{The internal energy of a system is the sum of the kinetic and potential energies of the particles in the system.}\label{fig:internalenergy}
 \end{figure}
+
+Since internal energy is a state function the change in internal energy in a process is given by the difference in internal energy of the final and initial states (equation \eqref{eq:internal}).
+
+\begin{equation}
+\Delta U = U_\textrm{f} - U_\textrm{i}
+\label{eq:internal}
+\end{equation}
+
+\hypertarget{degrees-of-freedom}{%
+\subsection{Degrees of Freedom}\label{degrees-of-freedom}}
+
+NOTE - I've also added this to the week1 part1 so this section is duplicated.
+
+Perhaps unsurprisingly the structure of molecules is an important concept when we consider thermodynamics from the molecule up perspective, but perhaps surprisingly classical thermodynamics does not care at all the structure of the molecules in the system we are considering.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/atomdegrees} 
+
+}
+
+\caption{Every atom has three degrees of freedom, these are movement along the x, y and z axis.}\label{fig:atomdegrees1}
+\end{figure}
+
+When atoms combine to form moleucules the total number of degrees of freedom must be conserved, and so new types of degrees of freedom are introduced, namely molecular rotations and molecular vibrations (figure \ref{fig:typesdegree1}, and equations \eqref{eq:lineardof1} and \eqref{eq:nonlineardof1}).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/typesdegree} 
+
+}
+
+\caption{Translations, molecular rotations and molecular vibrations are all degrees of freedom.}\label{fig:typesdegree1}
+\end{figure}
+
+For linear molecules there are three translational degrees of freedom, two rotational degrees of freedom (figure \ref{fig:linear1}) and the number of vibrational degrees of freedom is given by equation \eqref{eq:lineardof1}, where N is the total number of atoms in the molecule:
+
+\begin{equation}
+x = 3N-5
+\label{eq:lineardof1}
+\end{equation}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/linear} 
+
+}
+
+\caption{In linear molecules there are only two rotational degrees of freedom as rotaion around the z-axis (the long axis of the molecule) are equivalent and therefore dont contribute to the degrees of freedom.}\label{fig:linear1}
+\end{figure}
+
+For non-linear molecules there are three translational degrees of freedom, three rotational degrees of freedom and the number of vibrational degrees of freedom is given by equation \eqref{eq:nonlineardof1}, again where N is the total number of atoms in the molecule:
+
+\begin{equation}
+x = 3N-6
+\label{eq:nonlineardof1}
+\end{equation}
+
+\hypertarget{equipartition-theory}{%
+\subsection{Equipartition theory}\label{equipartition-theory}}
+
+\emph{Some of the material covered in this video relates to heat capacities which we will study in more detail later in the course.}
+
+Equipartition theory is quite involved, and I am not going to explain any of the actual theory or derivation in this course, instead we are going to just use the results of this theory.
+
+These results from statistical thermodynamic calculation, are verified by emperical observations which is proof of the power of Boltzmann's theories.
+
+Equipartition theory says that for an ideal gas each degree of freedom contributes \(\frac{RT}{2}\) to the molar internal energy, and so for monatomic gases, such as helium and neon the internal energy , U is \(\frac{3RT}{2}\). However for a diatomic gas with 6 degrees of freedom (3 translational, 2 rotational and 1 vibrational) the internal energy of the ideal gas is predicted to be \(3RT\).
+
+However, we have already seen that the energy spacing between different types of energy level differs, and so only \emph{active} degrees of freedom contribute to the internal energy. Consequently because there are large energy gaps for vibrational energy levels the excited states of these energy levels are rarely occupied and so they do not contribute towards the total internal energy of the system.
 
 THIS DOCUMENT IS UNFINISHED
 
