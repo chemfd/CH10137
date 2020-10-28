@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.24)  28 OCT 2020 16:30
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.24)  28 OCT 2020 17:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1312,31 +1312,33 @@ File: images/atomdegrees.png Graphic file (type QTm)
 File: images/typesdegree.png Graphic file (type QTm)
 <use  "images/typesdegree.png" >
 File: images/linear.png Graphic file (type QTm)
-<use  "images/linear.png" > [22] [23] [24
+<use  "images/linear.png" > [22] [23]
+Missing character: There is no 𝛥 in font [lmroman10-regular]:mapping=tex-text;!
+[24] [25
 
-] [25]
+]
 No file CH10137Thermodynamics.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 717.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 800.
 [26]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 717.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 800.
 (./CH10137Thermodynamics.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 717.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 717.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 800.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 800.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 717.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 800.
  ) 
 Here is how much of TeX's memory you used:
- 24848 strings out of 493005
- 444587 string characters out of 6134596
- 640843 words of memory out of 5000000
- 28535 multiletter control sequences out of 15000+600000
+ 24855 strings out of 493005
+ 444667 string characters out of 6134596
+ 641018 words of memory out of 5000000
+ 28542 multiletter control sequences out of 15000+600000
  13845 words of font info for 91 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 58i,7n,120p,10416b,392s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,7n,120p,10416b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on CH10137Thermodynamics.pdf (26 pages).

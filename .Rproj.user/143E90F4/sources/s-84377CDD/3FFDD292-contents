@@ -131,5 +131,52 @@ Equipartition theory says that for an ideal gas each degree of freedom contribut
 
 However, we have already seen that the energy spacing between different types of energy level differs, and so only *active* degrees of freedom contribute to the internal energy. Consequently because there are large energy gaps for vibrational energy levels the excited states of these energy levels are rarely occupied and so they do not contribute towards the total internal energy of the system.
 
+<div style="text-align: center;"><iframe width="847" height="476" src="https://www.youtube.com/embed/9ZDO7KEyQ3g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
 
-THIS DOCUMENT IS UNFINISHED
+## First Law of Thermodynamics
+
+There are a number of variations on the statements of the first law of thermodynamics, but ultimately they are all saying the same thing. The variations come from different definitions referring to different types of thermodynamic system (Section \@ref(sec:typesofsystem)).
+
+The first statement of the first law of thermodynamics is the most fundamental:
+
+<div style="text-align: center;"><span style="color: deeppink;">*‘the internal energy of an isolated system is constant’*<div style="text-align: left;"><span style="color: black;">
+
+This should be fairly obvious, if my system is isolated there can be no exchange of matter or energy and so the internal energy can't change.
+
+A second version of first law refers to a closed system, one where there can be no exchange of matter, but energy may be exchanged in the form of either heat or work. Mathematically this statement is (\@ref(eq:firstlaw)):
+
+\begin{equation}
+\Delta U = q + w
+(\#eq:firstlaw)
+\end{equation}
+
+where $q$ is the energy exchanged in the form of heat and $w$ the energy exchanged in the form of work.
+
+<div style="text-align: center;"><iframe width="847" height="476" src="https://www.youtube.com/embed/JY6DfuWokjU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
+
+## Questions
+
+1. Determine the number of degrees of freedom in each of the following molecules, and consequently predict the molar internal energy at 25 ºC.
+
+a. molecular nitrogen, N_2_
+a. ozone, O_3_
+a. acetylene HCCH
+
+2. Why can't you use equipartition theory to determine the internal energy of ethanol at room temperature?
+
+3. If a system looses 250 J of energy from loss of heat, and 600 J of energy is added to the sytem in the form of work what is the change in internal enery of the system, and the universe?
+
+4. How does changing the spacing of energy levels change the distribution of population of energy levels in a system?
+
+## Answers
+
+1. -
+a. 6.194 kJ mol^−1^
+a. 7.433  kJ mol^−1^
+a. 6.194 kJ mol^−1^
+
+2. It's a liquid at room temperature, equipartition theory tells us about ideal gases.
+
+3. $\Delta U_{system}=$ +350 J, $\Delta U_{universe}=$0J
+
+4. It shouldn't they will respace, so if the population of levels is higher when the space is bigger, but you are just distributing the energy differently.
