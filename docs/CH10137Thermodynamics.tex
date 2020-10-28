@@ -80,7 +80,7 @@
 
 \title{CH10137 Thermodynamics}
 \author{Fiona Dickinson}
-\date{2020-10-27}
+\date{2020-10-28}
 
 \begin{document}
 \maketitle
@@ -125,7 +125,9 @@ There is no single recommended text for this section of the course because multi
 \section*{Version history}\label{version-history}}
 \addcontentsline{toc}{section}{Version history}
 
-The initial commit of this book is dated 16nd October 2020.
+Week1Part2 started 28th October 2020.
+
+The initial commit of this book is dated 16th October 2020.
 
 \hypertarget{ch:Part1}{%
 \chapter{Week 1 - Part 1: Preliminaries}\label{ch:Part1}}
@@ -455,6 +457,93 @@ How would the enthalpy of reaction differ if liquid water was formed? Justify yo
 
 \hypertarget{ch:Part2}{%
 \chapter{Week 1 - Part 2}\label{ch:Part2}}
+
+There are different methods of teaching thermodynamics, many come at the problem from a very mathematical viewpoint, with partial derivatives, and operators. This course does not do that, the emphasis here is on understanding thermodynamic concepts, and being able to apply them solve problems. At no point will I expect you to be able to derive something, and I only include the derivations of a couple of equations where I feel it aids understanding of the concept.
+
+If you wish to see a more mathematical version of this course it is covered in a number of textbooks, including the recommended text for this course, Atkin's Elements of Physical Chemistry.
+
+\hypertarget{zeroth-law-of-thermodynamics}{%
+\section{Zeroth Law of Thermodynamics}\label{zeroth-law-of-thermodynamics}}
+
+There are four laws of thermodynamics, each introduces a thermodynamic concept. The first of these laws was actually the last to be defined and is called the \emph{zeroth law}.
+
+The zeroth law deals with the idea of thermal equilibrium, and leads to the concept of \emph{temperature}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/thermalequilibrium} 
+
+}
+
+\caption{The zeroth law of thermodynamics states: if A is in thermal equilibrium with B, and B is in thermal equilibrium with C, then C will be in thermal equilibrium with A.}\label{fig:zerothlaw}
+\end{figure}
+
+The thermal equilibrium used in figure @\ref(fig:zerothlaw) basically says that if A and B are in thermal equilibrium then they must have the same temperature. Therefore the first thermodynamic concept we meet is temperature, which has the unit K (kelvin).
+
+\emph{The following video is for context and interest only}
+
+\hypertarget{what-is-temperature}{%
+\section{What is temperature?}\label{what-is-temperature}}
+
+You are already familiar with teh Maxwell-Boltzmann distribution, and have seen that the mean speed of a gas particle depends only upon the mass of that particle and the temperature (figure \ref{fig:boltzmann}).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/boltzmann} 
+
+}
+
+\caption{The distribution of speeds of a gas depends only upon temperature and molecular mass. At low temperatures the mean speeds of particles are lower than those at high temperatures.}\label{fig:boltzmann}
+\end{figure}
+
+Therefore there is fundamental link between `speed' and temperature. In Section \ref{sec:classicalstat} you were introduced to the concept of energy levels in molecules. If you recall all energy levels are quantised, and translational energy levels have the closest spacing (figure \ref{fig:energylevels}). The faster a molecule moves the higher the translational energy level it occupies.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/energylevels} 
+
+}
+
+\caption{The energy levels within molecules have different gaps between levels, translational levels are very closely spaced, rotational energy levels have the next closest spacing, vibrational levels are higher in energy still, finally electronic levels have the largest energy gaps.}\label{fig:energylevels}
+\end{figure}
+
+The relative populations of these energy levels is given by the Maxwell-Boltzmann equation:
+
+\begin{equation}
+\frac{N_i}{N_j}=\frac{g_i}{g_j} \textrm{e}^{-\frac{\Delta E}{k_B T}}
+\label{eq:maxwell}
+\end{equation}
+
+Looking at equation \eqref{eq:maxwell} we can see that the relative population of energy levels depends upon ΔE, the energy gap between them. This means that the closely spaced translational energy levels are well populated and the particles have a range of speeds associated with this.
+
+At very low temperatures only translational levels are populated, but as the temperature increases and the energy is distributed over more levels rotational levels are then populated, then finally vibrational, at room temperature only there is only a negligible probability of vibrational energy levels being populated.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/approachingzero} 
+
+}
+
+\caption{As the temperature is decreased the probability of finding particles in the ground translational state increases. At absolute zero all molecules will be in the ground translational state. }\label{fig:approachingzero}
+\end{figure}
+
+Therefore temperature is a measure of the population of energy levels within a molecule.
+
+\hypertarget{internal-energy-u}{%
+\section{Internal energy, U}\label{internal-energy-u}}
+
+Internal energy is a state function, which describes the `total internal energy' of a system. We are already aware that there is thermal energy within the system from the population of the energy levels as described in figure \ref{fig:energylevels}. However internal energy also accounts for the `potential energy' from the interactions between particles in the system (figure \ref{fig:internalenergy}).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/internalenergy} 
+
+}
+
+\caption{The internal energy of a system is the sum of the kinetic and potential energies of the particles in the system.}\label{fig:internalenergy}
+\end{figure}
+
+THIS DOCUMENT IS UNFINISHED
 
 \hypertarget{glossary-of-terms}{%
 \chapter*{Glossary of terms}\label{glossary-of-terms}}

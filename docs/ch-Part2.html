@@ -24,7 +24,7 @@
 <meta name="author" content="Fiona Dickinson" />
 
 
-<meta name="date" content="2020-10-27" />
+<meta name="date" content="2020-10-28" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -98,7 +98,11 @@
 <li class="chapter" data-level="1.7" data-path="ch-Part1.html"><a href="ch-Part1.html#sec:Questions1"><i class="fa fa-check"></i><b>1.7</b> Questions</a></li>
 <li class="chapter" data-level="1.8" data-path="ch-Part1.html"><a href="ch-Part1.html#sec:Answers1"><i class="fa fa-check"></i><b>1.8</b> Answers</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="ch-Part2.html"><a href="ch-Part2.html"><i class="fa fa-check"></i><b>2</b> Week 1 - Part 2</a></li>
+<li class="chapter" data-level="2" data-path="ch-Part2.html"><a href="ch-Part2.html"><i class="fa fa-check"></i><b>2</b> Week 1 - Part 2</a><ul>
+<li class="chapter" data-level="2.1" data-path="ch-Part2.html"><a href="ch-Part2.html#zeroth-law-of-thermodynamics"><i class="fa fa-check"></i><b>2.1</b> Zeroth Law of Thermodynamics</a></li>
+<li class="chapter" data-level="2.2" data-path="ch-Part2.html"><a href="ch-Part2.html#what-is-temperature"><i class="fa fa-check"></i><b>2.2</b> What is temperature?</a></li>
+<li class="chapter" data-level="2.3" data-path="ch-Part2.html"><a href="ch-Part2.html#internal-energy-u"><i class="fa fa-check"></i><b>2.3</b> Internal energy, U</a></li>
+</ul></li>
 <li class="chapter" data-level="" data-path="glossary-of-terms.html"><a href="glossary-of-terms.html"><i class="fa fa-check"></i>Glossary of terms</a><ul>
 <li class="chapter" data-level="" data-path="glossary-of-terms.html"><a href="glossary-of-terms.html#a-f"><i class="fa fa-check"></i>A-F</a></li>
 <li class="chapter" data-level="" data-path="glossary-of-terms.html"><a href="glossary-of-terms.html#g-m"><i class="fa fa-check"></i>G-M</a></li>
@@ -127,7 +131,92 @@
             <section class="normal" id="section-">
 <div id="ch:Part2" class="section level1">
 <h1><span class="header-section-number">CH101372</span> Week 1 - Part 2</h1>
+<p>There are different methods of teaching thermodynamics, many come at the problem from a very mathematical viewpoint, with partial derivatives, and operators. This course does not do that, the emphasis here is on understanding thermodynamic concepts, and being able to apply them solve problems. At no point will I expect you to be able to derive something, and I only include the derivations of a couple of equations where I feel it aids understanding of the concept.</p>
+<p>If you wish to see a more mathematical version of this course it is covered in a number of textbooks, including the recommended text for this course, Atkin’s Elements of Physical Chemistry.</p>
+<div id="zeroth-law-of-thermodynamics" class="section level2">
+<h2><span class="header-section-number">2.1</span> Zeroth Law of Thermodynamics</h2>
+<p>There are four laws of thermodynamics, each introduces a thermodynamic concept. The first of these laws was actually the last to be defined and is called the <em>zeroth law</em>.</p>
+<p>The zeroth law deals with the idea of thermal equilibrium, and leads to the concept of <em>temperature</em>.</p>
+<div class="figure" style="text-align: center"><span id="fig:zerothlaw"></span>
+<img src="images/thermalequilibrium.png" alt="The zeroth law of thermodynamics states: if A is in thermal equilibrium with B, and B is in thermal equilibrium with C, then C will be in thermal equilibrium with A." width="50%" />
+<p class="caption">
+Figure 2.1: The zeroth law of thermodynamics states: if A is in thermal equilibrium with B, and B is in thermal equilibrium with C, then C will be in thermal equilibrium with A.
+</p>
+</div>
+<div style="text-align: center;">
+<iframe width="847" height="476" src="https://www.youtube.com/embed/exynAqHlHyA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<div style="text-align: left;">
 
+<div style="text-align: left;">
+
+<p>The thermal equilibrium used in figure @(fig:zerothlaw) basically says that if A and B are in thermal equilibrium then they must have the same temperature. Therefore the first thermodynamic concept we meet is temperature, which has the unit K (kelvin).</p>
+<p><span style="color: deeppink;"> <em>The following video is for context and interest only</em></p>
+<div style="text-align: center;">
+<iframe width="847" height="476" src="https://www.youtube.com/embed/3Y8gaAwcJg8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<div style="text-align: left;">
+
+<span style="color: black;">
+<div style="text-align: left;">
+</div>
+<div id="what-is-temperature" class="section level2">
+<h2><span class="header-section-number">2.2</span> What is temperature?</h2>
+<div style="text-align: left;">
+<p>You are already familiar with teh Maxwell-Boltzmann distribution, and have seen that the mean speed of a gas particle depends only upon the mass of that particle and the temperature (figure <a href="ch-Part2.html#fig:boltzmann">2.2</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:boltzmann"></span>
+<img src="images/boltzmann.png" alt="The distribution of speeds of a gas depends only upon temperature and molecular mass. At low temperatures the mean speeds of particles are lower than those at high temperatures." width="80%" />
+<p class="caption">
+Figure 2.2: The distribution of speeds of a gas depends only upon temperature and molecular mass. At low temperatures the mean speeds of particles are lower than those at high temperatures.
+</p>
+</div>
+<p>Therefore there is fundamental link between ‘speed’ and temperature. In Section <a href="ch-Part1.html#sec:classicalstat">1.5</a> you were introduced to the concept of energy levels in molecules. If you recall all energy levels are quantised, and translational energy levels have the closest spacing (figure <a href="ch-Part2.html#fig:energylevels">2.3</a>). The faster a molecule moves the higher the translational energy level it occupies.</p>
+<div class="figure" style="text-align: center"><span id="fig:energylevels"></span>
+<img src="images/energylevels.png" alt="The energy levels within molecules have different gaps between levels, translational levels are very closely spaced, rotational energy levels have the next closest spacing, vibrational levels are higher in energy still, finally electronic levels have the largest energy gaps." width="80%" />
+<p class="caption">
+Figure 2.3: The energy levels within molecules have different gaps between levels, translational levels are very closely spaced, rotational energy levels have the next closest spacing, vibrational levels are higher in energy still, finally electronic levels have the largest energy gaps.
+</p>
+</div>
+<p>The relative populations of these energy levels is given by the Maxwell-Boltzmann equation:</p>
+<p><span class="math display" id="eq:maxwell">\[\begin{equation}
+\frac{N_i}{N_j}=\frac{g_i}{g_j} \textrm{e}^{-\frac{\Delta E}{k_B T}}
+\tag{2.1}
+\end{equation}\]</span></p>
+<p>Looking at equation <a href="ch-Part2.html#eq:maxwell">(2.1)</a> we can see that the relative population of energy levels depends upon ΔE, the energy gap between them. This means that the closely spaced translational energy levels are well populated and the particles have a range of speeds associated with this.</p>
+<p>At very low temperatures only translational levels are populated, but as the temperature increases and the energy is distributed over more levels rotational levels are then populated, then finally vibrational, at room temperature only there is only a negligible probability of vibrational energy levels being populated.</p>
+<div class="figure" style="text-align: center"><span id="fig:approachingzero"></span>
+<img src="images/approachingzero.png" alt="As the temperature is decreased the probability of finding particles in the ground translational state increases. At absolute zero all molecules will be in the ground translational state. " width="80%" />
+<p class="caption">
+Figure 2.4: As the temperature is decreased the probability of finding particles in the ground translational state increases. At absolute zero all molecules will be in the ground translational state.
+</p>
+</div>
+<p>Therefore temperature is a measure of the population of energy levels within a molecule.</p>
+<div style="text-align: center;">
+<iframe width="847" height="476" src="https://www.youtube.com/embed/3JADfdS8z3k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<div style="text-align: left;">
+
+
+
+
+</div>
+<div id="internal-energy-u" class="section level2">
+<h2><span class="header-section-number">2.3</span> Internal energy, U</h2>
+<p>Internal energy is a state function, which describes the ‘total internal energy’ of a system. We are already aware that there is thermal energy within the system from the population of the energy levels as described in figure <a href="ch-Part2.html#fig:energylevels">2.3</a>. However internal energy also accounts for the ‘potential energy’ from the interactions between particles in the system (figure <a href="ch-Part2.html#fig:internalenergy">2.5</a>).</p>
+<div class="figure" style="text-align: center"><span id="fig:internalenergy"></span>
+<img src="images/internalenergy.png" alt="The internal energy of a system is the sum of the kinetic and potential energies of the particles in the system." width="80%" />
+<p class="caption">
+Figure 2.5: The internal energy of a system is the sum of the kinetic and potential energies of the particles in the system.
+</p>
+</div>
+<div style="text-align: center;">
+<iframe width="847" height="476" src="https://www.youtube.com/embed/TCwvOeKme30" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<div style="text-align: left;">
+
+<p>THIS DOCUMENT IS UNFINISHED</p>
+
+</div>
 </div>
             </section>
 

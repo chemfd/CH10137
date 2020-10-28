@@ -1,0 +1,280 @@
+# Week 1  - Part 1: Preliminaries {#ch:Part1}
+
+The 'content' videos are all very short, any equations or important images are contained in the text of this document and so pdf slides will not be shared (as these are not an accessible document).
+
+## Why thermodynamics matters {#sec:whyjustwhy}
+
+<div style="text-align: center;"><iframe width="847" height="476" src="https://www.youtube.com/embed/6CpPo2491AA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div style="text-align: left;">
+
+The laws of thermodynamics are some of the most fundamental laws of nature, and in this course I hope you will learn to understand these laws and be able to apply them to explain the world around you.
+ 
+Thermodynamics is fundamental to the way we live, to our dream of living a better, less impactful life and to how we as ‘life’ work.
+
+## State functions - (products - reactants) {#sec:state}
+
+Many properties in thermodynamics are <span style="color: deeppink;">*state functions*<span style="color: black;">, that is properties that only depend upon the current state of the system. State functions are completely independent of the path by which that final state was reached.
+
+Enthalpy (H) is a state function, as are entropy (S), internal energy (U), Gibbs’ free energy (G), Helmholtz free energy (F), temperature (T), pressure (p), and chemical composition.
+
+Path functions are unlike state functions in that they depend on the path taken to determine their value. 
+Heat (q) and work (w) are both examples of path functions.
+
+<div style="text-align: center;"><iframe width="640" height="360" src="https://www.youtube.com/embed/PiTaVpkYxek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div style="text-align: left;">
+
+- <span style="color: deeppink;">Internal energy, U<span style="color: black;"> The internal energy is the sum of all of the kinetic and potential energy contributions of the molecules in the system.
+
+- <span style="color: deeppink;">Enthalpy, H<span style="color: black;"> The enthalpy is related to the internal energy, but also takes into account any expansion work done by the system, formally ΔH = ΔU + Δ(pV).
+
+- <span style="color: deeppink;">Entropy, S<span style="color: black;"> The entropy is a measure of the number of possible arrangements of a system (multiplicity, Ω), formally S = k~B~ ln Ω
+
+- <span style="color: deeppink;">Gibbs' free energy, G<span style="color: black;"> The Gibbs’ free energy is a measure of the energy available to ‘do work’ in a reaction system. It accounts for both the enalpic and entropic contributions of the reaction. ΔG = ΔH − TΔS
+
+```{r echo=FALSE, mountain, out.width='30%', fig.show='hold', fig.align='center', fig.cap='State functions - no matter how you got here, here you are… …altitude is a good analogy for a state function, whether climbing the mountain or flying on the balloon if your altitude is 1000 m it is 1000 m!.'}
+knitr::include_graphics("images/mountain.png")
+```
+
+
+### Useful equations - State functions {#sec:equations1}
+
+Hess' Law (Equation \@ref(eq:enthalpystate)) is something most will be familiar with already. You should try to think about it in terms of an equation however, not the cylces of which you may already be familiar.
+
+\begin{equation}
+\Delta_r H^{\ominus} = \sum_{products}v \Delta H^{\ominus}_\textrm{X}-\sum_{reactants}v \Delta H^{\ominus}_\textrm{X}
+(\#eq:enthalpystate)
+\end{equation}
+
+Similar equations can be used for heat capacity (Equation \@ref(eq:heatcapacitystate)), this equation for heat capacity will then be used later in the course when we look at the effect of temperature on the enthalpy and entropy of reaction.
+
+\begin{equation}
+\Delta_r C_p^{\ominus} = \sum_{products}vC_{p,n}^{\ominus}-\sum_{reactants}vC_{p,n}^{\ominus}
+(\#eq:heatcapacitystate)
+\end{equation}
+
+Entropy, just like enthalpy is a state function.
+
+\begin{equation}
+\Delta_r S^{\ominus} = \sum_{products}v S^{\ominus}-\sum_{reactants}v S^{\ominus}
+(\#eq:entropystate)
+\end{equation}
+
+As is Gibbs' free energy.
+
+\begin{equation}
+\Delta _ r G^\ominus = \sum_{prod} v G_n^\ominus - \sum_{react} v  G_n^\ominus 
+(\#eq:Gibbsstate)
+\end{equation}
+
+The value of each of these variables is independent of the path used to form them. Hence, the same <span style="color: deeppink;">*‘products − reactants’*<span style="color: black;"> approach always works!
+
+
+<div style="text-align: left;">
+
+## Types of thermodynamic system {#sec:typesofsystem}
+
+When we consider anything in thermodynamics we have to consider both the system and its surroundings. The relationship between the system and the surroundings defines the different types of thermodynamic system.
+
+<div style="text-align: center;"><iframe width="847" height="476" src="https://www.youtube.com/embed/Y1y-dg8Z6ok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div style="text-align: left;">
+
+### Isolated system {#subsec:isolated}
+
+```{r echo=FALSE, isolated, out.width='30%', fig.show='hold', fig.align='center', fig.cap='Isolated system: there is no exchange of matter or energy between the system and surroundings.'}
+knitr::include_graphics("images/isolated.png")
+```
+
+In an isolated system, there can be no exchange of either matter or energy in any form between the system and surroundings.
+
+A stoppered perfectly insulated flask may be thought of as an isolated system.
+
+### Open system {#subsec:open}
+
+```{r echo=FALSE, open, out.width='30%', fig.show='hold', fig.align='center', fig.cap='Open system: in an open system both matter and energy may be exchanged between the system and surroundings.'}
+knitr::include_graphics("images/open.png")
+```
+
+In an open system both matter and energy can be exchanged between the system and surroundings.
+
+A cup of tea is a nice example of an open system you can add sugar (if you are weird), drink it, or forget about it and find it cold 2 hours later.
+
+### Closed system {#subsec:closed}
+
+```{r echo=FALSE, closed, out.width='30%', fig.show='hold', fig.align='center', fig.cap='Closed system: in a closed system only energy in either the form of heat or work may be exchanged between system and surroundings..'}
+knitr::include_graphics("images/closed.png")
+```
+
+A closed system is one where you can't exchange matter but energy in the form of either 'heat' or 'work' can be exchanged between the system and surroundings.
+
+A closed system is often used as a simpler model than an open system - not many things in life actually fit this model perfectly, but most bench chemistry where we can heat a system fits into this model.
+
+### Adiabatic system {#subsec:adiabatic}
+
+```{r echo=FALSE, adiabatic, out.width='30%', fig.show='hold', fig.align='center', fig.cap='Adiabatic system: in an adiabatic system only energy in the form of work may be exchanged between the system and surroundings.'}
+knitr::include_graphics("images/adiabatic.png")
+```
+
+An adiabatic system is one where you can't have any flow of heat between the system and surroundings, but you can exchange energy in the form of work.
+
+This would mean that the system is insulated from the surroundings, and therefore the system may not be in thermodynamic equilibrium with the surroundings.
+
+We will learn more about both 'heat' and 'work' later in the course.
+
+
+## Extensive and intensive properties {#sec:extensiveintensive}
+
+The difference between extensive and intensive properties is whether the property depends upon the amount of ‘stuff’ you have.
+
+<div style="text-align: center;"><iframe width="640" height="360" src="https://www.youtube.com/embed/t8oMZXqtEDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div style="text-align: left;">
+
+### Intensive properties {#sec:intenstive}
+
+Properties which are *independent* of the amount of stuff are called <span style="color: deeppink;">'intensive properties'.
+
+Temperature is an example of an intensive property as are all of 'molar' properties (the quantity of something 'per mole'): molar heat capacity, molar enthalpy, molar entropy, molar Gibbs' energy, *etc*... in physics the term 'specific' is often used such as specific heat capacity and specific enthalpy, these are also intensive properties based on the fixed amount of a 'gram' (g).
+
+### Extensive properties {#sec:extensive}
+
+Conversely, properties which are *dependent* on the amount of stuff you have are called extensive properties.
+
+Many intensive properties have extensive equivalents, so whilst we have 'molar heat capacity' we also have 'heat capacity'; one looks at the amount of energy it takes to raise one mole of a thing by one kelvin, whereas the other looks at how much energy it takes to raise the temperature how ever much of a thing we have by on kelvin.
+
+Consequently extensive properties have different units to their 'equivalent' intensive property.
+
+Other examples of extensive properties are unsurprisingly: volume, mass, amount (as in moles), and length.
+
+Whilst knowing the terms extensive and intensive isn't vital it is hugely important to recognise that sometimes terms will appear with different units to suit the particular situation.
+
+<div style="text-align: left;">
+
+## Classical vs. Statistical thermodynamics {#sec:classicalstat}
+
+Thermodynamics is quite an old subject, much of our understanding of why chemical reactions happen is based in 19th century science. This understanding was based on emperical observation of things like steam engines and battery piles. It scientists trying to understand how things work in order to make them better, make them more efficient, and make them safer.
+
+This 19th century (and earlier) view of the world didn't even consider things we take for granted now, nowhere in thermodynamics do we ever really think about atoms. We talk about ideal systems (those that follow the rules nicely), but never really care about the reaction taking place, it is all just the bulk average behaviour of the system.
+
+Then in the late 19th century Ludwig Boltzmann proposed a different way of thinking about thermodynamics. He started to think about the 'average' behaviour of individual atoms. This version of statistical mechanics gave an explanation of what concepts like entropy were and it helped explain macroscopic phenomena (such as pressure and temperature) on an atomic and molecular level.
+
+Statistical thermodynamics started to be able to explain the values of what had until then been emperical constants.
+
+Consequently in this course we will look at thermodynamics from both a classical and statistical point of view.
+
+<div style="text-align: center;"><iframe width="640" height="360" src="https://www.youtube.com/embed/odOkb-NhxVI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div style="text-align: left;">
+## Example calculations
+
+
+<div style="text-align: left;">
+### Example calculation - Hess's Law {#sec:examplehess}
+
+<span style="color: deeppink;"> How much energy is released when 4.60 g of sodium reacts with excess water to give NaOH (aq) & H~2~ (g)?
+
+- <span style="color: deeppink;"> ΔH~f~^⦵^ NaOH = −425.61 kJ mol^−1^
+- <span style="color: deeppink;"> ΔH~f~^⦵^ H~2~O = −285.83 kJ mol^−1^ 
+
+The enthalpy of formation of elements in their standard state (*e.g.* Na (s) & H~2~ (g)) is zero.
+
+Therefore using equation \@ref(eq:enthalpystate): 
+
+\begin{equation*}
+\Delta H_{rxn}^{\ominus}= \Delta H_{f}^{\ominus}(\textrm{NaOH})-\Delta H_{f}^{\ominus}(\textrm{H}_2\textrm{O})= −425.61 \textrm{ kJ mol}^{−1} − −285.83 \textrm{ kJ mol}^{−1} = −139.78 \textrm{ kJ mol}^{−1}
+\end{equation*}
+
+$R_M \textrm{ Na} = 22.989769 \textrm{ g mol}^{−1}$
+Therefore:
+
+\begin{equation*}
+n \textrm{(Na)} = \frac{m}{R_M} = \frac{4.60 \textrm{ g}}{ 22.989769 \textrm{ g mol}^{−1}} = 0.200 \textrm{ mol}
+\end{equation*}
+
+*note sf!*
+
+Therefore if 4.60g reacts:
+
+\begin{equation*}
+\Delta H_{rxn}^⦵ ( \textrm{kJ}) = \Delta H_{rxn}^⦵ ( \textrm{kJ mol}^{−1}) × \textrm{mol} = −139.78 \textrm{kJ mol}^{-1} × 0.200 \textrm{mol} = −28.0 \textrm{ kJ}
+\end{equation*}
+
+The ‘−’ sign indicates that heat is released (evolved) and the temperature of the surroundings increases.
+
+### Example Calculation - Kirchoff's law {#subsec:examplekirchoff}
+
+<span style="color: deeppink;">Kirchoff’s laws may be used to adjust calculated values of enthalpy and entropy of reaction to different temperatures, they use the difference in heat capacity of products and reactants to do this. Determine $ΔC_{p,m}$ for the following reaction: 
+
+<center>
+<span style="color: deeppink;">CH~3~CH~2~OH (aq)  + CH~3~COOH (aq) ⟶ CH~3~COOCH~2~CH~3~ (aq) + H~2~O (l) 
+
+
+| | $ΔC_{p,m}$ / J K$^{−1}$ mol$^{−1}$ |
+|:--------:|:--------:|
+| CH~3~CH~2~OH (aq) | 111.46 |
+| CH~3~COOH (aq) | 124.3 |
+| CH~3~COOCH~2~CH~3~ (aq) | 170.1 |
+| H~2~O (l) | 33.58 |
+
+\begin{equation*}
+ΔC_{p,m \textrm{ rxn}} = (C_{p,m} \textrm{CH$_3$COOCH$_2$CH$_3$ (aq)} + C_{p,m} \textrm{H$_2$O (l)}) − (C_{p,m} \textrm{CH$_3$CH$_2$OH (aq)} + C_{p,m} \textrm{CH$_3$COOH (aq)})
+\end{equation*}
+
+\begin{equation*}
+ΔC_\textrm{p,m rxn} = (170.1 + 33.58) − (111.46 + 124.3) \textrm{ J K$^{-1}$ mol}^{−1}) = − 32.1 \textrm{ J K$^{-1}$ mol}^{−1}
+\end{equation*}
+
+<div style="text-align: left;">
+
+## Questions {#sec:Questions1}
+
+Later in this course you will learn about the origin of these equations, for now it is enough to be able to balance chemical equations and use the fact that each of the variables in teh following equations are state functions.
+
+1. What is the standard Gibbs’ free energy of the oxidation of ammonia (NH~3~) to nitric acid (NO)? 
+
+Hint: This is a redox reaction.
+
+$ΔG^⦵_{f, \textrm{NH}_3} = −16.45 \textrm{ kJ mol}^{−1}$ 
+
+$ΔG^⦵_{f, \textrm{NO}} = +86.55 \textrm{ kJ mol}^{−1}$ 
+
+$ΔG^⦵_{f, \textrm{H}_2 \textrm{O}} = −228.57 \textrm{ kJ mol}^{−1}$ 
+
+***
+
+2. Methanol fuel cells have been proposed as replacements for internal combustion engines. Methanol (density, ρ = 792 kg m^−3^) is reacted in a fuel cell to be completely oxidised. 
+
+Given the enthalpies of formation required are listed below determine the amount of energy released per mL of methanol.
+
+$ΔH^⦵_{f, \textrm{CH}_3\textrm{OH}} = −425.61 \textrm{ kJ mol}^{−1}$ 
+
+$ΔH^⦵_{f, \textrm{H}_2 \textrm{O}} = −241.82 \textrm{ kJ mol}^{−1}$ 
+  
+$ΔH^⦵_{f, \textrm{CO}_2} = −393.51 \textrm{ kJ mol}^{−1}$ 
+
+***
+
+3. Ammonium dichromate decomposes upon heating in a spectacular ‘volcano’ reaction:
+
+<div style="text-align: center;"> (NH~4~)Cr~2~O~7~ (s) ⟶ N~2~ (g) + 4 H~2~O (g) + Cr~2~O~3~ (s)
+
+<div style="text-align: left;">Determine the enthalpy of reaction for this process given the following data.
+
+$ΔH^⦵_{f, \textrm{(NH}_4\textrm{)Cr}_2\textrm{O}_7\textrm{ (s)}} = −1810 \textrm{ kJ mol}^{−1}$ 
+
+$ΔH^⦵_{f, \textrm{H}_2 \textrm{O (g)}} = −240  \textrm{ kJ mol}^{−1}$ 
+
+$ΔH^⦵_{f, \textrm{Cr}_2 \textrm{O}_3 \textrm{ (g)}} = −1140  \textrm{ kJ mol}^{−1}$ 
+
+How would the enthalpy of reaction differ if liquid water was formed? Justify your answer.
+
+<div style="text-align: left;">                
+
+## Answers {#sec:Answers1}
+
+1. $ΔG_{rxn}^⦵$  = −239.86 kJ mol^−1^$_{NH_3}$ (per mole of NH~3~)
+1. $ΔH_{rxn}^⦵$ = -11.2 kJ cm^-3^
+1. $ΔH_{rxn}^⦵$ = -290 kJ mol^−1^, become more negative as heat is released upon condensing (we will cover this later in the course if you don't understant this last part, please don't stress).
+
