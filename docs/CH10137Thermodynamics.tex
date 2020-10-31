@@ -80,7 +80,7 @@
 
 \title{CH10137 Thermodynamics}
 \author{Fiona Dickinson}
-\date{2020-10-28}
+\date{2020-10-31}
 
 \begin{document}
 \maketitle
@@ -125,7 +125,9 @@ There is no single recommended text for this section of the course because multi
 \section*{Version history}\label{version-history}}
 \addcontentsline{toc}{section}{Version history}
 
-Degrees of freedom section added to week1part1, week1part2 finished
+Week2part1 finished 311020
+
+Degrees of freedom section added to week1part1, week1part2 finished 29th October 2020
 
 Week1Part2 started 28th October 2020.
 
@@ -652,9 +654,8 @@ x = 3N-6
 \label{eq:nonlineardof1}
 \end{equation}
 
-\#\#\#
-
-Equipartition theory
+\hypertarget{equipartition-theory}{%
+\subsection{Equipartition theory}\label{equipartition-theory}}
 
 \emph{Some of the material covered in this video relates to heat capacities which we will study in more detail later in the course.}
 
@@ -666,9 +667,8 @@ Equipartition theory says that for an ideal gas each degree of freedom contribut
 
 However, we have already seen that the energy spacing between different types of energy level differs, and so only \emph{active} degrees of freedom contribute to the internal energy. Consequently because there are large energy gaps for vibrational energy levels the excited states of these energy levels are rarely occupied and so they do not contribute towards the total internal energy of the system.
 
-\#\#
-
-First Law of Thermodynamics
+\hypertarget{first-law-of-thermodynamics}{%
+\section{First Law of Thermodynamics}\label{first-law-of-thermodynamics}}
 
 There are a number of variations on the statements of the first law of thermodynamics, but ultimately they are all saying the same thing. The variations come from different definitions referring to different types of thermodynamic system (Section \ref{sec:typesofsystem}).
 
@@ -687,9 +687,8 @@ A second version of first law refers to a closed system, one where there can be 
 
 where \(q\) is the energy exchanged in the form of heat and \(w\) the energy exchanged in the form of work.
 
-\#\#
-
-Questions
+\hypertarget{questions}{%
+\section{Questions}\label{questions}}
 
 1. Determine the number of degrees of freedom in each of the following molecules, and consequently predict the molar internal energy at 25 ºC.
 
@@ -748,6 +747,241 @@ Questions
   It shouldn't they will respace, so if the population of levels is higher when the space is bigger, but you are just distributing the energy differently.
 \end{enumerate}
 
+\hypertarget{ch:Part3}{%
+\chapter{Week 2 - Part 1}\label{ch:Part3}}
+
+Previously we have been introduced to the concepts of temperature and internal energy, two fundamental concepts in thermodynamics, and we finished by introducing the first law of thermodynamics, and introducing the terms `heat' and `work'. In this part we learn what heat and work are thermodynamically, and extend our idea of state functions to bring the well known concept of Hess' Law to this course.
+
+The unit of energy is joule, this is named after one of the pioneers of thermodynamics.
+
+\emph{The following video has been added for some context to the material, it is not core to the course and the material in it is not examinable.}
+
+\hypertarget{sec:work}{%
+\section{Work, w}\label{sec:work}}
+
+In thermodynamics the term `work' describes a mode of transfer of energy between the system and surroundings, this transfer of energy achieves a uniform motion. Work is sometimes considered to be useful energy because this uniform motion may be used to move a piston, lift a weight in a gravitational field or power a phone.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/work} 
+
+}
+
+\caption{When energy is transfered in the form of work there is a uniform change in the system or surroundings.}\label{fig:work}
+\end{figure}
+
+If we consider the expansion of a gas in a piston against a constant external pressure the gas will expand until the pressure inside and outside of the piston are the same (figure \ref{fig:irrevexpansion}). The work done in this process is given by equation \eqref{eq:irrevexpansion}, and shown as the shaded area in figure \ref{fig:irrevexpansion}.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/irrevexpansion} 
+
+}
+
+\caption{If a gas expands against a constant external pressure the expansion will continue until the pressure inside and out of the piston is the same.}\label{fig:irrevexpansion}
+\end{figure}
+
+\begin{equation}
+w=-p_{\textrm{ex}}\Delta V
+\label{eq:irrevexpansion}
+\end{equation}
+
+The work done, is negative because if the system does work on the surroundings energy is transferred from the system to the surroundings and the internal energy of the system falls.
+
+You can check the units of this process to help verify this statement, pressure has the units pascal, Pa, which in SI base units is kg m\textsuperscript{−1} s\textsuperscript{−2} and volume of course m\textsuperscript{3}. The units of work are joules, J, which in SI base units is kg m\textsuperscript{2} s\textsuperscript{−2}.
+
+If we instead consider the hypothetical thermodynamically reversible process where the system and surroundings are in equilibrium all through the expansion, this tells us the maximum possible work which can be achieved from a system.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/revexpansion} 
+
+}
+
+\caption{If a gas expands and the pressure inside and out are only ever infitessimal difference between the pressure of system and surroundings this is called a reversible expansion and the maximum possible amount of work can be achieved.}\label{fig:revexpansion}
+\end{figure}
+
+In the case of a reversible expansion the work done by the system in an expansion is given in equation \eqref{eq:revexpansion}, this expression may be derived from integrating the area under the pV curve in figure \ref{figrevexpansion}.
+
+\begin{equation}
+w=-n\textrm{R}T \ln {\frac{V_\textrm{f}}{V_\textrm{i}}}
+\label{eq:revexpansion}
+\end{equation}
+
+For the same increase in volume at the temperature of the system increases then the work needed in a reversible expansion also increases.
+
+There are many types of work, but they may all be modeled by expansion work. Other types of work include things like surgace expansion, extension of a spring or electrical work.
+
+\hypertarget{sec:heat}{%
+\section{Heat, q}\label{sec:heat}}
+
+If you recall the definition of a closed system (section \ref{subsec:closed}), we introduced the concept of energy being able to be exchanged in the form of heat through a diathermic wall, this is just a boundary through which energy in the form of heat may be transferred.
+
+Heat is defined as a mode of transfer of energy that achieves a random motion in the surroundings.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/heat} 
+
+}
+
+\caption{When energy is transfered in the form of heat it induces a random motion in the system or surroundings.}\label{fig:heat}
+\end{figure}
+
+\begin{itemize}
+\item
+  When a reaction is exothermic energy in the form of heat is transferred from the system to the surroundings and the internal energy of the system falls (q = -ve).
+\item
+  When a reaction is endothermic energy in the form of heat is transferred from the surroundings to the system and the internal energy of the system increases (q = +ve).
+\end{itemize}
+
+\hypertarget{isothermal-reversible-expansion}{%
+\subsection{Isothermal reversible expansion}\label{isothermal-reversible-expansion}}
+
+If a gas is allowed to expand and no heat is transferred then the work done by the system allows the temperature of the system to fall.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/isothermalexpansion} 
+
+}
+
+\caption{In the case of an isothermal reversible expansion the work done by the system and the heat transferred to the system exactly balance.}\label{fig:isothermalexpansion}
+\end{figure}
+
+There is a special case where we can consider the expansion of a gas but energy is transferred from the surroundings to the system in the form of heat. In this isothermal reversible expansion the work done by the system is exactly equal an opposite to the heat transferred to the system, and so the net change in internal energy is zero.
+
+Therefore, by applying this to equation \eqref{eq:revexpansion}, we can see for an isothermal reversible expansion:
+
+\begin{equation}
+q=n\textrm{R}T \ln {\frac{V_\textrm{f}}{V_\textrm{i}}}
+\label{eq:isothermalexpansion}
+\end{equation}
+
+This is just an example of the first law of thermodynamics in action.
+
+\hypertarget{enthalpy-h}{%
+\section{Enthalpy, H}\label{enthalpy-h}}
+
+The enthalpy of a system is given by:
+
+\begin{equation}
+H = U+pV
+\label{eq:enthalpy}
+\end{equation}
+
+at constant pressure the enthalpy change of a system is given by:
+
+\begin{equation}
+\Delta H = \Delta U + p\Delta V
+\label{eq:enthalpychange}
+\end{equation}
+
+Fundamentally enthalpy is a way of keeping track of internal energy when we are working in systems which are at constant pressure, systems which are allowed to do expansion work against the atmosphere.
+
+If we take both our original definitions of enthalpy and internal energy we can bring enthalpy back to a concept I am sure you are all familiar. That being heat:
+
+\begin{equation*}
+\Delta H = \Delta U + p\Delta V
+\end{equation*}
+
+and
+
+\begin{equation*}
+\Delta U = w + q
+\end{equation*}
+
+then
+
+\begin{equation*}
+\Delta H = w + q + p \Delta V
+\end{equation*}
+
+Therefore:
+
+\begin{equation}
+\Delta H_p = q
+\label{eq:enthalpyconstp}
+\end{equation}
+
+\hypertarget{hesss-law}{%
+\section{Hess's Law}\label{hesss-law}}
+
+Just like internal energy, enthalpy is a state function, and the relationship between the enthalpy of a reaction is just the difference in enthalpy of the final and initial states.
+
+Hess' law (equation \eqref{eq:enthalpystate1})is just application of the nature of enthalpy being a state function:
+
+\begin{equation}
+\Delta_r H^{\ominus} = \sum_{products}v \Delta H^{\ominus}_\textrm{X}-\sum_{reactants}v \Delta H^{\ominus}_\textrm{X}
+\label{eq:enthalpystate1}
+\end{equation}
+
+If the enthalpy of reaction is positive the reaction is endothermic heat is transferred from the surroundings to the system and the temperature of the surroundings falls, if the enthalpy of reaction is negative the reaction is exothermic heat is transferred from the system to the surroundings and the temperature of surroundings increases.
+
+\hypertarget{constant-volume-and-constant-pressure}{%
+\subsection{Constant volume and constant pressure}\label{constant-volume-and-constant-pressure}}
+
+Section to follow
+
+\hypertarget{questions}{%
+\section{Questions}\label{questions}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  When exactly one mole of an ideal gas is `heated' with 1.75 kJ of energy, it expands doing 250 J of work. What is the change in internal energy of the gas?
+\item
+  Suppose we have two otherwise identical calorimeters, one calorimeter of fixed volume (isochoric) and the other calorimeter of fixed pressure (isobaric). If exactly the same amount of substance was burnt in excess oxygen in each, which would record the highest temperature change in the surroundings?
+\end{enumerate}
+
+\begin{itemize}
+\tightlist
+\item
+  it would be the same in each
+\item
+  the isochoric system
+\item
+  the isobaric system
+\item
+  not enough information to determine
+\end{itemize}
+
+\hypertarget{answers}{%
+\section{Answers}\label{answers}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \begin{itemize}
+  \tightlist
+  \item
+    1.50 kJ
+  \end{itemize}
+\item
+  not enough infomation to determine, we would need to know if the net change in gas molecules of the system is postive or negative.
+\end{enumerate}
+
+MORE QUESTIONS AND ANSWERS TO FOLLOW
+
+\hypertarget{ch:Part4}{%
+\chapter{Week 2 - Part 2}\label{ch:Part4}}
+
+\hypertarget{heat-capacity}{%
+\section{Heat capacity}\label{heat-capacity}}
+
+\begin{equation}
+\Delta_r H^{\ominus} (T')=\Delta_r H^{\ominus} (T) + \Delta_r C_p^{\ominus} (T'-T)
+(eq:kirchoff)
+\end{equation}
+
+\hypertarget{temperature-variation-of-heat-capacity}{%
+\section{Temperature variation of heat capacity}\label{temperature-variation-of-heat-capacity}}
+
+\hypertarget{phase-changes}{%
+\section{Phase changes}\label{phase-changes}}
+
+This document is a work in progress
+
 \hypertarget{glossary-of-terms}{%
 \chapter*{Glossary of terms}\label{glossary-of-terms}}
 \addcontentsline{toc}{chapter}{Glossary of terms}
@@ -758,9 +992,13 @@ Questions
 
 \begin{itemize}
 \item
-  Adiabatic system: An adiabatic system can have no exchange of matter, and energy can only be exchanged in the form of work between the system and surroundings.
+  Adiabatic system: An adiabatic system can have no exchange of matter, and energy can only be exchanged in the form of work between the system and surroundings
 \item
   Closed system: A closed system is one where there can be no exchnage of matter, but energy in either the form of heat or work may be exchanged between the system and surroundings.
+\item
+  Endothermic: an endothermic reaction has a positive value for ΔH and energy is transferred from the surroundings to the system in the form of heat
+\item
+  Exothermic: an exothermic reaction has a negative value for ΔH and energy is transferred from the system to the surroundings in the form of heat
 \item
   Extensive property: a property which is dependent upon the amount of `stuff' you have, such as mass, volume, and enthalpy.
 \end{itemize}
@@ -771,9 +1009,15 @@ Questions
 
 \begin{itemize}
 \item
+  Heat: a mode of transfer of energy which causes chaotic (or non-uniform) motion of the system or surroundings
+\item
+  Heat capacity: see specific heat capacity or molar heat capacity
+\item
   Intensive property: a property which is independent of the amount of `stuff' you have, such as temperature, molar volume, and molar enthalpy.
 \item
-  Isolated system: An isolated system is one where there can be no exchange of either matter or energy between the system and surroundings.
+  Isolated system: An isolated system is one where there can be no exchange of either matter or energy between the system and surroundings
+\item
+  Molar heat capacity: the energy in the form of heat requred to raise the temperature of 1 mol of a substance by 1 K
 \end{itemize}
 
 \hypertarget{n-s}{%
@@ -786,12 +1030,22 @@ Questions
 \item
   Path function: a path function is one which depends upon the route taken to go between the initial and final states. Functions such as work are path functions.
 \item
+  reversible: when a process is reversible in thermodynamics it is in equilibrium at all times and any changes which occur are infinitessimally small.
+\item
+  Specific heat capacity: the energy in the form of heat requred to raise the temperature of 1 kg (or 1 g) of a substance by 1 K
+\item
   State function: a state function is one where only the current state of the system matters, for functions such as enthalpy change we only need to know the initial and final states and not how it got between those states.
 \end{itemize}
 
 \hypertarget{t-z}{%
 \section*{T-Z}\label{t-z}}
 \addcontentsline{toc}{section}{T-Z}
+
+\begin{itemize}
+\tightlist
+\item
+  Work: a mode of transfer of energy which causes uniform motion of the system or surroundings
+\end{itemize}
 
   \bibliography{book.bib,packages.bib}
 

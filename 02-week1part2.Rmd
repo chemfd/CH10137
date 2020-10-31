@@ -118,10 +118,10 @@ x = 3N-6
 
 <div style="text-align: center;"><iframe width="847" height="476" src="https://www.youtube.com/embed/s4lfDeoPo5Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
 
+<div style="text-align: left;">
+### Equipartition theory
 
-### </iframe><div style="text-align: left;">Equipartition theory
-
-</iframe><div style="text-align: left;"><span style="color: deeppink;">*Some of the material covered in this video relates to heat capacities which we will study in more detail later in the course.*
+<div style="text-align: left;"><span style="color: deeppink;">*Some of the material covered in this video relates to heat capacities which we will study in more detail later in the course.*
 
 Equipartition theory is quite involved, and I am not going to explain any of the actual theory or derivation in this course, instead we are going to just use the results of this theory.
 
@@ -133,7 +133,9 @@ However, we have already seen that the energy spacing between different types of
 
 <div style="text-align: center;"><iframe width="847" height="476" src="https://www.youtube.com/embed/9ZDO7KEyQ3g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
 
-## </iframe><div style="text-align: left;">First Law of Thermodynamics
+
+<div style="text-align: left;">
+## First Law of Thermodynamics
 
 </iframe><div style="text-align: left;">There are a number of variations on the statements of the first law of thermodynamics, but ultimately they are all saying the same thing. The variations come from different definitions referring to different types of thermodynamic system (Section \@ref(sec:typesofsystem)).
 
@@ -154,7 +156,9 @@ The first statement of the first law of thermodynamics is the most fundamental:
 
 <div style="text-align: center;"><iframe width="847" height="476" src="https://www.youtube.com/embed/JY6DfuWokjU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
 
-## <div style="text-align: left;">Questions
+<div style="text-align: left;">
+
+## Questions
 <div style="text-align: left;"><span style="color: black;">
 1. <span style="color: black;">Determine the number of degrees of freedom in each of the following molecules, and consequently predict the molar internal energy at 25 ºC.
 

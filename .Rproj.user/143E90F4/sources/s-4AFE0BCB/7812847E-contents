@@ -1,0 +1,50 @@
+--- 
+title: "CH10137 Thermodynamics"
+author: "Fiona Dickinson"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: chemfd/CH10137Workshop
+description: "CH10137 Thermodynamics"
+---
+# Welcome {-}
+
+The notes have been prepared in a package called BookDown for RStudio so that the equations are accessible to screen readers. However, by providing the notes as a .html webpage I can also embed short videos to further describe some of the topics. If you want videos on any topic please ask and I will do my best to produce the most requested ones.
+
+Further you can download the notes in a format that suits you (either pdf or epub) to view offline, or change the way this document appears for ease of reading.
+
+This document is written in markdown, and particularly in equations typos can creep in. If you spot any typos or think there are any errors please let me know and I will do my best to fix them. 
+
+## Notes and Workshops for CH10137 {-}
+
+This 'book' will be updated weekly with content and embedded 'micro lecture' video content.
+
+Questions and answers will be provided and some answers will include 'process' as well as answer. Please contact me if you need help. Questions on later topics will rely on earlier knowledge.
+
+I am using this format as it is an accessible format. However I have moved over to this format this year and so I would appreciate you pointing out any areas of confusion or where error may have crept in.
+
+## Recommended text {-}
+
+There is no single recommended text for this section of the course because multiple books can offer valuable extra insight. It may be useful for you to refer to any of the following:
+
+[The Elements of Physical Chemistry](https://bath-ac-primo.hosted.exlibrisgroup.com/primo-explore/search?query=any,contains,Elements%20of%20physical%20chemistry&tab=local&sortby=date&vid=44BAT_VU1&facet=frbrgroupid,include,978286819&offset=0&pcAvailability=false)
+
+[Atkins' Physical Chemistry](https://bath-ac-primo.hosted.exlibrisgroup.com/primo-explore/search?query=any,contains,physical%20chemistry%20de%20paula&tab=local&search_scope=CSCOP_44BAT_DEEP&sortby=date&vid=44BAT_VU1&facet=frbrgroupid,include,978327499&offset=0&pcAvailability=false)
+
+[Chemistry^3^](https://bath-ac-primo.hosted.exlibrisgroup.com/primo-explore/search?query=any,contains,chemistry3&tab=local&search_scope=CSCOP_44BAT_DEEP&sortby=date&vid=44BAT_VU1&facet=frbrgroupid,include,978293871&offset=0&pcAvailability=false)
+
+
+## Version history {-}
+
+Week2part1 finished 311020
+
+Degrees of freedom section added to week1part1, week1part2 finished 29th October 2020
+
+Week1Part2 started 28th October 2020.
+
+The initial commit of this book is dated 16th October 2020.
+
