@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.24)  31 OCT 2020 01:50
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.24)  31 OCT 2020 14:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -834,6 +834,9 @@ LaTeX Warning: Label `degrees-of-freedom' multiply defined.
 LaTeX Warning: Label `questions' multiply defined.
 
 
+LaTeX Warning: Label `questions' multiply defined.
+
+
 LaTeX Warning: Label `answers' multiply defined.
 
 )
@@ -1329,44 +1332,39 @@ File: images/irrevexpansion.png Graphic file (type QTm)
 
 ]
 File: images/revexpansion.png Graphic file (type QTm)
-<use  "images/revexpansion.png" >
-
-LaTeX Warning: Reference `figrevexpansion' on page 26 undefined on input line 8
-04.
-
-[26]
+<use  "images/revexpansion.png" > [26]
 File: images/heat.png Graphic file (type QTm)
 <use  "images/heat.png" > [27]
 File: images/isothermalexpansion.png Graphic file (type QTm)
-<use  "images/isothermalexpansion.png" > [28] [29] [30]
+<use  "images/isothermalexpansion.png" > [28] [29] [30] [31] [32
+
+]
 Chapter 4.
-[31
+[33] [34] [35
 
-] [32
-
-] [33]
+]
 No file CH10137Thermodynamics.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1052.
-[34]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1052.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1126.
+[36]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1126.
 (./CH10137Thermodynamics.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1052.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1052.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1126.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1126.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1052.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1126.
  ) 
 Here is how much of TeX's memory you used:
  24900 strings out of 493005
- 445349 string characters out of 6134596
- 642673 words of memory out of 5000000
+ 445338 string characters out of 6134596
+ 643673 words of memory out of 5000000
  28582 multiletter control sequences out of 15000+600000
  13845 words of font info for 91 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,7n,120p,10416b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CH10137Thermodynamics.pdf (34 pages).
+Output written on CH10137Thermodynamics.pdf (36 pages).
