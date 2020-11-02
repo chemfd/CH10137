@@ -1,0 +1,74 @@
+# Week 2  - Part 2 {#ch:Part4}
+
+## Heat capacity, C~X~
+
+The heat capacity of a material is the amount of energy required to raise the temperature of that material by 1 K, however there are many different versions of heat capacity, covering both entensive an intensive properties.
+
+Perhaps more confusingly when looking at gases we have to consider whether the heat capacity of a material is at constant pressure or constant volume. This is because if we are at consant pressure the gas has to do work in expanding, and so heat capacitites at constant volume are always smaller than those at constant pressure.
+
+Heat capacity varies with temperature, we can usually say values will be constant within about 100 K, but numerous measurements have been used to show that the heat capacity varies with temperature as follows:
+
+
+
+```{r echo=FALSE, heatcapacitypV, out.width='30%', fig.show='hold', fig.align='center', fig.cap='The heat capacity of a material is the gradient of the line on an energy verses temperature plot.'}
+knitr::include_graphics("images/heatcapacitypV.png")
+```
+
+\begin{equation}
+C_{p,n}=\textrm{a}+\textrm{b}T+\frac{\textrm{c}}{T^2}
+(\#eq:heatcapacitytemp)
+\end{equation}
+
+the constants, a, b and c are measured emperically and are known for a wide range of materials.
+
+<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/e563NzK5r2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
+
+Previously in section \@ref{subsec:equipartition} we have seen how equipartition theory predicts the heat capacity of ideal gases. Like the internal energy only degrees of freedom which are active contribute to heat capacity of a material, and this consideration needs to be made. 
+
+- Every translational degree of freedom contributes $\frac{1}{2}R$ to the heat capacity
+
+- Every rotational degree of freedom contributes $\frac{1}{2}R$ to the heat capacity
+
+- Every vibrational degree of freedom contributes $R$ to the heat capacity
+
+We can see the heat capacity of molecules changing as the different degrees of freedom are activated.
+
+H2heatcapacity
+
+```{r echo=FALSE, H2heatcapacity, out.width='30%', fig.show='hold', fig.align='center', fig.cap='The heat capacity of molecular hydrogen varies with temperature, showing clear steps as each type of degree of freedom are activated. At very high temperatures dissociation occurs before the final plateau is observed.'}
+knitr::include_graphics("images/H2heatcapacity.png")
+```
+
+## Temperature dependance of enthalpy
+ 
+ \begin{equation}
+\Delta_r H^{\ominus} (T')=\Delta_r H^{\ominus} (T) + \Delta_r C_p^{\ominus} (T'-T)
+(eq:kirchoff)
+\end{equation}
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uOzg89whp0g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Phase changes
+
+<iframe width="847" height="476" src="https://www.youtube.com/embed/I4DDJs3OqnM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Questions
+
+1. The constant pressure specific heat capacity of copper is 0.3850 kJ kg^–1^ K^–1^ at 298 K. Calculate the constant pressure heat capacity of 0.559 mol of copper at this temperature.
+
+2. The constant pressure molar heat capacity of methane, CH~4~, is 35.31 J K^–1^ mol^–1^ at temperatures close to 298 K. Calculate the enthalpy change when 4.7 mol of methane is heated from a temperature of 266 K to 302 K.
+
+3. What is the enthalpy of formation of water at 100 ºC if $\Delta H_f = -241.82$ kJ mol$^{-1}$ at 25 ºC? What assumptions have you made?
+
+c$_{p,m} H_2 O = 33.58$ J K$^{-1}$ mol$^{-1}$
+
+c$_{p,m} H_2 = 28.84$ J K$^{-1}$ mol$^{-1}$ 
+
+c$_{p,m} O_2 = 29.37$ J K$^{-1}$ mol$^{-1}$
+
+
+## Answers
+
+1. c = 13.7 J K^–1^
+2. ΔH = 6.0 kJ
+3. $\Delta _f H _{(\textrm{100 ºC})}=$ -242.57 kJ mol^−1^

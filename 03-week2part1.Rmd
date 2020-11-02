@@ -163,7 +163,9 @@ At constant pressure the work done, $-p \Delta V$ means that the change in entha
 - the isobaric system
 - not enough information to determine
 
-3. Calculate the standard enthalpy of formation of $N_2 O_5$ from the following data:
+3. For a reaction conducted at constant pressure and at 20.0 ºC the change in the number of moles of gas ($\Delta n_{gas}$) is +2.  Calculate the difference between $\Delta H$ & $\Delta U$.
+
+4. Calculate the standard enthalpy of formation of $N_2 O_5$ from the following data:
 
 $2 NO_{(g)} + O_{2(g)} \longrightarrow 2 NO_{2(g)}$   $\Delta _r H^\ominus = -114.1$ kJ mol$^{-1}$
 
@@ -171,15 +173,16 @@ $4 NO_{2(g)} + O_{2(g)} \longrightarrow 2 N_2 O_{5(g)}$   $\Delta _r H^\ominus =
 
 $N_{2(g)} + O_{2(g)} \longrightarrow 2 NO_{(g)}$   $\Delta _r H^\ominus = +180.5$ kJ mol$^{-1}$
 
-4. Calculate the expansion work done on the system when 9.576 g of solid ammonium chloride, NH_4_Cl, decomposes completely to yield gaseous ammonia, NH3 and hydrogen chloride, HCl at a temperature of 1,410 K. Treat the expansion as irreversible and the gases formed as perfect.
+5. Calculate the expansion work done on the system when 9.576 g of solid ammonium chloride, NH~4~Cl, decomposes completely to yield gaseous ammonia, NH3 and hydrogen chloride, HCl at a temperature of 1,410 K. Treat the expansion as irreversible and the gases formed as perfect.
 
-5. What is the maximum amount of work available when 1 mole of a gas doubles in volume at 25$^\circ$C?
+6. What is the maximum amount of work available when 1 mole of a gas doubles in volume at 25$^\circ$C?
 - How does this change with increasing temperature?
 - If the expansion is isothermal how much heat is added to the system?
 ## Answers
 
 1. + 1.50 kJ
 2. not enough infomation to determine, we would need to know if the net change in gas molecules of the system is postive or negative.
-3. $Δ_fH^\ominus$ = +11.3 kJ mol^−1^ per mole of N~2~O~5~
-4. w = -4.198 kJ
-5. w = −1.72 kJ, increases, q=  -w = +1.72 kJ.
+3. $\Delta H - \Delta U$ = +4.876 kJ
+4. $Δ_fH^\ominus$ = +11.3 kJ mol^−1^ per mole of N~2~O~5~
+5. w = -4.198 kJ
+6. w = −1.72 kJ, increases, q=  -w = +1.72 kJ.

@@ -24,7 +24,7 @@
 <meta name="author" content="Fiona Dickinson" />
 
 
-<meta name="date" content="2020-10-31" />
+<meta name="date" content="2020-11-02" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -105,7 +105,7 @@
 <li class="chapter" data-level="2.2" data-path="ch-Part2.html"><a href="ch-Part2.html#what-is-temperature"><i class="fa fa-check"></i><b>2.2</b> What is temperature?</a></li>
 <li class="chapter" data-level="2.3" data-path="ch-Part2.html"><a href="ch-Part2.html#internal-energy-u"><i class="fa fa-check"></i><b>2.3</b> Internal energy, U</a><ul>
 <li class="chapter" data-level="2.3.1" data-path="ch-Part1.html"><a href="ch-Part1.html#degrees-of-freedom"><i class="fa fa-check"></i><b>2.3.1</b> Degrees of Freedom</a></li>
-<li class="chapter" data-level="2.3.2" data-path="ch-Part2.html"><a href="ch-Part2.html#equipartition-theory"><i class="fa fa-check"></i><b>2.3.2</b> Equipartition theory</a></li>
+<li class="chapter" data-level="2.3.2" data-path="ch-Part2.html"><a href="ch-Part2.html#subsec:equipartition"><i class="fa fa-check"></i><b>2.3.2</b> Equipartition theory</a></li>
 </ul></li>
 <li class="chapter" data-level="2.4" data-path="ch-Part2.html"><a href="ch-Part2.html#first-law-of-thermodynamics"><i class="fa fa-check"></i><b>2.4</b> First Law of Thermodynamics</a></li>
 <li class="chapter" data-level="2.5" data-path="ch-Part2.html"><a href="ch-Part2.html#questions"><i class="fa fa-check"></i><b>2.5</b> Questions</a></li>
@@ -123,8 +123,8 @@
 <li class="chapter" data-level="3.5" data-path="ch-Part2.html"><a href="ch-Part2.html#questions"><i class="fa fa-check"></i><b>3.5</b> Questions</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="ch-Part4.html"><a href="ch-Part4.html"><i class="fa fa-check"></i><b>4</b> Week 2 - Part 2</a><ul>
-<li class="chapter" data-level="4.1" data-path="ch-Part4.html"><a href="ch-Part4.html#heat-capacity"><i class="fa fa-check"></i><b>4.1</b> Heat capacity</a></li>
-<li class="chapter" data-level="4.2" data-path="ch-Part4.html"><a href="ch-Part4.html#temperature-variation-of-heat-capacity"><i class="fa fa-check"></i><b>4.2</b> Temperature variation of heat capacity</a></li>
+<li class="chapter" data-level="4.1" data-path="ch-Part4.html"><a href="ch-Part4.html#heat-capacity-cx"><i class="fa fa-check"></i><b>4.1</b> Heat capacity, C<sub>X</sub></a></li>
+<li class="chapter" data-level="4.2" data-path="ch-Part4.html"><a href="ch-Part4.html#temperature-dependance-of-enthalpy"><i class="fa fa-check"></i><b>4.2</b> Temperature dependance of enthalpy</a></li>
 <li class="chapter" data-level="4.3" data-path="ch-Part4.html"><a href="ch-Part4.html#phase-changes"><i class="fa fa-check"></i><b>4.3</b> Phase changes</a></li>
 <li class="chapter" data-level="4.4" data-path="ch-Part2.html"><a href="ch-Part2.html#questions"><i class="fa fa-check"></i><b>4.4</b> Questions</a></li>
 <li class="chapter" data-level="4.5" data-path="ch-Part2.html"><a href="ch-Part2.html#answers"><i class="fa fa-check"></i><b>4.5</b> Answers</a></li>
@@ -157,20 +157,48 @@
             <section class="normal" id="section-">
 <div id="ch:Part4" class="section level1">
 <h1><span class="header-section-number">CH101374</span> Week 2 - Part 2</h1>
-<div id="heat-capacity" class="section level2">
-<h2><span class="header-section-number">4.1</span> Heat capacity</h2>
+<div id="heat-capacity-cx" class="section level2">
+<h2><span class="header-section-number">4.1</span> Heat capacity, C<sub>X</sub></h2>
+<p>The heat capacity of a material is the amount of energy required to raise the temperature of that material by 1 K, however there are many different versions of heat capacity, covering both entensive an intensive properties.</p>
+<p>Perhaps more confusingly when looking at gases we have to consider whether the heat capacity of a material is at constant pressure or constant volume. This is because if we are at consant pressure the gas has to do work in expanding, and so heat capacitites at constant volume are always smaller than those at constant pressure.</p>
+<p>Heat capacity varies with temperature, we can usually say values will be constant within about 100 K, but numerous measurements have been used to show that the heat capacity varies with temperature as follows:</p>
+<div class="figure" style="text-align: center"><span id="fig:heatcapacitypV"></span>
+<img src="images/heatcapacitypV.png" alt="The heat capacity of a material is the gradient of the line on an energy verses temperature plot." width="30%" />
+<p class="caption">
+Figure 4.1: The heat capacity of a material is the gradient of the line on an energy verses temperature plot.
+</p>
+</div>
+<p><span class="math display" id="eq:heatcapacitytemp">\[\begin{equation}
+C_{p,n}=\textrm{a}+\textrm{b}T+\frac{\textrm{c}}{T^2}
+\tag{4.1}
+\end{equation}\]</span></p>
+<p>the constants, a, b and c are measured emperically and are known for a wide range of materials.</p>
 <div style="text-align: center;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/e563NzK5r2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 <div style="text-align: left;">
 
+<p>Previously in section @ref{subsec:equipartition} we have seen how equipartition theory predicts the heat capacity of ideal gases. Like the internal energy only degrees of freedom which are active contribute to heat capacity of a material, and this consideration needs to be made.</p>
+<ul>
+<li><p>Every translational degree of freedom contributes <span class="math inline">\(\frac{1}{2}R\)</span> to the heat capacity</p></li>
+<li><p>Every rotational degree of freedom contributes <span class="math inline">\(\frac{1}{2}R\)</span> to the heat capacity</p></li>
+<li><p>Every vibrational degree of freedom contributes <span class="math inline">\(R\)</span> to the heat capacity</p></li>
+</ul>
+<p>We can see the heat capacity of molecules changing as the different degrees of freedom are activated.</p>
+<p>H2heatcapacity</p>
+<div class="figure" style="text-align: center"><span id="fig:H2heatcapacity"></span>
+<img src="images/H2heatcapacity.png" alt="The heat capacity of molecular hydrogen varies with temperature, showing clear steps as each type of degree of freedom are activated. At very high temperatures dissociation occurs before the final plateau is observed." width="30%" />
+<p class="caption">
+Figure 4.2: The heat capacity of molecular hydrogen varies with temperature, showing clear steps as each type of degree of freedom are activated. At very high temperatures dissociation occurs before the final plateau is observed.
+</p>
+</div>
+</div>
+<div id="temperature-dependance-of-enthalpy" class="section level2">
+<h2><span class="header-section-number">4.2</span> Temperature dependance of enthalpy</h2>
 <p><span class="math display">\[\begin{equation}
 \Delta_r H^{\ominus} (T&#39;)=\Delta_r H^{\ominus} (T) + \Delta_r C_p^{\ominus} (T&#39;-T)
 (eq:kirchoff)
 \end{equation}\]</span></p>
-</div>
-<div id="temperature-variation-of-heat-capacity" class="section level2">
-<h2><span class="header-section-number">4.2</span> Temperature variation of heat capacity</h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uOzg89whp0g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
 </div>

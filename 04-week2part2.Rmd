@@ -1,18 +1,50 @@
 # Week 2  - Part 2 {#ch:Part4}
 
-## Heat capacity
+## Heat capacity, C~X~
+
+The heat capacity of a material is the amount of energy required to raise the temperature of that material by 1 K, however there are many different versions of heat capacity, covering both entensive an intensive properties.
+
+Perhaps more confusingly when looking at gases we have to consider whether the heat capacity of a material is at constant pressure or constant volume. This is because if we are at consant pressure the gas has to do work in expanding, and so heat capacitites at constant volume are always smaller than those at constant pressure.
+
+Heat capacity varies with temperature, we can usually say values will be constant within about 100 K, but numerous measurements have been used to show that the heat capacity varies with temperature as follows:
+
+
+
+```{r echo=FALSE, heatcapacitypV, out.width='30%', fig.show='hold', fig.align='center', fig.cap='The heat capacity of a material is the gradient of the line on an energy verses temperature plot.'}
+knitr::include_graphics("images/heatcapacitypV.png")
+```
+
+\begin{equation}
+C_{p,n}=\textrm{a}+\textrm{b}T+\frac{\textrm{c}}{T^2}
+(\#eq:heatcapacitytemp)
+\end{equation}
+
+the constants, a, b and c are measured emperically and are known for a wide range of materials.
 
 <div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/e563NzK5r2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
 
-\begin{equation}
+Previously in section \@ref{subsec:equipartition} we have seen how equipartition theory predicts the heat capacity of ideal gases. Like the internal energy only degrees of freedom which are active contribute to heat capacity of a material, and this consideration needs to be made. 
+
+- Every translational degree of freedom contributes $\frac{1}{2}R$ to the heat capacity
+
+- Every rotational degree of freedom contributes $\frac{1}{2}R$ to the heat capacity
+
+- Every vibrational degree of freedom contributes $R$ to the heat capacity
+
+We can see the heat capacity of molecules changing as the different degrees of freedom are activated.
+
+H2heatcapacity
+
+```{r echo=FALSE, H2heatcapacity, out.width='30%', fig.show='hold', fig.align='center', fig.cap='The heat capacity of molecular hydrogen varies with temperature, showing clear steps as each type of degree of freedom are activated. At very high temperatures dissociation occurs before the final plateau is observed.'}
+knitr::include_graphics("images/H2heatcapacity.png")
+```
+
+## Temperature dependance of enthalpy
+ 
+ \begin{equation}
 \Delta_r H^{\ominus} (T')=\Delta_r H^{\ominus} (T) + \Delta_r C_p^{\ominus} (T'-T)
 (eq:kirchoff)
 \end{equation}
-
-
-
-## Temperature variation of heat capacity
-
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uOzg89whp0g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

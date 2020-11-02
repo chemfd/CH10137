@@ -80,7 +80,7 @@
 
 \title{CH10137 Thermodynamics}
 \author{Fiona Dickinson}
-\date{2020-10-31}
+\date{2020-11-02}
 
 \begin{document}
 \maketitle
@@ -654,8 +654,8 @@ x = 3N-6
 \label{eq:nonlineardof1}
 \end{equation}
 
-\hypertarget{equipartition-theory}{%
-\subsection{Equipartition theory}\label{equipartition-theory}}
+\hypertarget{subsec:equipartition}{%
+\subsection{Equipartition theory}\label{subsec:equipartition}}
 
 \emph{Some of the material covered in this video relates to heat capacities which we will study in more detail later in the course.}
 
@@ -953,7 +953,8 @@ At constant pressure the work done, \(-p \Delta V\) means that the change in ent
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{2}
-\tightlist
+\item
+  For a reaction conducted at constant pressure and at 20.0 ºC the change in the number of moles of gas (\(\Delta n_{gas}\)) is +2. Calculate the difference between \(\Delta H\) \& \(\Delta U\).
 \item
   Calculate the standard enthalpy of formation of \(N_2 O_5\) from the following data:
 \end{enumerate}
@@ -966,9 +967,9 @@ At constant pressure the work done, \(-p \Delta V\) means that the change in ent
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{3}
+\setcounter{enumi}{4}
 \item
-  Calculate the expansion work done on the system when 9.576 g of solid ammonium chloride, NH\_4\_Cl, decomposes completely to yield gaseous ammonia, NH3 and hydrogen chloride, HCl at a temperature of 1,410 K. Treat the expansion as irreversible and the gases formed as perfect.
+  Calculate the expansion work done on the system when 9.576 g of solid ammonium chloride, NH\textsubscript{4}Cl, decomposes completely to yield gaseous ammonia, NH3 and hydrogen chloride, HCl at a temperature of 1,410 K. Treat the expansion as irreversible and the gases formed as perfect.
 \item
   What is the maximum amount of work available when 1 mole of a gas doubles in volume at 25\(^\circ\)C?
 \end{enumerate}
@@ -993,6 +994,8 @@ At constant pressure the work done, \(-p \Delta V\) means that the change in ent
 \item
   not enough infomation to determine, we would need to know if the net change in gas molecules of the system is postive or negative.
 \item
+  \(\Delta H - \Delta U\) = +4.876 kJ
+\item
   \(Δ_fH^\ominus\) = +11.3 kJ mol\textsuperscript{−1} per mole of N\textsubscript{2}O\textsubscript{5}
 \item
   w = -4.198 kJ
@@ -1003,16 +1006,62 @@ At constant pressure the work done, \(-p \Delta V\) means that the change in ent
 \hypertarget{ch:Part4}{%
 \chapter{Week 2 - Part 2}\label{ch:Part4}}
 
-\hypertarget{heat-capacity}{%
-\section{Heat capacity}\label{heat-capacity}}
+\hypertarget{heat-capacity-cx}{%
+\section{\texorpdfstring{Heat capacity, C\textsubscript{X}}{Heat capacity, CX}}\label{heat-capacity-cx}}
+
+The heat capacity of a material is the amount of energy required to raise the temperature of that material by 1 K, however there are many different versions of heat capacity, covering both entensive an intensive properties.
+
+Perhaps more confusingly when looking at gases we have to consider whether the heat capacity of a material is at constant pressure or constant volume. This is because if we are at consant pressure the gas has to do work in expanding, and so heat capacitites at constant volume are always smaller than those at constant pressure.
+
+Heat capacity varies with temperature, we can usually say values will be constant within about 100 K, but numerous measurements have been used to show that the heat capacity varies with temperature as follows:
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.3\linewidth]{images/heatcapacitypV} 
+
+}
+
+\caption{The heat capacity of a material is the gradient of the line on an energy verses temperature plot.}\label{fig:heatcapacitypV}
+\end{figure}
+
+\begin{equation}
+C_{p,n}=\textrm{a}+\textrm{b}T+\frac{\textrm{c}}{T^2}
+\label{eq:heatcapacitytemp}
+\end{equation}
+
+the constants, a, b and c are measured emperically and are known for a wide range of materials.
+
+Previously in section @ref\{subsec:equipartition\} we have seen how equipartition theory predicts the heat capacity of ideal gases. Like the internal energy only degrees of freedom which are active contribute to heat capacity of a material, and this consideration needs to be made.
+
+\begin{itemize}
+\item
+  Every translational degree of freedom contributes \(\frac{1}{2}R\) to the heat capacity
+\item
+  Every rotational degree of freedom contributes \(\frac{1}{2}R\) to the heat capacity
+\item
+  Every vibrational degree of freedom contributes \(R\) to the heat capacity
+\end{itemize}
+
+We can see the heat capacity of molecules changing as the different degrees of freedom are activated.
+
+H2heatcapacity
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.3\linewidth]{images/H2heatcapacity} 
+
+}
+
+\caption{The heat capacity of molecular hydrogen varies with temperature, showing clear steps as each type of degree of freedom are activated. At very high temperatures dissociation occurs before the final plateau is observed.}\label{fig:H2heatcapacity}
+\end{figure}
+
+\hypertarget{temperature-dependance-of-enthalpy}{%
+\section{Temperature dependance of enthalpy}\label{temperature-dependance-of-enthalpy}}
 
 \begin{equation}
 \Delta_r H^{\ominus} (T')=\Delta_r H^{\ominus} (T) + \Delta_r C_p^{\ominus} (T'-T)
 (eq:kirchoff)
 \end{equation}
-
-\hypertarget{temperature-variation-of-heat-capacity}{%
-\section{Temperature variation of heat capacity}\label{temperature-variation-of-heat-capacity}}
 
 \hypertarget{phase-changes}{%
 \section{Phase changes}\label{phase-changes}}
