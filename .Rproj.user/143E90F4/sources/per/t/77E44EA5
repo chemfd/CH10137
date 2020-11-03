@@ -3,22 +3,22 @@
     "path": "~/Documents/GitHub/CH10137/04-week2part2.Rmd",
     "project_path": "04-week2part2.Rmd",
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "2656407220",
     "contents": "",
     "dirty": false,
     "created": 1604103835437.0,
     "source_on_save": false,
     "relative_order": 7,
     "properties": {
-        "cursorPosition": "112,0",
-        "scrollLine": "84"
+        "cursorPosition": "107,31",
+        "scrollLine": "86"
     },
     "folds": "",
-    "lastKnownWriteTime": 1604363476,
+    "lastKnownWriteTime": 1604363927,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1604363476984,
+    "last_content_update": 1604363927231,
     "read_only": false,
     "read_only_alternatives": []
 }
