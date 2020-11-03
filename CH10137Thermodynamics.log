@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.24)  2 NOV 2020 00:52
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.24)  3 NOV 2020 00:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1355,31 +1355,44 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
 File: images/heatcapacitypV.png Graphic file (type QTm)
 <use  "images/heatcapacitypV.png" > [33]
 File: images/H2heatcapacity.png Graphic file (type QTm)
-<use  "images/H2heatcapacity.png" > [34] [35] [36
+<use  "images/H2heatcapacity.png" >
 
-] [37]
+LaTeX Warning: Reference `ed:kirchoff' on page 34 undefined on input line 1061.
+
+
+File: images/enthalpytemp.png Graphic file (type QTm)
+<use  "images/enthalpytemp.png" >
+
+LaTeX Warning: Reference `eq:kirchoff' on page 34 undefined on input line 1079.
+
+
+[34]
+File: images/enthalpyphasechange.png Graphic file (type QTm)
+<use  "images/enthalpyphasechange.png" > [35] [36] [37
+
+]
 No file CH10137Thermodynamics.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1175.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1239.
 [38]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1175.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1239.
 (./CH10137Thermodynamics.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1175.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1175.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1239.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1239.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1175.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1239.
  ) 
 Here is how much of TeX's memory you used:
- 24937 strings out of 493005
- 446492 string characters out of 6134596
- 644137 words of memory out of 5000000
- 28611 multiletter control sequences out of 15000+600000
+ 24946 strings out of 493005
+ 446670 string characters out of 6134596
+ 644531 words of memory out of 5000000
+ 28618 multiletter control sequences out of 15000+600000
  15779 words of font info for 103 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 58i,7n,120p,10416b,409s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,7n,120p,10416b,417s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on CH10137Thermodynamics.pdf (38 pages).
