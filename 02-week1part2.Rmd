@@ -4,7 +4,7 @@ There are different methods of teaching thermodynamics, many come at the problem
 
 If you wish to see a more mathematical version of this course it is covered in a number of textbooks, including the recommended text for this course, Atkin's Elements of Physical Chemistry.
 
-## Zeroth Law of Thermodynamics
+## Zeroth Law of Thermodynamics {#sec:zeroth}
 
 There are four laws of thermodynamics, each introduces a thermodynamic concept. The first of these laws was actually the last to be defined and is called the *zeroth law*.
 

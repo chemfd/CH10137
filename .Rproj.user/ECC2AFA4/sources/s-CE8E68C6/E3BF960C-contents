@@ -1,0 +1,6 @@
+book_filename: "CH10137Thermodynamics"
+language:
+  ui:
+    chapter_name: "CH10137"
+delete_merged_file: true
+output_dir: "docs"

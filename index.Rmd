@@ -40,6 +40,8 @@ There is no single recommended text for this section of the course because multi
 
 ## Version history {-}
 
+Week2part2 finished 031120 (how is it November!)
+
 Week2part1 finished 311020
 
 Degrees of freedom section added to week1part1, week1part2 finished 29th October 2020

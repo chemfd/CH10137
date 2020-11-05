@@ -1,0 +1,54 @@
+# Week 3  - Part 1 {#ch:Part5}
+
+## One last thing before we introduce entropy
+
+*The following video has been added for some context to the material, it is not core to the course and the material in it is not examinable.*
+
+Thermodynamics was developed to understand steam engines better, to help improve their design.
+
+It was found that no matter how well designed the boiler or pistons the efficiency of a steam engine was controlled by something engineers have no control over - them temperature of the surroundings.
+
+\begin{equation}
+\epsilon = 1-\frac{T_{\textrm{sink}}}{T_{\textrm{source}}}
+(\#eq:efficiency)
+\end{equation}
+
+It was these experiments on efficiency by William Thompson (later Lord Kelvin) which lead to the concept of thermodynamic temperature we have already met in section \@ref(sec:zeroth). 
+
+This equation for efficiency (equation \@ref(eq:efficiency)) says that a thermodynamic system (or steam engine) can only ever be 100% efficient if either the temperature of the 'sink' (or the surroundings as we have come to call them) is absolute zero, or else the temperature of the source (or system)  is infinite. Clearly neither of these cases can ever be true and so no system will ever be, can ever be, 100% efficient.
+
+The reason you can never have 100% efficiency is entropy... but what is entropy?
+
+## Second Law of Thermodyanamics
+
+Just like the first law there are various statements of the first law of thermodynamics, because various people were working on the same problem at the same time.
+
+The most famous of these statements is:
+
+<div style="text-align: center;"><span style="color: deeppink;">‘the entropy of an isolated system tends to increase’
+
+<div style="text-align: left;"><span style="color: black;">
+
+and another common statement which considers systems which are not isolated:
+
+<div style="text-align: center;"><span style="color: deeppink;">‘the entropy of a universe increases during any spontaneous change’
+
+<div style="text-align: left;"><span style="color: black;">
+
+Clausius linked the change in entropy of a system to the 'heat' added to that system reversibly, where temperature  is again a factor:
+
+\begin{equation}
+\Delta S=\frac {q_{\textrm{rev}}}{T}
+(\#eq:clausius)
+\end{equation}
+
+This equation says that the entropy increase for a given amount of heat is greater at lower temperatures. This is the minimum amount of entropy change (if the process isn't reversible then the entropy change is higher).
+
+This is often stated as the clausius inequality (where the heat isn't considered to be exchanged reversibly):
+
+\begin{equation}
+\Delta S \geq \frac {q}{T}
+(\#eq:clausiusineq)
+\end{equation}
+
+THIS DOCUMENT IS UNFINISHED
