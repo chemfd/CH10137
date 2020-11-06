@@ -40,6 +40,8 @@ There is no single recommended text for this section of the course because multi
 
 ## Version history {-}
 
+Week3part1 started 051120
+
 Week2part2 finished 031120 (how is it November!)
 
 Week2part1 finished 311020

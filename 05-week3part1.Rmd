@@ -19,6 +19,20 @@ This equation for efficiency (equation \@ref(eq:efficiency)) says that a thermod
 
 The reason you can never have 100% efficiency is entropy... but what is entropy?
 
+## Thermodynamic spontaneity 
+
+In thermodynamics when a process is spontaneous it will occur without work needing to be done to bring about any change.
+
+This phrase can be turned around to say that work can be done to make a non-spontaneous process to occur.
+
+```{r echo=FALSE, fridge, out.width='50%', fig.show='hold', fig.align='center', fig.cap='Fridges and freezers show that non-sponteneous processes can occur if work is done to make them happen - heat does not spontaneously from from cold bodies to hot bodies, but doing work (with the pump in the fridge) allows this thermodynamically non-spontenous process to occur.'}
+knitr::include_graphics("images/fridge.png")
+```
+
+It is important to not confuse spontaneous processes with kinetics, a process may be spontaneous but occur very slowly. Spontaneity is just about the thermodynamics.
+
+If a balloon contains a mixture of hydrogen gas and oxygen gas it will happily just float there not reacting at room temperature - it is only when a spark is added to the system that the gases react to form water. Without a spark the kinetics are very, very slow, but the reaction is still spontaneous. *There will be more about this process later in the course, as some people confuse the reaction of gases to form a liquid as being non-spontaneous.*
+
 ## Second Law of Thermodyanamics
 
 Just like the first law there are various statements of the first law of thermodynamics, because various people were working on the same problem at the same time.
@@ -50,5 +64,7 @@ This is often stated as the clausius inequality (where the heat isn't considered
 \Delta S \geq \frac {q}{T}
 (\#eq:clausiusineq)
 \end{equation}
+
+One thing entropy is **not** is dis*****! This is not an acceptable understanding of entropy - please try and forget the 'd-word' when thinking about entropy.
 
 THIS DOCUMENT IS UNFINISHED
