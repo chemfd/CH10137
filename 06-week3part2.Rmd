@@ -1,0 +1,13 @@
+# Week 3  - Part 2 {#ch:Part6}
+
+
+## Questions {#sec:w3p2question}
+
+
+1. Calculate the change of entropy change when exactly 1 mol of methanol is heated at constant pressure from 5 °C to 35 °C, the molar heat capacity, C~p~, of methanol is 81.6 J K^−1^
+
+mol , assume that the molar heat capacity, Cp is constant over this temperature range.
+
+## Answers {#sec:w3p2ans}
+
+

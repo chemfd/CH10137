@@ -24,7 +24,7 @@
 <meta name="author" content="Fiona Dickinson" />
 
 
-<meta name="date" content="2020-11-07" />
+<meta name="date" content="2020-11-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -127,12 +127,23 @@
 <li class="chapter" data-level="4.2" data-path="ch-Part4.html"><a href="ch-Part4.html#temperature-dependance-of-enthalpy"><i class="fa fa-check"></i><b>4.2</b> Temperature dependance of enthalpy</a></li>
 <li class="chapter" data-level="4.3" data-path="ch-Part4.html"><a href="ch-Part4.html#enthalpy-of-phase-changes"><i class="fa fa-check"></i><b>4.3</b> Enthalpy of phase changes</a></li>
 <li class="chapter" data-level="4.4" data-path="ch-Part2.html"><a href="ch-Part2.html#questions"><i class="fa fa-check"></i><b>4.4</b> Questions</a></li>
+<li class="chapter" data-level="4.5" data-path="ch-Part4.html"><a href="ch-Part4.html#sec:w2p2ans"><i class="fa fa-check"></i><b>4.5</b> Answers</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="ch-Part5.html"><a href="ch-Part5.html"><i class="fa fa-check"></i><b>5</b> Week 3 - Part 1</a><ul>
 <li class="chapter" data-level="5.1" data-path="ch-Part5.html"><a href="ch-Part5.html#one-last-thing-before-we-introduce-entropy"><i class="fa fa-check"></i><b>5.1</b> One last thing before we introduce entropy</a></li>
 <li class="chapter" data-level="5.2" data-path="ch-Part5.html"><a href="ch-Part5.html#thermodynamic-spontaneity"><i class="fa fa-check"></i><b>5.2</b> Thermodynamic spontaneity</a></li>
 <li class="chapter" data-level="5.3" data-path="ch-Part5.html"><a href="ch-Part5.html#second-law-of-thermodyanamics"><i class="fa fa-check"></i><b>5.3</b> Second Law of Thermodyanamics</a></li>
-<li class="chapter" data-level="5.4" data-path="ch-Part5.html"><a href="ch-Part5.html#the-statistical-nature-of-entropy"><i class="fa fa-check"></i><b>5.4</b> The statistical nature of entropy</a></li>
+<li class="chapter" data-level="5.4" data-path="ch-Part5.html"><a href="ch-Part5.html#the-statistical-nature-of-entropy"><i class="fa fa-check"></i><b>5.4</b> The statistical nature of entropy</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="ch-Part5.html"><a href="ch-Part5.html#macrostates"><i class="fa fa-check"></i><b>5.4.1</b> Macrostates</a></li>
+<li class="chapter" data-level="5.4.2" data-path="ch-Part5.html"><a href="ch-Part5.html#microstates"><i class="fa fa-check"></i><b>5.4.2</b> Microstates</a></li>
+<li class="chapter" data-level="5.4.3" data-path="ch-Part5.html"><a href="ch-Part5.html#statistical-entropy"><i class="fa fa-check"></i><b>5.4.3</b> Statistical entropy</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="ch-Part5.html"><a href="ch-Part5.html#sec:w3p1question"><i class="fa fa-check"></i><b>5.5</b> Questions</a></li>
+<li class="chapter" data-level="5.6" data-path="ch-Part5.html"><a href="ch-Part5.html#sec:w3p1ans"><i class="fa fa-check"></i><b>5.6</b> Answers</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="ch-Part6.html"><a href="ch-Part6.html"><i class="fa fa-check"></i><b>6</b> Week 3 - Part 2</a><ul>
+<li class="chapter" data-level="6.1" data-path="ch-Part6.html"><a href="ch-Part6.html#sec:w3p2question"><i class="fa fa-check"></i><b>6.1</b> Questions</a></li>
+<li class="chapter" data-level="6.2" data-path="ch-Part6.html"><a href="ch-Part6.html#sec:w3p2ans"><i class="fa fa-check"></i><b>6.2</b> Answers</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="glossary-of-terms.html"><a href="glossary-of-terms.html"><i class="fa fa-check"></i>Glossary of terms</a><ul>
 <li class="chapter" data-level="" data-path="glossary-of-terms.html"><a href="glossary-of-terms.html#a-f"><i class="fa fa-check"></i>A-F</a></li>
@@ -201,7 +212,7 @@ Figure 4.2: The heat capacity of molecular hydrogen varies with temperature, sho
 <div id="temperature-dependance-of-enthalpy" class="section level2">
 <h2><span class="header-section-number">4.2</span> Temperature dependance of enthalpy</h2>
 <div style="text-align: left;">
-<p>The enthalpy of reaction is dependent upon the temperature of reaction (figure <a href="ch-Part4.html#fig:enthalpytemp">4.3</a>), the relationship between the enthalpies at two tempeartures are given in equation <a href="#ed:kirchoff"><strong>??</strong></a>. Standard enthalpies of fromation are defined usually at exactly 25 ºC.</p>
+<p>The enthalpy of reaction is dependent upon the temperature of reaction (figure <a href="ch-Part4.html#fig:enthalpytemp">4.3</a>), the relationship between the enthalpies at two tempeartures are given in equation <a href="#eq:kirchoff">(<strong>??</strong>)</a>. Standard enthalpies of fromation are defined usually at exactly 25 ºC.</p>
 <p><span class="math display">\[\begin{equation}
 \Delta_r H^{\ominus} (T&#39;)=\Delta_r H^{\ominus} (T) + \Delta_r C_p^{\ominus} (T&#39;-T)
 (eq:kirchoff)
@@ -284,9 +295,14 @@ Figure 4.4: As heat is added to the system usually the temperature increases, bu
 </tbody>
 </table>
 <ol start="5" style="list-style-type: decimal">
-<li>Calculate the enthalpy of formation of liquid mercury at 0 ºC. (C<sub>p</sub> = 27.98 J K<sup>−1</sup> mol<sup>−1</sup>)
+<li>Calculate the enthalpy of formation of liquid mercury at 0 ºC. (C<sub>p</sub> = 27.98 J K<sup>−1</sup> mol<sup>−1</sup>)</li>
+</ol>
 <div style="text-align: left;">
-<h2 id="answers"><span class="header-section-number">4.4</span> Answers</h2></li>
+
+</div>
+<div id="sec:w2p2ans" class="section level2">
+<h2><span class="header-section-number">4.5</span> Answers</h2>
+<ol style="list-style-type: decimal">
 <li>c = 13.7 J K<sup>–1</sup></li>
 <li>ΔH = 6.0 kJ</li>
 <li><span class="math inline">\(\Delta _f H _{(\textrm{100 ºC})}=\)</span> -242.57 kJ mol<sup>−1</sup></li>

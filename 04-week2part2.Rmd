@@ -40,7 +40,7 @@ knitr::include_graphics("images/H2heatcapacity.png")
 <div style="text-align: left;">
 ## Temperature dependance of enthalpy
 <div style="text-align: left;">
-The enthalpy of reaction is dependent upon the temperature of reaction (figure \@ref(fig:enthalpytemp)), the relationship between the enthalpies at two tempeartures are given in equation \@ref(ed:kirchoff). Standard enthalpies of fromation are defined usually at exactly 25 ºC.
+The enthalpy of reaction is dependent upon the temperature of reaction (figure \@ref(fig:enthalpytemp)), the relationship between the enthalpies at two tempeartures are given in equation \@ref(eq:kirchoff). Standard enthalpies of fromation are defined usually at exactly 25 ºC.
 
 \begin{equation}
 \Delta_r H^{\ominus} (T')=\Delta_r H^{\ominus} (T) + \Delta_r C_p^{\ominus} (T'-T)
@@ -105,8 +105,11 @@ c$_{p,m} O_2 = 29.37$ J K$^{-1}$ mol$^{-1}$
 |H~2~O|75.3|
 
 5. Calculate the enthalpy of formation of liquid mercury at 0 ºC. (C~p~ = 27.98 J K^−1^ mol^−1^)
+
+
 <div style="text-align: left;">
-## Answers
+
+## Answers {#sec:w2p2ans}
 
 1. c = 13.7 J K^–1^
 2. ΔH = 6.0 kJ

@@ -80,7 +80,7 @@
 
 \title{CH10137 Thermodynamics}
 \author{Fiona Dickinson}
-\date{2020-11-07}
+\date{2020-11-08}
 
 \begin{document}
 \maketitle
@@ -124,6 +124,10 @@ There is no single recommended text for this section of the course because multi
 \hypertarget{version-history}{%
 \section*{Version history}\label{version-history}}
 \addcontentsline{toc}{section}{Version history}
+
+Week3part1 finished 081120
+
+Week3part1 videos added 071120
 
 Week3part1 started 051120
 
@@ -1060,7 +1064,7 @@ We can see the heat capacity of molecules changing as the different degrees of f
 \hypertarget{temperature-dependance-of-enthalpy}{%
 \section{Temperature dependance of enthalpy}\label{temperature-dependance-of-enthalpy}}
 
-The enthalpy of reaction is dependent upon the temperature of reaction (figure \ref{fig:enthalpytemp}), the relationship between the enthalpies at two tempeartures are given in equation \ref{ed:kirchoff}. Standard enthalpies of fromation are defined usually at exactly 25 ºC.
+The enthalpy of reaction is dependent upon the temperature of reaction (figure \ref{fig:enthalpytemp}), the relationship between the enthalpies at two tempeartures are given in equation \eqref{eq:kirchoff}. Standard enthalpies of fromation are defined usually at exactly 25 ºC.
 
 \begin{equation}
 \Delta_r H^{\ominus} (T')=\Delta_r H^{\ominus} (T) + \Delta_r C_p^{\ominus} (T'-T)
@@ -1145,9 +1149,14 @@ H\textsubscript{2}O & 75.3\tabularnewline
 \tightlist
 \item
   Calculate the enthalpy of formation of liquid mercury at 0 ºC. (C\textsubscript{p} = 27.98 J K\textsuperscript{−1} mol\textsuperscript{−1})
+\end{enumerate}
 
-  \hypertarget{answers}{%
-  \section{Answers}\label{answers}}
+\hypertarget{sec:w2p2ans}{%
+\section{Answers}\label{sec:w2p2ans}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
 \item
   c = 13.7 J K\textsuperscript{--1}
 \item
@@ -1201,7 +1210,9 @@ This phrase can be turned around to say that work can be done to make a non-spon
 
 It is important to not confuse spontaneous processes with kinetics, a process may be spontaneous but occur very slowly. Spontaneity is just about the thermodynamics.
 
-If a balloon contains a mixture of hydrogen gas and oxygen gas it will happily just float there not reacting at room temperature - it is only when a spark is added to the system that the gases react to form water. Without a spark the kinetics are very, very slow, but the reaction is still spontaneous. \emph{There will be more about this process later in the course, as some people confuse the reaction of gases to form a liquid as being non-spontaneous.}
+If a balloon contains a mixture of hydrogen gas and oxygen gas it will happily just float there not reacting at room temperature - it is only when a spark is added to the system that the gases react to form water. Without a spark the kinetics are very, very slow, but the reaction is still spontaneous.
+
+\emph{There will be more about this process later in the course, as some people confuse the reaction of gases to form a liquid as being non-spontaneous.}
 
 \hypertarget{second-law-of-thermodyanamics}{%
 \section{Second Law of Thermodyanamics}\label{second-law-of-thermodyanamics}}
@@ -1219,7 +1230,7 @@ and another common statement which considers systems which are not isolated:
 Clausius linked the change in entropy of a system to the `heat' added to that system reversibly, where temperature is again a factor:
 
 \begin{equation}
-\Delta S=\frac {q_{\textrm{rev}}}{T}
+\Delta S=\frac{q_{\textrm{rev}}}{T}
 \label{eq:clausius}
 \end{equation}
 
@@ -1237,7 +1248,148 @@ One thing entropy is \textbf{not} is dis*****! This is not an acceptable underst
 \hypertarget{the-statistical-nature-of-entropy}{%
 \section{The statistical nature of entropy}\label{the-statistical-nature-of-entropy}}
 
-THIS DOCUMENT IS UNFINISHED
+If we look at two bulbs, one containing gas and the other vacuumm and open the tap between the two containers we are not surprised when the gas distributes between the two bulbs.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/gasdistribution} 
+
+}
+
+\caption{If we have two bulbs, one with gas the other with vacuum and open the tap it is unsurprising that the gas distributes evenly between the two bulbs.}\label{fig:gasdistribution}
+\end{figure}
+
+\hypertarget{macrostates}{%
+\subsection{Macrostates}\label{macrostates}}
+
+So what is happening on a molecular level? Simplifying the system to just 4 particles in the two bulbs, there are 5 possible ways of arranging this system (figure \ref{fig:macro}).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/macro} 
+
+}
+
+\caption{There are five possible ways of aranging four particles between two bulbs.}\label{fig:macro}
+\end{figure}
+
+Each of these possible arrangements are called the macrostates of the system, however the probability of achieving each of these macrostates is not the same.
+
+\hypertarget{microstates}{%
+\subsection{Microstates}\label{microstates}}
+
+The probability of any one of these states occuring depends upon the number of microstates making up each macrostate. If we consider this system and imagine we can individually name each atom:
+
+\begin{itemize}
+\tightlist
+\item
+  all `atoms' in the LH container there is only one possible arrangement
+\item
+  all `atoms' in the RH container there is only one possible arrangement
+\item
+  3 `atoms' in the LH container and 1 in the RH there are four possible arrangements
+\item
+  3 `atoms' in the RH container and 1 in the LH there are four possible arrangements
+\item
+  2 `atoms' in the LH container and 2 in the RH container there are six possible arrangements
+\end{itemize}
+
+The total number of permutations is 2\textsuperscript{4} = 16.
+
+The total number of permutations of any system is given by:
+
+\begin{equation}
+\textrm{permutation}=\textrm{possible outcomes}^\textrm{number of particles}
+\label{eq:permutations}
+\end{equation}
+
+and the multiplicity of microstates is given by:
+
+\begin{equation}
+\Omega = \frac{N!}{n_A!n_B!}
+\label{eq:multiplicity}
+\end{equation}
+
+The probability of any given state occuring is the number of microstates making up a macrostate divided by the total number of permutations of the system.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/probabilityleft} 
+
+}
+
+\caption{The probability of the number of particles in the left hand container for systems containing 10 (top), 20 (middle) and 30 (bottom) particles.}\label{fig:probabilityleft}
+\end{figure}
+
+\hypertarget{statistical-entropy}{%
+\subsection{Statistical entropy}\label{statistical-entropy}}
+
+Logic says that entropy is an extensive property, if we have twice as much stuff we have twice the entropy. However system permutations are not additive.
+
+Boltzman related the permutations of a system to the absolute entropy of the system (equation \eqref{eq:boltzmann}.
+
+\begin{equation}
+S=\textrm{k}_B \ln \Omega
+\label{eq:boltzmann}
+\end{equation}
+
+Boltzmann was actually concerned with the distribution of energy in a system. If you recall the total internal energy (our macrostate) is the sum of the particles each having different energies (our microstates), we said that the probability of existing in a given energy level (or microstate) fell exponentially.
+
+Therefore as the temperature falls the probability of being in any given microstate increases and the entropy of the system decreases.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/tempentropy} 
+
+}
+
+\caption{As the temperature of the system falls the probability of being in a particular level increases and so the temperature falls.}\label{fig:tempentropy}
+\end{figure}
+
+\hypertarget{sec:w3p1question}{%
+\section{Questions}\label{sec:w3p1question}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  What is the change in entropy of a system is 50.0 kJ of energy is reversibly added in the form of heat to 100 g of water at exactly 10 ºC?
+\item
+  Consider a system with two bulbs and 20 particles. What is the probability that all 20 atoms will be found in a single bulb?
+\item
+  When 1 mol of trichloromethane is heated from 5°C to 20°C at constant pressure, the
+  change of entropy is + 6.00 J K\textsuperscript{−1} mol\textsuperscript{−1} . When the solvent is heated further from 20 °C to 35°C, the change in entropy will also be + 6.00 J K\textsuperscript{−1} mol\textsuperscript{−1} your reasoning. You may assume C\textsubscript{p} is constant over this range.
+\end{enumerate}
+
+\hypertarget{sec:w3p1ans}{%
+\section{Answers}\label{sec:w3p1ans}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  ΔS = +177 J K\textsuperscript{−1}
+\item
+  \(\frac{2}{2^{20}}\)
+\item
+  No.~Entropy changes for the same input of heat are greater at lower tempeartures.
+\end{enumerate}
+
+\hypertarget{ch:Part6}{%
+\chapter{Week 3 - Part 2}\label{ch:Part6}}
+
+\hypertarget{sec:w3p2question}{%
+\section{Questions}\label{sec:w3p2question}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Calculate the change of entropy change when exactly 1 mol of methanol is heated at constant pressure from 5 °C to 35 °C, the molar heat capacity, C\textsubscript{p}, of methanol is 81.6 J K\textsuperscript{−1}
+\end{enumerate}
+
+mol , assume that the molar heat capacity, Cp is constant over this temperature range.
+
+\hypertarget{sec:w3p2ans}{%
+\section{Answers}\label{sec:w3p2ans}}
 
 \hypertarget{glossary-of-terms}{%
 \chapter*{Glossary of terms}\label{glossary-of-terms}}
