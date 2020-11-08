@@ -28,6 +28,10 @@
 
 - Isothermal: at constant temperature.
 
+- Macrostate: the overall way a system looks, a macrostate often has multiple ways (microstates) to achieve this state .
+
+- Microstate: the way a system looks as if we can uniquely identify individual particles.
+
 - Molar heat capacity: the energy in the form of heat requred to raise the temperature of 1 mol of a substance by 1 K
 
 ## N-S {-}

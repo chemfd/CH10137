@@ -4,7 +4,9 @@
 
 *The following video has been added for some context to the material, it is not core to the course and the material in it is not examinable.*
 
-Thermodynamics was developed to understand steam engines better, to help improve their design.
+<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/3VLOPILl7MU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
+
+<div style="text-align: left;">Thermodynamics was developed to understand steam engines better, to help improve their design.
 
 It was found that no matter how well designed the boiler or pistons the efficiency of a steam engine was controlled by something engineers have no control over - them temperature of the surroundings.
 
@@ -35,7 +37,9 @@ If a balloon contains a mixture of hydrogen gas and oxygen gas it will happily j
 
 ## Second Law of Thermodyanamics
 
-Just like the first law there are various statements of the first law of thermodynamics, because various people were working on the same problem at the same time.
+<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/a8kBCMdawxw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
+
+<div style="text-align: left;">Just like the first law there are various statements of the first law of thermodynamics, because various people were working on the same problem at the same time.
 
 The most famous of these statements is:
 
@@ -66,5 +70,9 @@ This is often stated as the clausius inequality (where the heat isn't considered
 \end{equation}
 
 One thing entropy is **not** is dis*****! This is not an acceptable understanding of entropy - please try and forget the 'd-word' when thinking about entropy.
+
+## The statistical nature of entropy
+
+<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/JMhS2sKxAx4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
 
 THIS DOCUMENT IS UNFINISHED
