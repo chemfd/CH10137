@@ -28,6 +28,9 @@ For any chemical process we can now work out the enthalpy change for the reactio
 (\#eq:entropyrxntemp)
 \end{equation}
 
+<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/oV6b3iGfwIU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
+
+<div style="text-align: left;">
 ## The entropy of phase changes
 
 If we look at how the heat capacity divided by temperature changes as a function of temperature we see clear breaks in function where the phase changes are (figure \@ref(fig:Cpphase)).
