@@ -80,7 +80,7 @@
 
 \title{CH10137 Thermodynamics}
 \author{Fiona Dickinson}
-\date{2020-11-08}
+\date{2020-11-09}
 
 \begin{document}
 \maketitle
@@ -1339,7 +1339,7 @@ Therefore as the temperature falls the probability of being in any given microst
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.5\linewidth]{images/tempentropy} 
+{\centering \includegraphics[width=0.8\linewidth]{images/tempentropy} 
 
 }
 
@@ -1376,6 +1376,202 @@ Therefore as the temperature falls the probability of being in any given microst
 \hypertarget{ch:Part6}{%
 \chapter{Week 3 - Part 2}\label{ch:Part6}}
 
+\hypertarget{how-temperature-affects-entropy}{%
+\section{How temperature affects entropy}\label{how-temperature-affects-entropy}}
+
+The absolute entropy of a substance is the area underneath the plot of \(\frac{C_p}{T}\) against \(T\) between absolute zero and the temperature of interest. As shown in figure \ref{fig:entropytemp} the entropy difference going between the two temperatures is teh area underneath the curve between the initial and final temperatures.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/entropytemp} 
+
+}
+
+\caption{The entropy change of a substance is the area of the left hand plot between teh initial and final temperature.}\label{fig:entropytemp}
+\end{figure}
+
+From equation \eqref{eq:clausius} the entropy change of heating or cooling a substance is given by:
+
+\begin{equation}
+\Delta S=C_x \ln \frac{T_f}{T_i}
+\label{eq:entropytemp}
+\end{equation}
+
+and the bigger the value of heat capacity (\(C_x\)) the bigger the change in entropy for the same change in temperature.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/entropyheatcapacity} 
+
+}
+
+\caption{The entropy change going between two temperatures is larger for substances with larger heat capacities.}\label{fig:entropyheatcapacity}
+\end{figure}
+
+For any chemical process we can now work out the enthalpy change for the reaction at a new temperature, assuming the heat capacity is constant over the temperature range considered.
+
+\begin{equation}
+\Delta S_{T_f} = \Delta S_{T_i} + C_x \ln \frac{T_f}{T_i}
+\label{eq:entropyrxntemp}
+\end{equation}
+
+\hypertarget{the-entropy-of-phase-changes}{%
+\section{The entropy of phase changes}\label{the-entropy-of-phase-changes}}
+
+If we look at how the heat capacity divided by temperature changes as a function of temperature we see clear breaks in function where the phase changes are (figure \ref{fig:Cpphase}).
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/Cpphase} 
+
+}
+
+\caption{The phase changes are obvious on a plot of Cp/T against T showing the latent heat of the phase change clearly. Recall that the absolute entropy of a substanced is the area under this plot.}\label{fig:Cpphase}
+\end{figure}
+
+The absolute molar entropy of a substance is sum of the entropy for heating and the entropy of the phase change.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/entropyphase} 
+
+}
+
+\caption{The absolute entropy of a material has to consider the entropy of heating between absolute zero and the melting temperature, the entropy of fusion, the entropy between the melting temperature and boiling temperature, the entropy of vapourisation and then the entropy between the boiling temperature and final temperature.}\label{fig:entropyphase}
+\end{figure}
+
+\begin{equation}
+S_m(T) = S_m(0)+ \int_0^{T_f}\frac{C_p(s)}{T}\textrm{d}T+ \frac{\Delta _{fus} H}{T_f}+ \int_{T_f}^{T_b}\frac{C_p(l)}{T}\textrm{d}T+ \frac{\Delta _{vap} H}{T_f}+ \int_{T_f}^T\frac{C_p(g)}{T}\textrm{d}T
+\label{eq:entropyphase}
+\end{equation}
+
+From equation \eqref{eq:clausius} we can relate the enthalpy of phase change and entropy of phase change at constant pressure because phase changes are reversible processes.
+
+\begin{equation}
+\Delta_{vap} S=\frac{\Delta_{vap} H }{T_b}
+\label{eq:entropyvap}
+\end{equation}
+
+\begin{equation}
+\Delta_{fus} S=\frac{\Delta_{fus} H }{T_m}
+\label{eq:entropyfus}
+\end{equation}
+
+\hypertarget{troutons-rule}{%
+\subsection{Trouton's Rule}\label{troutons-rule}}
+
+Trouton's rule is an empirical relationship which found that \(\frac{\Delta_{vap} H }{T_b}\) is around 85 J K\textsuperscript{−1} mol\textsuperscript{−1} for liquids that have no hydrogen bonding. For substances with hydrogen bonding \(\Delta_{vap} H\) is considerably higher because more heat is required to break all of the intermolecular bonds.
+
+\begin{longtable}[]{@{}cccc@{}}
+\caption{\label{tab:trouton} Thermodynamic data for the vaporisation of a range of chemical species.}\tabularnewline
+\toprule
+\begin{minipage}[b]{0.22\columnwidth}\centering
+\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
+\(\Delta_{vap} S^\ominus\) / J K\textsuperscript{−1} mol\textsuperscript{−1}\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
+\(\Delta_{vap} H^\ominus\) / kJ mol\textsuperscript{−1}\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
+\(T_b\) / K\strut
+\end{minipage}\tabularnewline
+\midrule
+\endfirsthead
+\toprule
+\begin{minipage}[b]{0.22\columnwidth}\centering
+\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
+\(\Delta_{vap} S^\ominus\) / J K\textsuperscript{−1} mol\textsuperscript{−1}\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
+\(\Delta_{vap} H^\ominus\) / kJ mol\textsuperscript{−1}\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
+\(T_b\) / K\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.22\columnwidth}\centering
+benzene\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+87.2\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+30.8\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+353.2\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+bromine\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+88.6\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+29.45\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+332.4\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+tetrachloromethane\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+85.9\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+30.00\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+349.9\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+methane\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+73.2\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+8.18\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+111.7\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+hydrogen sulphide\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+87.9\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+18.67\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+212.8\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+mercury\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+94.2\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+59.30\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+692.7\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+argon\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+74.4\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+6.5\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+87.3\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+ammonia\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+97.4\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+23.4\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+239.7\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+water\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+109.1\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+40.7\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+373.2\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
 \hypertarget{sec:w3p2question}{%
 \section{Questions}\label{sec:w3p2question}}
 
@@ -1383,10 +1579,8 @@ Therefore as the temperature falls the probability of being in any given microst
 \def\labelenumi{\arabic{enumi}.}
 \tightlist
 \item
-  Calculate the change of entropy change when exactly 1 mol of methanol is heated at constant pressure from 5 °C to 35 °C, the molar heat capacity, C\textsubscript{p}, of methanol is 81.6 J K\textsuperscript{−1}
+  Calculate the change of entropy change when exactly 1 mol of methanol is heated at constant pressure from 5 °C to 35 °C, the molar heat capacity, C\textsubscript{p}, of methanol is 81.6 J K\textsuperscript{−1} mol\textsuperscript{−1}, assume that the molar heat capacity, C\textsubscript{p} is constant over this temperature range.
 \end{enumerate}
-
-mol , assume that the molar heat capacity, Cp is constant over this temperature range.
 
 \hypertarget{sec:w3p2ans}{%
 \section{Answers}\label{sec:w3p2ans}}

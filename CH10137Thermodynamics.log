@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.24)  8 NOV 2020 17:21
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.24)  9 NOV 2020 00:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1384,31 +1384,49 @@ File: images/tempentropy.png Graphic file (type QTm)
 
 ]
 Chapter 6.
-[47] [48
+File: images/entropytemp.png Graphic file (type QTm)
+<use  "images/entropytemp.png" >
+File: images/entropyheatcapacity.png Graphic file (type QTm)
+<use  "images/entropyheatcapacity.png" > [47]
+File: images/Cpphase.png Graphic file (type QTm)
+<use  "images/Cpphase.png" >
+File: images/entropyphase.png Graphic file (type QTm)
+<use  "images/entropyphase.png" >
+Overfull \hbox (5.28595pt too wide) detected at line 1446
+[][][][][][] [] [][][][][] [] [][] [][][] [] [] [] [][] [][][] [] [] [] [][] []
+[][]
+ []
 
-] [49]
+[48]
+Overfull \hbox (8.87958pt too wide) in paragraph at lines 1510--1511
+ []\TU/lmr/m/n/10 tetrachloromethane| 
+ []
+
+[49] [50] [51] [52
+
+] [53]
 No file CH10137Thermodynamics.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1471.
-[50]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1471.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1665.
+[54]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1665.
 (./CH10137Thermodynamics.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1471.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1471.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1665.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1665.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1471.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1665.
  ) 
 Here is how much of TeX's memory you used:
- 24989 strings out of 493005
- 447327 string characters out of 6134596
- 646396 words of memory out of 5000000
- 28657 multiletter control sequences out of 15000+600000
+ 25013 strings out of 493005
+ 447749 string characters out of 6134596
+ 652793 words of memory out of 5000000
+ 28677 multiletter control sequences out of 15000+600000
  15779 words of font info for 103 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 58i,7n,120p,10416b,415s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,9n,120p,10416b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CH10137Thermodynamics.pdf (50 pages).
+Output written on CH10137Thermodynamics.pdf (54 pages).
