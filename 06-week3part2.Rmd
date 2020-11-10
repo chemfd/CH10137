@@ -67,6 +67,10 @@ From equation \@ref(eq:clausius) we can relate the enthalpy of phase change and 
 
 Trouton's rule is an empirical relationship which found that $\frac{\Delta_{vap} H }{T_b}$ is around 85 J K^−1^ mol^−1^ for liquids that have no hydrogen bonding. For substances with hydrogen bonding $\Delta_{vap} H$ is considerably higher because more heat is required to break all of the intermolecular bonds.
 
+Equally some species have a lower than predicted entropy of vapourisation. These species may still have intermolecular bonding in the gas phase, such as formic acid which forms a molecular dimer at temperatures just above the boiling temperature (you can then see a 'phase change' as this dimer dissociates at even higher temperatures). Otherwise it may be that the species is particularly 'small' and has a low moment of rotational inertia, leading to large spacings in molecular energy levels and therefore relatively low entropy in the population of these levels.
+
+
+
 Table: (\#tab:trouton)  Thermodynamic data for the vaporisation of a range of chemical species.
 
 ||$\Delta_{vap} S^\ominus$ / J K^−1^ mol^−1^|$\Delta_{vap} H^\ominus$ / kJ mol^−1^| $T_b$ / K|
@@ -74,19 +78,34 @@ Table: (\#tab:trouton)  Thermodynamic data for the vaporisation of a range of ch
 | benzene | 87.2 |30.8|353.2|
 | bromine |88.6|29.45|332.4|
 | tetrachloromethane |85.9|30.00|349.9|
-| methane |73.2|8.18|111.7|
 | hydrogen sulphide |87.9|18.67|212.8|
 | mercury |94.2|59.30|692.7|
-| argon |74.4|6.5|87.3|
 | ammonia |97.4|23.4|239.7|
 | water |109.1|40.7|373.2|
+| methane |73.2|8.18|111.7|
+| argon |74.4|6.5|87.3|
+| formic acid | 61.8 | 23.1 | 373.9 |
+
 
 ## Residual entropy
 
+As we cool our sample you would expect that as the temperature reaches absolute zero you would expect the entropy to fall to zero, however under some circumstances there may still be multiple possible ways of arranging a system. These include:
+
+- isotopes being randomly distributed in a sample
+- systems where there is no enthalpy change for different arrangements, such as CO
+- degeneracy in ground state
 
 ```{r echo=FALSE, entropyzero, out.width='80%', fig.show='hold', fig.align='center', fig.cap='If we follow our molecular understanding of entropy from Boltzmann we could theoretically reach a point with zero entropy where all molcules are in the same state.'}
 knitr::include_graphics("images/entropyzero.png")
 ```
+
+```{r echo=FALSE, CO, out.width='80%', fig.show='hold', fig.align='center', fig.cap='CO molecules can exist in one of two states (C=O and O=C) and because ther eis a very even electic charge across the molecule the two states are degenerate in energy and two possible microstates exist for each CO site in the crystal.'}
+knitr::include_graphics("images/CO.png")
+```
+
+We can calculate the residual entropy using the statistical definition of entropy (equation \@ref(eq:boltzmann)).
+
+## Entropy changes for isothermal expansion of a gas
 
 
 ## Questions {#sec:w3p2question}

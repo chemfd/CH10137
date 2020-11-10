@@ -24,7 +24,7 @@
 <meta name="author" content="Fiona Dickinson" />
 
 
-<meta name="date" content="2020-11-09" />
+<meta name="date" content="2020-11-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -146,8 +146,10 @@
 <li class="chapter" data-level="6.2" data-path="ch-Part6.html"><a href="ch-Part6.html#the-entropy-of-phase-changes"><i class="fa fa-check"></i><b>6.2</b> The entropy of phase changes</a><ul>
 <li class="chapter" data-level="6.2.1" data-path="ch-Part6.html"><a href="ch-Part6.html#troutons-rule"><i class="fa fa-check"></i><b>6.2.1</b> Trouton’s Rule</a></li>
 </ul></li>
-<li class="chapter" data-level="6.3" data-path="ch-Part6.html"><a href="ch-Part6.html#sec:w3p2question"><i class="fa fa-check"></i><b>6.3</b> Questions</a></li>
-<li class="chapter" data-level="6.4" data-path="ch-Part6.html"><a href="ch-Part6.html#sec:w3p2ans"><i class="fa fa-check"></i><b>6.4</b> Answers</a></li>
+<li class="chapter" data-level="6.3" data-path="ch-Part6.html"><a href="ch-Part6.html#residual-entropy"><i class="fa fa-check"></i><b>6.3</b> Residual entropy</a></li>
+<li class="chapter" data-level="6.4" data-path="ch-Part6.html"><a href="ch-Part6.html#entropy-changes-for-isothermal-expansion-of-a-gas"><i class="fa fa-check"></i><b>6.4</b> Entropy changes for isothermal expansion of a gas</a></li>
+<li class="chapter" data-level="6.5" data-path="ch-Part6.html"><a href="ch-Part6.html#sec:w3p2question"><i class="fa fa-check"></i><b>6.5</b> Questions</a></li>
+<li class="chapter" data-level="6.6" data-path="ch-Part6.html"><a href="ch-Part6.html#sec:w3p2ans"><i class="fa fa-check"></i><b>6.6</b> Answers</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="glossary-of-terms.html"><a href="glossary-of-terms.html"><i class="fa fa-check"></i>Glossary of terms</a><ul>
 <li class="chapter" data-level="" data-path="glossary-of-terms.html"><a href="glossary-of-terms.html#a-f"><i class="fa fa-check"></i>A-F</a></li>
@@ -203,6 +205,12 @@ Figure 6.2: The entropy change going between two temperatures is larger for subs
 \Delta S_{T_f} = \Delta S_{T_i} + C_x \ln \frac{T_f}{T_i}
 \tag{6.2}
 \end{equation}\]</span></p>
+<div style="text-align: center;">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oV6b3iGfwIU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<div style="text-align: left;">
+
+<div style="text-align: left;">
 </div>
 <div id="the-entropy-of-phase-changes" class="section level2">
 <h2><span class="header-section-number">6.2</span> The entropy of phase changes</h2>
@@ -236,6 +244,7 @@ S_m(T) = S_m(0)+ \int_0^{T_f}\frac{C_p(s)}{T}\textrm{d}T+ \frac{\Delta _{fus} H}
 <div id="troutons-rule" class="section level3">
 <h3><span class="header-section-number">6.2.1</span> Trouton’s Rule</h3>
 <p>Trouton’s rule is an empirical relationship which found that <span class="math inline">\(\frac{\Delta_{vap} H }{T_b}\)</span> is around 85 J K<sup>−1</sup> mol<sup>−1</sup> for liquids that have no hydrogen bonding. For substances with hydrogen bonding <span class="math inline">\(\Delta_{vap} H\)</span> is considerably higher because more heat is required to break all of the intermolecular bonds.</p>
+<p>Equally some species have a lower than predicted entropy of vapourisation. These species may still have intermolecular bonding in the gas phase, such as formic acid which forms a molecular dimer at temperatures just above the boiling temperature (you can then see a ‘phase change’ as this dimer dissociates at even higher temperatures). Otherwise it may be that the species is particularly ‘small’ and has a low moment of rotational inertia, leading to large spacings in molecular energy levels and therefore relatively low entropy in the population of these levels.</p>
 <table>
 <caption><span id="tab:trouton">Table 6.1: </span> Thermodynamic data for the vaporisation of a range of chemical species.</caption>
 <colgroup>
@@ -272,28 +281,16 @@ S_m(T) = S_m(0)+ \int_0^{T_f}\frac{C_p(s)}{T}\textrm{d}T+ \frac{\Delta _{fus} H}
 <td align="center">349.9</td>
 </tr>
 <tr class="even">
-<td align="center">methane</td>
-<td align="center">73.2</td>
-<td align="center">8.18</td>
-<td align="center">111.7</td>
-</tr>
-<tr class="odd">
 <td align="center">hydrogen sulphide</td>
 <td align="center">87.9</td>
 <td align="center">18.67</td>
 <td align="center">212.8</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td align="center">mercury</td>
 <td align="center">94.2</td>
 <td align="center">59.30</td>
 <td align="center">692.7</td>
-</tr>
-<tr class="odd">
-<td align="center">argon</td>
-<td align="center">74.4</td>
-<td align="center">6.5</td>
-<td align="center">87.3</td>
 </tr>
 <tr class="even">
 <td align="center">ammonia</td>
@@ -307,18 +304,61 @@ S_m(T) = S_m(0)+ \int_0^{T_f}\frac{C_p(s)}{T}\textrm{d}T+ \frac{\Delta _{fus} H}
 <td align="center">40.7</td>
 <td align="center">373.2</td>
 </tr>
+<tr class="even">
+<td align="center">methane</td>
+<td align="center">73.2</td>
+<td align="center">8.18</td>
+<td align="center">111.7</td>
+</tr>
+<tr class="odd">
+<td align="center">argon</td>
+<td align="center">74.4</td>
+<td align="center">6.5</td>
+<td align="center">87.3</td>
+</tr>
+<tr class="even">
+<td align="center">formic acid</td>
+<td align="center">61.8</td>
+<td align="center">23.1</td>
+<td align="center">373.9</td>
+</tr>
 </tbody>
 </table>
 </div>
 </div>
+<div id="residual-entropy" class="section level2">
+<h2><span class="header-section-number">6.3</span> Residual entropy</h2>
+<p>As we cool our sample you would expect that as the temperature reaches absolute zero you would expect the entropy to fall to zero, however under some circumstances there may still be multiple possible ways of arranging a system. These include:</p>
+<ul>
+<li>isotopes being randomly distributed in a sample</li>
+<li>systems where there is no enthalpy change for different arrangements, such as CO</li>
+<li>degeneracy in ground state</li>
+</ul>
+<div class="figure" style="text-align: center"><span id="fig:entropyzero"></span>
+<img src="images/entropyzero.png" alt="If we follow our molecular understanding of entropy from Boltzmann we could theoretically reach a point with zero entropy where all molcules are in the same state." width="80%" />
+<p class="caption">
+Figure 6.5: If we follow our molecular understanding of entropy from Boltzmann we could theoretically reach a point with zero entropy where all molcules are in the same state.
+</p>
+</div>
+<div class="figure" style="text-align: center"><span id="fig:CO"></span>
+<img src="images/CO.png" alt="CO molecules can exist in one of two states (C=O and O=C) and because ther eis a very even electic charge across the molecule the two states are degenerate in energy and two possible microstates exist for each CO site in the crystal." width="80%" />
+<p class="caption">
+Figure 6.6: CO molecules can exist in one of two states (C=O and O=C) and because ther eis a very even electic charge across the molecule the two states are degenerate in energy and two possible microstates exist for each CO site in the crystal.
+</p>
+</div>
+<p>We can calculate the residual entropy using the statistical definition of entropy (equation <a href="ch-Part5.html#eq:boltzmann">(5.6)</a>).</p>
+</div>
+<div id="entropy-changes-for-isothermal-expansion-of-a-gas" class="section level2">
+<h2><span class="header-section-number">6.4</span> Entropy changes for isothermal expansion of a gas</h2>
+</div>
 <div id="sec:w3p2question" class="section level2">
-<h2><span class="header-section-number">6.3</span> Questions</h2>
+<h2><span class="header-section-number">6.5</span> Questions</h2>
 <ol style="list-style-type: decimal">
 <li>Calculate the change of entropy change when exactly 1 mol of methanol is heated at constant pressure from 5 °C to 35 °C, the molar heat capacity, C<sub>p</sub>, of methanol is 81.6 J K<sup>−1</sup> mol<sup>−1</sup>, assume that the molar heat capacity, C<sub>p</sub> is constant over this temperature range.</li>
 </ol>
 </div>
 <div id="sec:w3p2ans" class="section level2">
-<h2><span class="header-section-number">6.4</span> Answers</h2>
+<h2><span class="header-section-number">6.6</span> Answers</h2>
 
 </div>
 </div>

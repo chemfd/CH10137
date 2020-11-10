@@ -80,7 +80,7 @@
 
 \title{CH10137 Thermodynamics}
 \author{Fiona Dickinson}
-\date{2020-11-09}
+\date{2020-11-10}
 
 \begin{document}
 \maketitle
@@ -1462,6 +1462,8 @@ From equation \eqref{eq:clausius} we can relate the enthalpy of phase change and
 
 Trouton's rule is an empirical relationship which found that \(\frac{\Delta_{vap} H }{T_b}\) is around 85 J K\textsuperscript{−1} mol\textsuperscript{−1} for liquids that have no hydrogen bonding. For substances with hydrogen bonding \(\Delta_{vap} H\) is considerably higher because more heat is required to break all of the intermolecular bonds.
 
+Equally some species have a lower than predicted entropy of vapourisation. These species may still have intermolecular bonding in the gas phase, such as formic acid which forms a molecular dimer at temperatures just above the boiling temperature (you can then see a `phase change' as this dimer dissociates at even higher temperatures). Otherwise it may be that the species is particularly `small' and has a low moment of rotational inertia, leading to large spacings in molecular energy levels and therefore relatively low entropy in the population of these levels.
+
 \begin{longtable}[]{@{}cccc@{}}
 \caption{\label{tab:trouton} Thermodynamic data for the vaporisation of a range of chemical species.}\tabularnewline
 \toprule
@@ -1516,15 +1518,6 @@ tetrachloromethane\strut
 349.9\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.22\columnwidth}\centering
-methane\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-73.2\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-8.18\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-111.7\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
 hydrogen sulphide\strut
 \end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
 87.9\strut
@@ -1541,15 +1534,6 @@ mercury\strut
 59.30\strut
 \end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
 692.7\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-argon\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-74.4\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-6.5\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-87.3\strut
 \end{minipage}\tabularnewline
 \begin{minipage}[t]{0.22\columnwidth}\centering
 ammonia\strut
@@ -1569,8 +1553,73 @@ water\strut
 \end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
 373.2\strut
 \end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+methane\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+73.2\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+8.18\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+111.7\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+argon\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+74.4\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+6.5\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+87.3\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+formic acid\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+61.8\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+23.1\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+373.9\strut
+\end{minipage}\tabularnewline
 \bottomrule
 \end{longtable}
+
+\hypertarget{residual-entropy}{%
+\section{Residual entropy}\label{residual-entropy}}
+
+As we cool our sample you would expect that as the temperature reaches absolute zero you would expect the entropy to fall to zero, however under some circumstances there may still be multiple possible ways of arranging a system. These include:
+
+\begin{itemize}
+\tightlist
+\item
+  isotopes being randomly distributed in a sample
+\item
+  systems where there is no enthalpy change for different arrangements, such as CO
+\item
+  degeneracy in ground state
+\end{itemize}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/entropyzero} 
+
+}
+
+\caption{If we follow our molecular understanding of entropy from Boltzmann we could theoretically reach a point with zero entropy where all molcules are in the same state.}\label{fig:entropyzero}
+\end{figure}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/CO} 
+
+}
+
+\caption{CO molecules can exist in one of two states (C=O and O=C) and because ther eis a very even electic charge across the molecule the two states are degenerate in energy and two possible microstates exist for each CO site in the crystal.}\label{fig:CO}
+\end{figure}
+
+We can calculate the residual entropy using the statistical definition of entropy (equation \eqref{eq:boltzmann}).
+
+\hypertarget{entropy-changes-for-isothermal-expansion-of-a-gas}{%
+\section{Entropy changes for isothermal expansion of a gas}\label{entropy-changes-for-isothermal-expansion-of-a-gas}}
 
 \hypertarget{sec:w3p2question}{%
 \section{Questions}\label{sec:w3p2question}}
