@@ -44,7 +44,7 @@ The enthalpy of reaction is dependent upon the temperature of reaction (figure \
 
 \begin{equation}
 \Delta_r H^{\ominus} (T')=\Delta_r H^{\ominus} (T) + \Delta_r C_p^{\ominus} (T'-T)
-(eq:kirchoff)
+(#eq:kirchoff)
 \end{equation}
 
 
