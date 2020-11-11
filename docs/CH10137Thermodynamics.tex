@@ -80,7 +80,7 @@
 
 \title{CH10137 Thermodynamics}
 \author{Fiona Dickinson}
-\date{2020-11-10}
+\date{2020-11-11}
 
 \begin{document}
 \maketitle
@@ -124,6 +124,8 @@ There is no single recommended text for this section of the course because multi
 \hypertarget{version-history}{%
 \section*{Version history}\label{version-history}}
 \addcontentsline{toc}{section}{Version history}
+
+Week3part2 finished 101120
 
 Week3part1 finished 081120
 
@@ -1068,7 +1070,7 @@ The enthalpy of reaction is dependent upon the temperature of reaction (figure \
 
 \begin{equation}
 \Delta_r H^{\ominus} (T')=\Delta_r H^{\ominus} (T) + \Delta_r C_p^{\ominus} (T'-T)
-(eq:kirchoff)
+\label{eq:kirchoff}
 \end{equation}
 
 \begin{figure}
@@ -1621,18 +1623,83 @@ We can calculate the residual entropy using the statistical definition of entrop
 \hypertarget{entropy-changes-for-isothermal-expansion-of-a-gas}{%
 \section{Entropy changes for isothermal expansion of a gas}\label{entropy-changes-for-isothermal-expansion-of-a-gas}}
 
+If we think about entropy of the probabiity of a given state being achieved then as the `box' gets bigger the probability of a particle being in any position falls and so the entropy of the system increases.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/entropyexpansion} 
+
+}
+
+\caption{As the container expands the molecules have more possible positions and so the probability of a particle being in any single postion is reduced and the entropy increases.}\label{fig:entropyexpansion}
+\end{figure}
+
+If we actually think about the energy levels in the system, we know that the occupation of these levels follows the Maxwell-Boltzmann distribution (equation \eqref{eq:maxwell}) when the levels are spaced further apart, fewer macrostates are occupied and so the probability of finding a particle in any state is relatively high. As the energy levels get closer together the probability of finding a particle in any given level decreases and so the entropy of the system increases.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{images/boxlevels} 
+
+}
+
+\caption{According to the particle in a box model energy levels in a small box (left) are spaced further apart than those in a larger box.}\label{fig:boxlevels}
+\end{figure}
+
+Now if we consider the entropy change in an isothermal expansion then:
+
+\begin{equation}
+\Delta S=nR \ln\frac{V_\textrm{f}}{V_\textrm{i}}
+\label{eq:entropyexpansion}
+\end{equation}
+
+This equation is derived from our expression of work done in a reversible expansion, and the relationship between heat and work when that expansion is isothermal. Combining this with our definition of entropy (\eqref{eq:clausiusineq}) gives us this expression above.
+
 \hypertarget{sec:w3p2question}{%
 \section{Questions}\label{sec:w3p2question}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\tightlist
 \item
   Calculate the change of entropy change when exactly 1 mol of methanol is heated at constant pressure from 5 °C to 35 °C, the molar heat capacity, C\textsubscript{p}, of methanol is 81.6 J K\textsuperscript{−1} mol\textsuperscript{−1}, assume that the molar heat capacity, C\textsubscript{p} is constant over this temperature range.
+\item
+  Calculate the entropy change of cooling of liquid mercury from 25 ºC to 0 ºC. (C\textsubscript{p} = 27.98 J K\textsuperscript{−1} mol\textsuperscript{−1})
+\item
+  Calculate the change in entropy of 5.151 mol of a perfect gas when it is compressed isothermally to 59.8 \% of its initial volume.
+\item
+  Use the following data to calculate the reaction entropy at 298 K for the thermal decomposition of 2.651 g of ammonium chloride, NH4Cl
+\end{enumerate}
+
+NH\textsubscript{4}Cl(s) → NH\textsubscript{3}(g) + HCl(g)
+
+\textbar{} Sm° / J K\textsuperscript{−1} mol\textsuperscript{−1} \textbar{}\\
+NH\textsubscript{4}Cl(s) \textbar{} 94.85 \textbar{}\\
+NH3(g) \textbar{} 192.77 \textbar{}\\
+HCl(g) \textbar{} 186.90 \textbar{}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  If the specific heat of water is 4.184 J K\textsuperscript{−1} g\textsuperscript{−1} what is the change in entropy when water is heated from 20 ºC and 80 ºC?
 \end{enumerate}
 
 \hypertarget{sec:w3p2ans}{%
 \section{Answers}\label{sec:w3p2ans}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \(\Delta S=\) 8.36 J K\textsuperscript{−1} mol\textsuperscript{−1}
+\item
+  \(\Delta S=\) −2.45 J K\textsuperscript{−1} mol\textsuperscript{−1}
+\item
+  \(\Delta S=\) -22.02 J K\textsuperscript{−1} mol\textsuperscript{−1}
+\item
+  \(\Delta S=\) +14.11 J K\textsuperscript{−1}
+\item
+  \(\Delta S=\) 14.0 J K\textsuperscript{−1} mol\textsuperscript{−1}
+\end{enumerate}
 
 \hypertarget{glossary-of-terms}{%
 \chapter*{Glossary of terms}\label{glossary-of-terms}}

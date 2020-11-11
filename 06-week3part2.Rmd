@@ -114,12 +114,61 @@ We can calculate the residual entropy using the statistical definition of entrop
 <div style="text-align: left;">
 ## Entropy changes for isothermal expansion of a gas
 
+<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/WKGH-rZF6WA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
+
+<div style="text-align: left;">
+
+If we think about entropy of the probabiity of a given state being achieved then as the 'box' gets bigger the probability of a particle being in any position falls and so the entropy of the system increases.
+
+```{r echo=FALSE, entropyexpansion, out.width='80%', fig.show='hold', fig.align='center', fig.cap='As the container expands the molecules have more possible positions and so the probability of a particle being in any single postion is reduced and the entropy increases.'}
+knitr::include_graphics("images/entropyexpansion.png")
+```
+
+If we actually think about the energy levels in the system, we know that the occupation of these levels follows the Maxwell-Boltzmann distribution (equation \@ref(eq:maxwell)) when the levels are spaced further apart, fewer macrostates are occupied and so the probability of finding a particle in any state is relatively high. As the energy levels get closer together the probability of finding a particle in any given level decreases and so the entropy of the system increases.
+
+
+```{r echo=FALSE, boxlevels, out.width='80%', fig.show='hold', fig.align='center', fig.cap='According to the particle in a box model energy levels in a small box (left) are spaced further apart than those in a larger box.'}
+knitr::include_graphics("images/boxlevels.png")
+```
+
+Now if we consider the entropy change in an isothermal expansion then:
+
+\begin{equation}
+\Delta S=nR \ln\frac{V_\textrm{f}}{V_\textrm{i}}
+(\#eq:entropyexpansion)
+\end{equation}
+
+This equation is derived from our expression of work done in a reversible expansion, and the relationship between heat and work when that expansion is isothermal. Combining this with our definition of entropy (\@ref(eq:clausiusineq)) gives us this expression above.
 
 ## Questions {#sec:w3p2question}
 
 
 1. Calculate the change of entropy change when exactly 1 mol of methanol is heated at constant pressure from 5 °C to 35 °C, the molar heat capacity, C~p~, of methanol is 81.6 J K^−1^ mol^−1^, assume that the molar heat capacity, C~p~ is constant over this temperature range.
 
+2. Calculate the entropy change of cooling of liquid mercury from 25 ºC to 0 ºC. (C~p~ = 27.98 J K^−1^ mol^−1^)
+
+3. Calculate the change in entropy of 5.151 mol of a perfect gas when it is compressed isothermally to 59.8 % of its initial volume.
+
+4. Use the following data to calculate the reaction entropy at 298 K for the thermal decomposition of 2.651 g of ammonium chloride, NH4Cl
+
+NH~4~Cl(s) → NH~3~(g) + HCl(g)
+
+
+| | Sm° / J K^−1^ mol^−1^ |
+| NH~4~Cl(s) | 94.85 |
+| NH3(g) | 192.77 |
+| HCl(g) | 186.90 |
+
+5.  If the specific heat of water is 4.184 J K^−1^ g^−1^ what is the change in entropy when water is heated from 20 ºC and 80 ºC?
+
 ## Answers {#sec:w3p2ans}
 
+1. $\Delta S=$ 8.36 J K^−1^ mol^−1^
 
+2. $\Delta S=$ −2.45 J K^−1^ mol^−1^
+
+3. $\Delta S=$ -22.02 J K^−1^ mol^−1^
+
+4. $\Delta S=$ +14.11 J K^−1^
+
+5. $\Delta S=$ 14.0 J K^−1^ mol^−1^
