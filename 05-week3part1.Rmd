@@ -37,7 +37,7 @@ If a balloon contains a mixture of hydrogen gas and oxygen gas it will happily j
 
 *There will be more about this process later in the course, as some people confuse the reaction of gases to form a liquid as being non-spontaneous.*
 
-## Second Law of Thermodyanamics
+## Second Law of Thermodyanamics {#sec:2ndlaw}
 
 <div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/a8kBCMdawxw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
 

@@ -149,12 +149,13 @@ This equation is derived from our expression of work done in a reversible expans
 
 3. Calculate the change in entropy of 5.151 mol of a perfect gas when it is compressed isothermally to 59.8 % of its initial volume.
 
-4. Use the following data to calculate the reaction entropy at 298 K for the thermal decomposition of 2.651 g of ammonium chloride, NH4Cl
+4. Use the following data to calculate the reaction entropy at 298 K for the thermal decomposition of 2.651 g of ammonium chloride, NH~4~Cl
 
 NH~4~Cl(s) → NH~3~(g) + HCl(g)
 
 
 | | Sm° / J K^−1^ mol^−1^ |
+|:----:|:----:|
 | NH~4~Cl(s) | 94.85 |
 | NH3(g) | 192.77 |
 | HCl(g) | 186.90 |

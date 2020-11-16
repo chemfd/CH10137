@@ -14,6 +14,8 @@
 
 ## G-M {-}
 
+-Gibbs' free energy (G): the amount of non expansion work which can be derived from a system, if the value of Gibbs free energy change for a process is negative the reaction is spontaneous.
+
 - Heat: a mode of transfer of energy which causes chaotic (or non-uniform) motion of the system or surroundings
 
 - Heat capacity: see specific heat capacity or molar heat capacity
