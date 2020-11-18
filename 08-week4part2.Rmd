@@ -1,0 +1,73 @@
+# Week 4  - Part 2 {#ch:Part8}
+
+## How ΔG relates to the equilibrium constant, K
+
+The driving force of a reaction, ΔG~⦵~ , is linked to the equilibrium constant for that process by equation \@ref(eq:Gibbsequilibrium).
+
+\begin{equation}
+\Delta G^\ominus = -RT \ln K
+(\#eq:Gibbsequilibrium)
+\end{equation}
+
+Consequently, the bigger the driving force of a reaction ( the more negative ΔG^⦵^) the more the equilibrium lies towards the products of a reaction. Here we introduce a second version of the Gibbs' free energy (ΔG), this is for when we are looking at the driving force of the reaction but for at any point in the reaction where we no longer have pure reactants and pure products.
+
+
+```{r echo=FALSE, gibbsequilibrium, out.width='50%', fig.show='hold', fig.align='center', fig.cap='The reaction profile showing the Gibbs free energy (ΔG⦵) between pure reactants and products but also the driving force (ΔG). at any point of the reaction, the equilibrium is reached when ΔG=0 and both forward and backward reactions will occur until the compositon of the system matches the position of the thermodynamic equilibrium.'}
+knitr::include_graphics("images/gibbsequilibrium.png")
+```
+
+If we look at this on a molecular level, we know that the population of energy levels depends upon temperature, and we have previously seen in equation \@ref(eq:Gibbs) that the Gibbs free energy also depends upon the enthalpy and entropy of the system. Enthalpy gives us the relative positions of the bottom or the ladder (or well) for reactants and products and entropy is related to the closeness of energy levels and the number of available microstates.
+
+
+```{r echo=FALSE, energyleveleq, out.width='100%', fig.show='hold', fig.align='center', fig.cap='The two systems are both endothermic (ΔH⦵ is +ve) but for the case of the system on the left the entropy is similar for both reactants and products and therefore the equilibrium position (following a Boltzmann distribution across all available energy levels) favours the reactants. For the system on the right due to the closely packed energy levels more microstates are available for the products and so it has a higher entropy, conseqnently the product in this case is much more favoured.'}
+knitr::include_graphics("images/energyleveleq.png")
+```
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MX3r2o-4n4k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### The equilibrium constant, K
+
+The equilbrium constant for a reaction is defined as the *activity* of the products raised to their stoichiometric quantity divided by the *activity* of the prodcuts raised to their stoichiometric quantity (equation \@ref(eq:equilibrium)).
+
+\begin{equation}
+K = \frac{a_C^ca_D^d}{a_A^aa_B^b}
+(\#eq:equilibrium)
+\end{equation}
+
+Activity is sometimes called the *effective concentration* and so it makes sense that the thermodynamics depends upon activity and not concentration or pressure although equivalent expressions for concentration and pressure may be determined with equilibrium constants $K_c$ and $K_p$ respectively. However we cannot take the log of any value with units and so these versions of equilibrim constant are largely useless in thermodynamics.
+
+For most gaseous systems at atmospheric pressure or lower ideality is a reasonable assumption, as is ideality of low concentration solutions of none charged species, however any ionic solution quickly deviates from ideality at very low concentration and so the activity coefficient needs to be calculated.
+
+The activity of an dissolved species may be determined from:
+
+\begin{equation*}
+a_x = \gamma \frac{[X]}{[X]_0}= \gamma \frac{[X]}{1 \textrm{ mol dm}^{-3}}
+\end{equation*}
+
+and the activity of a gaseous species from the equivalent expression:
+
+\begin{equation*}
+a_x =\gamma \frac{p_x}{P_{x0}}= \gamma\frac{p_x}{1 \textrm{ bar}}
+\end{equation*}
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y2NUJwQdeJE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### le Châtelier's principle
+
+The whole point of an equilibrium is that the composiont of the system is defined by the equilbrium constant K, the only thing which affects K is the thermodyanamic temperature.
+
+le Châtelier's principle states *‘if a change is made to a system in dynamic equilibrium the system will respond so as to oppose the change'*, so if we add more product to ensure the equilibrium is restored some product will undergo the back reaction to produce reactants such that the value of K is unchanged.
+
+### Effect of catalysts.
+
+Catalysts affect rate, not thermodyanamics, the presence of a catalyst will affect the rate of both forward and back reactions but the position of the equilibrium will be unchanged.
+
+## How temperature affects K
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZTJIYqEUvi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Third Law (for completeness)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iAq4c980TWI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

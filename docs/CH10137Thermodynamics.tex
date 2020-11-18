@@ -80,7 +80,7 @@
 
 \title{CH10137 Thermodynamics}
 \author{Fiona Dickinson}
-\date{2020-11-16}
+\date{2020-11-18}
 
 \begin{document}
 \maketitle
@@ -1727,7 +1727,7 @@ J.W. Gibbs' contribution to thermodynamics was recognising that the entropy chan
 This gives one of the most important equations in science, the Gibbs' equation:
 
 \begin{equation}
-\Delta G = \Delta H - T \Delta S
+\Delta G^\ominus = \Delta H^\ominus - T \Delta S^\ominus
 \label{eq:Gibbs}
 \end{equation}
 
@@ -1902,6 +1902,85 @@ It should be noted that the temperature difference of fusion at different pressu
 \item
   \(\Delta_{vap} H\) = 43.5 kJ mol\textsuperscript{-1}
 \end{enumerate}
+
+\hypertarget{ch:Part8}{%
+\chapter{Week 4 - Part 2}\label{ch:Part8}}
+
+\hypertarget{how-ux3b4g-relates-to-the-equilibrium-constant-k}{%
+\section{How ΔG relates to the equilibrium constant, K}\label{how-ux3b4g-relates-to-the-equilibrium-constant-k}}
+
+The driving force of a reaction, ΔG\textsubscript{⦵} , is linked to the equilibrium constant for that process by equation \eqref{eq:Gibbsequilibrium}.
+
+\begin{equation}
+\Delta G^\ominus = -RT \ln K
+\label{eq:Gibbsequilibrium}
+\end{equation}
+
+Consequently, the bigger the driving force of a reaction ( the more negative ΔG\textsuperscript{⦵}) the more the equilibrium lies towards the products of a reaction. Here we introduce a second version of the Gibbs' free energy (ΔG), this is for when we are looking at the driving force of the reaction but for at any point in the reaction where we no longer have pure reactants and pure products.
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.5\linewidth]{images/gibbsequilibrium} 
+
+}
+
+\caption{The reaction profile showing the Gibbs free energy (ΔG⦵) between pure reactants and products but also the driving force (ΔG). at any point of the reaction, the equilibrium is reached when ΔG=0 and both forward and backward reactions will occur until the compositon of the system matches the position of the thermodynamic equilibrium.}\label{fig:gibbsequilibrium}
+\end{figure}
+
+If we look at this on a molecular level, we know that the population of energy levels depends upon temperature, and we have previously seen in equation \eqref{eq:Gibbs} that the Gibbs free energy also depends upon the enthalpy and entropy of the system. Enthalpy gives us the relative positions of the bottom or the ladder (or well) for reactants and products and entropy is related to the closeness of energy levels and the number of available microstates.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/energyleveleq} 
+
+}
+
+\caption{The two systems are both endothermic (ΔH⦵ is +ve) but for the case of the system on the left the entropy is similar for both reactants and products and therefore the equilibrium position (following a Boltzmann distribution across all available energy levels) favours the reactants. For the system on the right due to the closely packed energy levels more microstates are available for the products and so it has a higher entropy, conseqnently the product in this case is much more favoured.}\label{fig:energyleveleq}
+\end{figure}
+
+\hypertarget{the-equilibrium-constant-k}{%
+\subsection{The equilibrium constant, K}\label{the-equilibrium-constant-k}}
+
+The equilbrium constant for a reaction is defined as the \emph{activity} of the products raised to their stoichiometric quantity divided by the \emph{activity} of the prodcuts raised to their stoichiometric quantity (equation \eqref{eq:equilibrium}).
+
+\begin{equation}
+K = \frac{a_C^ca_D^d}{a_A^aa_B^b}
+\label{eq:equilibrium}
+\end{equation}
+
+Activity is sometimes called the \emph{effective concentration} and so it makes sense that the thermodynamics depends upon activity and not concentration or pressure although equivalent expressions for concentration and pressure may be determined with equilibrium constants \(K_c\) and \(K_p\) respectively. However we cannot take the log of any value with units and so these versions of equilibrim constant are largely useless in thermodynamics.
+
+For most gaseous systems at atmospheric pressure or lower ideality is a reasonable assumption, as is ideality of low concentration solutions of none charged species, however any ionic solution quickly deviates from ideality at very low concentration and so the activity coefficient needs to be calculated.
+
+The activity of an dissolved species may be determined from:
+
+\begin{equation*}
+a_x = \gamma \frac{[X]}{[X]_0}= \gamma \frac{[X]}{1 \textrm{ mol dm}^{-3}}
+\end{equation*}
+
+and the activity of a gaseous species from the equivalent expression:
+
+\begin{equation*}
+a_x =\gamma \frac{p_x}{P_{x0}}= \gamma\frac{p_x}{1 \textrm{ bar}}
+\end{equation*}
+
+\hypertarget{le-chuxe2teliers-principle}{%
+\subsection{le Châtelier's principle}\label{le-chuxe2teliers-principle}}
+
+The whole point of an equilibrium is that the composiont of the system is defined by the equilbrium constant K, the only thing which affects K is the thermodyanamic temperature.
+
+le Châtelier's principle states \emph{`if a change is made to a system in dynamic equilibrium the system will respond so as to oppose the change'}, so if we add more product to ensure the equilibrium is restored some product will undergo the back reaction to produce reactants such that the value of K is unchanged.
+
+\hypertarget{effect-of-catalysts.}{%
+\subsection{Effect of catalysts.}\label{effect-of-catalysts.}}
+
+Catalysts affect rate, not thermodyanamics, the presence of a catalyst will affect the rate of both forward and back reactions but the position of the equilibrium will be unchanged.
+
+\hypertarget{how-temperature-affects-k}{%
+\section{How temperature affects K}\label{how-temperature-affects-k}}
+
+\hypertarget{third-law-for-completeness}{%
+\section{Third Law (for completeness)}\label{third-law-for-completeness}}
 
 \hypertarget{glossary-of-terms}{%
 \chapter*{Glossary of terms}\label{glossary-of-terms}}

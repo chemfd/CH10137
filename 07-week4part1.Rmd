@@ -14,7 +14,7 @@ J.W. Gibbs' contribution to thermodynamics was recognising that the entropy chan
 This gives one of the most important equations in science, the Gibbs' equation:
 
 \begin{equation}
-\Delta G = \Delta H - T \Delta S
+\Delta G^\ominus = \Delta H^\ominus - T \Delta S^\ominus
 (\#eq:Gibbs)
 \end{equation}
 
