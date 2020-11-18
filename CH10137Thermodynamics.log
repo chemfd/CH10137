@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.24)  18 NOV 2020 12:23
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2018.3.24)  18 NOV 2020 17:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1184,7 +1184,7 @@ File: images/linear.png Graphic file (type QTm)
 Missing character: There is no ⦵ in font [lmroman7-regular]:mapping=tex-text;!
 Missing character: There is no ⦵ in font [lmroman7-regular]:mapping=tex-text;!
 
-Overfull \hbox (87.06633pt too wide) detected at line 404
+Overfull \hbox (87.06633pt too wide) detected at line 406
 [][][] [] [][][][][][] [] [][][][][][][][] [] [][][][][][][][][] [] [][][][][][
 ][][][] [] [][][][][][][][][]
  []
@@ -1203,19 +1203,19 @@ language=DFLT;!
 Missing character: There is no ⦵ in font [latinmodern-math.otf]/OT:script=math;
 language=DFLT;!
 
-Overfull \hbox (7.00084pt too wide) detected at line 419
+Overfull \hbox (7.00084pt too wide) detected at line 421
 [][][][][][] [] [][][][][][][] [] [] [] [][][][][][][][][] [] [][][][][][] [] [
 ][][][][][]
  []
 
 Missing character: There is no ⟶ in font [lmroman10-regular]:mapping=tex-text;!
 
-Overfull \hbox (117.79533pt too wide) detected at line 444
+Overfull \hbox (117.79533pt too wide) detected at line 446
 [][][] [] [][][][] [] [][][][] [] [][][][] [] [][][][]
  []
 
 
-Overfull \hbox (7.80762pt too wide) detected at line 448
+Overfull \hbox (7.80762pt too wide) detected at line 450
 [][][] [] [][][][][][] [] [][][][][][] [] [][][][][][][] [] [][][][][][][][][] 
 [] [][][][][][][]
  []
@@ -1300,7 +1300,7 @@ Chapter 2.
 File: images/thermalequilibrium.png Graphic file (type QTm)
 <use  "images/thermalequilibrium.png" >
 
-LaTeX Warning: Reference `(' on page 17 undefined on input line 547.
+LaTeX Warning: Reference `(' on page 17 undefined on input line 549.
 
 [17
 
@@ -1338,17 +1338,17 @@ File: images/isothermalexpansion.png Graphic file (type QTm)
 ]
 Chapter 4.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 1022.
+(Font)              scaled to size 14.4pt on input line 1024.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 1022.
+(Font)              scaled to size 7.0pt on input line 1024.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 14.4002pt on input line 1022.
+(Font)              scaled to size 14.4002pt on input line 1024.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0001pt on input line 1022.
+(Font)              scaled to size 7.0001pt on input line 1024.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.39977pt on input line 1022.
+(Font)              scaled to size 14.39977pt on input line 1024.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 6.9999pt on input line 1022.
+(Font)              scaled to size 6.9999pt on input line 1024.
 File: images/heatcapacitypV.png Graphic file (type QTm)
 <use  "images/heatcapacitypV.png" > [33]
 File: images/H2heatcapacity.png Graphic file (type QTm)
@@ -1382,13 +1382,13 @@ File: images/Cpphase.png Graphic file (type QTm)
 <use  "images/Cpphase.png" >
 File: images/entropyphase.png Graphic file (type QTm)
 <use  "images/entropyphase.png" >
-Overfull \hbox (5.28595pt too wide) detected at line 1450
+Overfull \hbox (5.28595pt too wide) detected at line 1452
 [][][][][][] [] [][][][][] [] [][] [][][] [] [] [] [][] [][][] [] [] [] [][] []
 [][]
  []
 
 [48] [49] [50]
-Overfull \hbox (8.87958pt too wide) in paragraph at lines 1516--1517
+Overfull \hbox (8.87958pt too wide) in paragraph at lines 1518--1519
  []\TU/lmr/m/n/10 tetrachloromethane| 
  []
 
@@ -1404,17 +1404,17 @@ File: images/boxlevels.png Graphic file (type QTm)
 ]
 Chapter 7.
 [57]
-Overfull \hbox (20.70001pt too wide) in alignment at lines 1753--1758
+Overfull \hbox (20.70001pt too wide) in alignment at lines 1755--1760
  [] [] [] [] 
  []
 
 
-Overfull \hbox (20.70001pt too wide) in alignment at lines 1758--1762
+Overfull \hbox (20.70001pt too wide) in alignment at lines 1760--1764
  [] [] [] [] 
  []
 
 
-Overfull \hbox (20.70001pt too wide) in alignment at lines 1762--1768
+Overfull \hbox (20.70001pt too wide) in alignment at lines 1764--1770
  [] [] [] [] 
  []
 
@@ -1441,31 +1441,41 @@ Missing character: There is no ⦵ in font [lmroman10-regular]:mapping=tex-text;
 Missing character: There is no ⦵ in font [lmroman10-regular]:mapping=tex-text;!
 [65
 
-] [66] [67] [68] [69] [70
+] [66] [67] [68]
+File: images/vanthoff.png Graphic file (type QTm)
+<use  "images/vanthoff.png" > [69]
+File: images/cooling.png Graphic file (type QTm)
+<use  "images/cooling.png" >
+Missing character: There is no ⦵ in font [lmroman7-regular]:mapping=tex-text;!
+Missing character: There is no ⦵ in font [lmroman7-regular]:mapping=tex-text;!
+[70]
+Missing character: There is no ⦵ in font [lmroman7-regular]:mapping=tex-text;!
+Missing character: There is no ⦵ in font [lmroman7-regular]:mapping=tex-text;!
+[71] [72] [73
 
-] [71]
+]
 No file CH10137Thermodynamics.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2064.
-[72]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2064.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2183.
+[74]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2183.
 (./CH10137Thermodynamics.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2064.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2064.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2183.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 2183.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2064.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2183.
  ) 
 Here is how much of TeX's memory you used:
- 25088 strings out of 493005
- 449079 string characters out of 6134596
- 655562 words of memory out of 5000000
- 28741 multiletter control sequences out of 15000+600000
+ 25104 strings out of 493005
+ 449286 string characters out of 6134596
+ 656279 words of memory out of 5000000
+ 28755 multiletter control sequences out of 15000+600000
  15779 words of font info for 103 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 58i,9n,120p,10416b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,9n,120p,10416b,457s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CH10137Thermodynamics.pdf (72 pages).
+Output written on CH10137Thermodynamics.pdf (74 pages).

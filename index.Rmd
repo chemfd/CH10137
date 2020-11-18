@@ -40,6 +40,8 @@ There is no single recommended text for this section of the course because multi
 
 ## Version history {-}
 
+Week4part2 finished 181120
+
 Week4part1 finished 161120
 
 Week3part2 finished 101120

@@ -28,7 +28,7 @@ knitr::include_graphics("images/energyleveleq.png")
 
 ### The equilibrium constant, K
 
-The equilbrium constant for a reaction is defined as the *activity* of the products raised to their stoichiometric quantity divided by the *activity* of the prodcuts raised to their stoichiometric quantity (equation \@ref(eq:equilibrium)).
+The equilbrium constant for a reaction is defined as the *activity* of the products raised to their stoichiometric quantity divided by the *activity* of the reactants raised to their stoichiometric quantity (equation \@ref(eq:equilibrium)).
 
 \begin{equation}
 K = \frac{a_C^ca_D^d}{a_A^aa_B^b}
@@ -60,14 +60,88 @@ The whole point of an equilibrium is that the composiont of the system is define
 
 le Châtelier's principle states *‘if a change is made to a system in dynamic equilibrium the system will respond so as to oppose the change'*, so if we add more product to ensure the equilibrium is restored some product will undergo the back reaction to produce reactants such that the value of K is unchanged.
 
+Another example could be for a gaseous reaction where if we increase the pressure of the system at equilibrium we disturb the equilibrium and the sytem will react to reduce (if possible) the total number of moles (or move to the side of the reaction with the lowest molar volume).
+
 ### Effect of catalysts.
 
-Catalysts affect rate, not thermodyanamics, the presence of a catalyst will affect the rate of both forward and back reactions but the position of the equilibrium will be unchanged.
+Catalysts affect rate, not thermodyanamics, the presence of a catalyst will affect the rate of both forward and back reactions but the position of the equilibrium will be unchanged. (Reactions are always occuring, but at equilibrium the rate of the forward reaction and rate of back reaction are the same). 
+
+## Reaction quotient
+
+We can define the reaction quotient, Q,  at any point during a reaction:
+
+\begin{equation}
+Q = \frac{a_C^ca_D^d}{a_A^aa_B^b}
+(\#eq:quotient)
+\end{equation}
+
+The expression for reaction quotient is the same used as for equilibrium constant but is true for any values of activity of reactants and products. This means that we can determine the driving force (or remaining work we can derive from a reaction) at any point in the reaction, not just for pure reactants and products.
+
+\begin{equation}
+\Delta _r G = \Delta _r G ^ \ominus + RT \ln Q
+(\#eq:gibbsquotient)
+\end{equation}
 
 ## How temperature affects K
+
+We have already seen that both the enthalpy and entropy (and therefore Gibbs' free energy) depend upon temperature, and we have also seen that the equilibrium composition (and therefore equilibrium constant) also depends upon tempearture.
+
+Henry van't Hoff combined two expressions for Gibbs' free energy (equations \@ref(eq:Gibbsequilibrium) and \@ref(eq:Gibbs)) to give the van't Hoff equation:
+
+\begin{equation}
+\ln K = -\frac{\Delta_r H^\ominus }{R}\frac{1}{T}+ \frac{\Delta_r S^\ominus }{R}
+(\#eq:vanthoff)
+\end{equation}
+
+
+```{r echo=FALSE, vanthoff, out.width='100%', fig.show='hold', fig.align='center', fig.cap='A plot of ln K against 1/T  has a gradient of −ΔH/R and an intercept of ΔS (assuming ΔH and ΔS are linear over the range studied.'}
+knitr::include_graphics("images/vanthoff.png")
+```
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZTJIYqEUvi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Third Law (for completeness)
 
+The third law, unlike the first three laws (the zeroth - which introduced temperature), the first (internal energy) and the second (entropy) doesn’t introduce a new thermodynamic concept. Instead it extends our understanding of both entropy and internal energy.
+
+*the entropy of all perfectly crystalline substances is zero at zero kelvin*
+
+Another way of stating the third law is that no body may be cooled to absolute zero... some people have got close cooling samples to 10^−12^ K. One of the problems is at very low temperatures heat capacities are also very, very low; consequently small inputs of 'heat' lead to large increases of the temperature of very cold systems.
+
+```{r echo=FALSE, cooling, out.width='100%', fig.show='hold', fig.align='center', fig.cap='As a two state system is cooled the entropy of the two states converges at absolute zero. There is no way to cool to zero by successively lowering the entropy then temperature, you just itterate every closer.'}
+knitr::include_graphics("images/cooling.png")
+```
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iAq4c980TWI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Questions {#sec:w4p2question}
+
+1. Write the expression for the equilibrium constant K for the following reaction.
+4 NH~3~ (g) + 7 O~2~ (g) $\leftrightharpoons$ 4 NO~2~ (g) + 6 H~2~O (l)
+
+2.  N~2~O~4~ $\leftrightharpoons$ 2 NO~2~
+
+ a. If the equilibrium constant for the above reaction is 3.89 $\times 10^5$ at $75 ^{\circ}$C and 4.79 $\times 10^6$ at $125 ^{\circ}$C what is the enthalpy of the reaction?
+ 
+ b. What assumptions have you made?
+ 
+ c. What partial pressure of product would you expect if 0.500 bar of reactant reaches equilibrium at 298 K?\\
+
+3. Silver carbonate decomposes on heating. Calculate the equilibrium constant at 110°C for the reaction:
+
+Ag~2~CO~3~ (s) $\leftrightharpoons$ Ag~2~O + CO~2~
+
+|| Ag~2~CO~3~ | Ag~2~O | CO~2~ |
+|:----:|:----:|:----:|:----:|
+|ΔH^⦵^ / kJ mol^−1^ | −501.4 | −29.07 | −393.5 |
+|S~m~^⦵^ / J K^−1^ mol^−1^ | 167.3 | 121.7 | 213.7 |
+| C~p~ / J K^−1^ mol^−1^ | 109.6 | 68.6 | 37.1 |
+
+## Answers {#sec:w4p2answer}
+1. $K = \frac{a_{NO_2}^4 a_{H_2O}^6}{a_{NH_3}^4 a_{O_2}^7}$
+
+2.  a. Δ~r~H^⦵^ = +57.8 kJ mol^−1^
+    b. Δ~r~H^⦵^ is constant over the temperature range
+    c. p(NO~2~) = 1.00 bar (the reaction goes to near completion)
+
+3. K = 0.01053

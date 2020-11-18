@@ -125,6 +125,8 @@ There is no single recommended text for this section of the course because multi
 \section*{Version history}\label{version-history}}
 \addcontentsline{toc}{section}{Version history}
 
+Week4part2 finished 181120
+
 Week4part1 finished 161120
 
 Week3part2 finished 101120
@@ -1941,7 +1943,7 @@ If we look at this on a molecular level, we know that the population of energy l
 \hypertarget{the-equilibrium-constant-k}{%
 \subsection{The equilibrium constant, K}\label{the-equilibrium-constant-k}}
 
-The equilbrium constant for a reaction is defined as the \emph{activity} of the products raised to their stoichiometric quantity divided by the \emph{activity} of the prodcuts raised to their stoichiometric quantity (equation \eqref{eq:equilibrium}).
+The equilbrium constant for a reaction is defined as the \emph{activity} of the products raised to their stoichiometric quantity divided by the \emph{activity} of the reactants raised to their stoichiometric quantity (equation \eqref{eq:equilibrium}).
 
 \begin{equation}
 K = \frac{a_C^ca_D^d}{a_A^aa_B^b}
@@ -1971,16 +1973,133 @@ The whole point of an equilibrium is that the composiont of the system is define
 
 le Châtelier's principle states \emph{`if a change is made to a system in dynamic equilibrium the system will respond so as to oppose the change'}, so if we add more product to ensure the equilibrium is restored some product will undergo the back reaction to produce reactants such that the value of K is unchanged.
 
+Another example could be for a gaseous reaction where if we increase the pressure of the system at equilibrium we disturb the equilibrium and the sytem will react to reduce (if possible) the total number of moles (or move to the side of the reaction with the lowest molar volume).
+
 \hypertarget{effect-of-catalysts.}{%
 \subsection{Effect of catalysts.}\label{effect-of-catalysts.}}
 
-Catalysts affect rate, not thermodyanamics, the presence of a catalyst will affect the rate of both forward and back reactions but the position of the equilibrium will be unchanged.
+Catalysts affect rate, not thermodyanamics, the presence of a catalyst will affect the rate of both forward and back reactions but the position of the equilibrium will be unchanged. (Reactions are always occuring, but at equilibrium the rate of the forward reaction and rate of back reaction are the same).
+
+\hypertarget{reaction-quotient}{%
+\section{Reaction quotient}\label{reaction-quotient}}
+
+We can define the reaction quotient, Q, at any point during a reaction:
+
+\begin{equation}
+Q = \frac{a_C^ca_D^d}{a_A^aa_B^b}
+\label{eq:quotient}
+\end{equation}
+
+The expression for reaction quotient is the same used as for equilibrium constant but is true for any values of activity of reactants and products. This means that we can determine the driving force (or remaining work we can derive from a reaction) at any point in the reaction, not just for pure reactants and products.
+
+\begin{equation}
+\Delta _r G = \Delta _r G ^ \ominus + RT \ln Q
+\label{eq:gibbsquotient}
+\end{equation}
 
 \hypertarget{how-temperature-affects-k}{%
 \section{How temperature affects K}\label{how-temperature-affects-k}}
 
+We have already seen that both the enthalpy and entropy (and therefore Gibbs' free energy) depend upon temperature, and we have also seen that the equilibrium composition (and therefore equilibrium constant) also depends upon tempearture.
+
+Henry van't Hoff combined two expressions for Gibbs' free energy (equations \eqref{eq:Gibbsequilibrium} and \eqref{eq:Gibbs}) to give the van't Hoff equation:
+
+\begin{equation}
+\ln K = -\frac{\Delta_r H^\ominus }{R}\frac{1}{T}+ \frac{\Delta_r S^\ominus }{R}
+\label{eq:vanthoff}
+\end{equation}
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/vanthoff} 
+
+}
+
+\caption{A plot of ln K against 1/T  has a gradient of −ΔH/R and an intercept of ΔS (assuming ΔH and ΔS are linear over the range studied.}\label{fig:vanthoff}
+\end{figure}
+
 \hypertarget{third-law-for-completeness}{%
 \section{Third Law (for completeness)}\label{third-law-for-completeness}}
+
+The third law, unlike the first three laws (the zeroth - which introduced temperature), the first (internal energy) and the second (entropy) doesn't introduce a new thermodynamic concept. Instead it extends our understanding of both entropy and internal energy.
+
+\emph{the entropy of all perfectly crystalline substances is zero at zero kelvin}
+
+Another way of stating the third law is that no body may be cooled to absolute zero\ldots{} some people have got close cooling samples to 10\textsuperscript{−12} K. One of the problems is at very low temperatures heat capacities are also very, very low; consequently small inputs of `heat' lead to large increases of the temperature of very cold systems.
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/cooling} 
+
+}
+
+\caption{As a two state system is cooled the entropy of the two states converges at absolute zero. There is no way to cool to zero by successively lowering the entropy then temperature, you just itterate every closer.}\label{fig:cooling}
+\end{figure}
+
+\hypertarget{sec:w4p2question}{%
+\section{Questions}\label{sec:w4p2question}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Write the expression for the equilibrium constant K for the following reaction.
+  4 NH\textsubscript{3} (g) + 7 O\textsubscript{2} (g) \(\leftrightharpoons\) 4 NO\textsubscript{2} (g) + 6 H\textsubscript{2}O (l)
+\item
+  N\textsubscript{2}O\textsubscript{4} \(\leftrightharpoons\) 2 NO\textsubscript{2}
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi}.}
+\item
+  If the equilibrium constant for the above reaction is 3.89 \(\times 10^5\) at \(75 ^{\circ}\)C and 4.79 \(\times 10^6\) at \(125 ^{\circ}\)C what is the enthalpy of the reaction?
+\item
+  What assumptions have you made?
+\item
+  What partial pressure of product would you expect if 0.500 bar of reactant reaches equilibrium at 298 K?\textbackslash{}
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  Silver carbonate decomposes on heating. Calculate the equilibrium constant at 110°C for the reaction:
+\end{enumerate}
+
+Ag\textsubscript{2}CO\textsubscript{3} (s) \(\leftrightharpoons\) Ag\textsubscript{2}O + CO\textsubscript{2}
+
+\begin{longtable}[]{@{}cccc@{}}
+\toprule
+& Ag\textsubscript{2}CO\textsubscript{3} & Ag\textsubscript{2}O & CO\textsubscript{2}\tabularnewline
+\midrule
+\endhead
+ΔH\textsuperscript{⦵} / kJ mol\textsuperscript{−1} & −501.4 & −29.07 & −393.5\tabularnewline
+S\textsubscript{m}\textsuperscript{⦵} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 167.3 & 121.7 & 213.7\tabularnewline
+C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 109.6 & 68.6 & 37.1\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{sec:w4p2answer}{%
+\section{Answers}\label{sec:w4p2answer}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \(K = \frac{a_{NO_2}^4 a_{H_2O}^6}{a_{NH_3}^4 a_{O_2}^7}\)
+\item
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}.}
+  \tightlist
+  \item
+    Δ\textsubscript{r}H\textsuperscript{⦵} = +57.8 kJ mol\textsuperscript{−1}
+  \item
+    Δ\textsubscript{r}H\textsuperscript{⦵} is constant over the temperature range
+  \item
+    p(NO\textsubscript{2}) = 1.00 bar (the reaction goes to near completion)
+  \end{enumerate}
+\item
+  K = 0.01053
+\end{enumerate}
 
 \hypertarget{glossary-of-terms}{%
 \chapter*{Glossary of terms}\label{glossary-of-terms}}
