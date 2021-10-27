@@ -167,7 +167,7 @@ Consequently in this course we will look at thermodynamics from both a classical
 <div style="text-align: center;"><iframe width="640" height="360" src="https://www.youtube.com/embed/odOkb-NhxVI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <div style="text-align: left;">
-### Degrees of Freedom 
+## Degrees of Freedom {#sec:degreesoffreedom}
 
 NOTE - I've also added this to the week1 part1 so this section is duplicated.
 

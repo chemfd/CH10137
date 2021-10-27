@@ -4,8 +4,8 @@
 %
 \documentclass[
 ]{book}
+\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
@@ -41,7 +41,8 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -50,7 +51,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx,grffile}
+\usepackage{graphicx}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -75,12 +76,15 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
 \title{CH10137 Thermodynamics}
 \author{Fiona Dickinson}
-\date{2020-11-19}
+\date{2021-10-27}
 
 \begin{document}
 \maketitle
@@ -331,8 +335,8 @@ Statistical thermodynamics started to be able to explain the values of what had 
 
 Consequently in this course we will look at thermodynamics from both a classical and statistical point of view.
 
-\hypertarget{degrees-of-freedom}{%
-\subsection{Degrees of Freedom}\label{degrees-of-freedom}}
+\hypertarget{sec:degreesoffreedom}{%
+\section{Degrees of Freedom}\label{sec:degreesoffreedom}}
 
 NOTE - I've also added this to the week1 part1 so this section is duplicated.
 
@@ -431,13 +435,13 @@ CH\textsubscript{3}CH\textsubscript{2}OH (aq) + CH\textsubscript{3}COOH (aq) ⟶
 
 \begin{longtable}[]{@{}cc@{}}
 \toprule
-& \(ΔC_{p,m}\) / J K\(^{−1}\) mol\(^{−1}\)\tabularnewline
+& \(ΔC_{p,m}\) / J K\(^{−1}\) mol\(^{−1}\) \\
 \midrule
 \endhead
-CH\textsubscript{3}CH\textsubscript{2}OH (aq) & 111.46\tabularnewline
-CH\textsubscript{3}COOH (aq) & 124.3\tabularnewline
-CH\textsubscript{3}COOCH\textsubscript{2}CH\textsubscript{3} (aq) & 170.1\tabularnewline
-H\textsubscript{2}O (l) & 33.58\tabularnewline
+CH\textsubscript{3}CH\textsubscript{2}OH (aq) & 111.46 \\
+CH\textsubscript{3}COOH (aq) & 124.3 \\
+CH\textsubscript{3}COOCH\textsubscript{2}CH\textsubscript{3} (aq) & 170.1 \\
+H\textsubscript{2}O (l) & 33.58 \\
 \bottomrule
 \end{longtable}
 
@@ -618,56 +622,6 @@ Since internal energy is a state function the change in internal energy in a pro
 \label{eq:internal}
 \end{equation}
 
-\hypertarget{degrees-of-freedom}{%
-\subsection{Degrees of Freedom}\label{degrees-of-freedom}}
-
-NOTE - I've also added this to the week1 part1 so this section is duplicated.
-
-Perhaps unsurprisingly the structure of molecules is an important concept when we consider thermodynamics from the molecule up perspective, but perhaps surprisingly classical thermodynamics does not care at all the structure of the molecules in the system we are considering.
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.5\linewidth]{images/atomdegrees} 
-
-}
-
-\caption{Every atom has three degrees of freedom, these are movement along the x, y and z axis.}\label{fig:atomdegrees1}
-\end{figure}
-
-When atoms combine to form moleucules the total number of degrees of freedom must be conserved, and so new types of degrees of freedom are introduced, namely molecular rotations and molecular vibrations (figure \ref{fig:typesdegree1}, and equations \eqref{eq:lineardof1} and \eqref{eq:nonlineardof1}).
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.8\linewidth]{images/typesdegree} 
-
-}
-
-\caption{Translations, molecular rotations and molecular vibrations are all degrees of freedom.}\label{fig:typesdegree1}
-\end{figure}
-
-For linear molecules there are three translational degrees of freedom, two rotational degrees of freedom (figure \ref{fig:linear1}) and the number of vibrational degrees of freedom is given by equation \eqref{eq:lineardof1}, where N is the total number of atoms in the molecule:
-
-\begin{equation}
-x = 3N-5
-\label{eq:lineardof1}
-\end{equation}
-
-\begin{figure}
-
-{\centering \includegraphics[width=0.8\linewidth]{images/linear} 
-
-}
-
-\caption{In linear molecules there are only two rotational degrees of freedom as rotaion around the z-axis (the long axis of the molecule) are equivalent and therefore dont contribute to the degrees of freedom.}\label{fig:linear1}
-\end{figure}
-
-For non-linear molecules there are three translational degrees of freedom, three rotational degrees of freedom and the number of vibrational degrees of freedom is given by equation \eqref{eq:nonlineardof1}, again where N is the total number of atoms in the molecule:
-
-\begin{equation}
-x = 3N-6
-\label{eq:nonlineardof1}
-\end{equation}
-
 \hypertarget{subsec:equipartition}{%
 \subsection{Equipartition theory}\label{subsec:equipartition}}
 
@@ -677,7 +631,7 @@ Equipartition theory is quite involved, and I am not going to explain any of the
 
 These results from statistical thermodynamic calculation, are verified by emperical observations which is proof of the power of Boltzmann's theories.
 
-Equipartition theory says that for an ideal gas each degree of freedom contributes \(\frac{RT}{2}\) to the molar internal energy, and so for monatomic gases, such as helium and neon the internal energy , U is \(\frac{3RT}{2}\). However for a diatomic gas with 6 degrees of freedom (3 translational, 2 rotational and 1 vibrational) the internal energy of the ideal gas is predicted to be \(3RT\).
+Equipartition theory says that for an ideal gas each degree of freedom (section \ref{sec:degreesoffreedom}) contributes \(\frac{RT}{2}\) to the molar internal energy, and so for monatomic gases, such as helium and neon the internal energy , U is \(\frac{3RT}{2}\). However for a diatomic gas with 6 degrees of freedom (3 translational, 2 rotational and 1 vibrational) the internal energy of the ideal gas is predicted to be \(3RT\).
 
 However, we have already seen that the energy spacing between different types of energy level differs, and so only \emph{active} degrees of freedom contribute to the internal energy. Consequently because there are large energy gaps for vibrational energy levels the excited states of these energy levels are rarely occupied and so they do not contribute towards the total internal energy of the system.
 
@@ -735,6 +689,7 @@ where \(q\) is the energy exchanged in the form of heat and \(w\) the energy exc
 \def\labelenumi{\arabic{enumi}.}
 \item
   \begin{itemize}
+  \tightlist
   \item
   \end{itemize}
 \end{enumerate}
@@ -941,8 +896,8 @@ This is just to highlight that at constant volume the system cannot expand and t
 
 At constant pressure the work done, \(-p \Delta V\) means that the change in enthalpy (\(\Delta H = \Delta U + p \Delta V\)) is given by \(\Delta H_p=q\).
 
-\hypertarget{questions}{%
-\section{Questions}\label{questions}}
+\hypertarget{questions-1}{%
+\section{Questions}\label{questions-1}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1110,8 +1065,8 @@ The enthalpy of the phase change is a measure of the energy required (or release
 
 We will meet phase changes later in the course when we consider both enthalpy and Gibbs' free energy so this is intentially just a very quick introduction.
 
-\hypertarget{questions}{%
-\section{Questions}\label{questions}}
+\hypertarget{questions-2}{%
+\section{Questions}\label{questions-2}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1139,13 +1094,13 @@ c\(_{p,m} O_2 = 29.37\) J K\(^{-1}\) mol\(^{-1}\)
 
 \begin{longtable}[]{@{}cc@{}}
 \toprule
-& C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1}\tabularnewline
+& C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1} \\
 \midrule
 \endhead
-C\textsubscript{2}H\textsubscript{6} & 52.6\tabularnewline
-O\textsubscript{2} & 29.4\tabularnewline
-CO\textsubscript{2} & 37.1\tabularnewline
-H\textsubscript{2}O & 75.3\tabularnewline
+C\textsubscript{2}H\textsubscript{6} & 52.6 \\
+O\textsubscript{2} & 29.4 \\
+CO\textsubscript{2} & 37.1 \\
+H\textsubscript{2}O & 75.3 \\
 \bottomrule
 \end{longtable}
 
@@ -1470,122 +1425,30 @@ Trouton's rule is an empirical relationship which found that \(\frac{\Delta_{vap
 
 Equally some species have a lower than predicted entropy of vapourisation. These species may still have intermolecular bonding in the gas phase, such as formic acid which forms a molecular dimer at temperatures just above the boiling temperature (you can then see a `phase change' as this dimer dissociates at even higher temperatures). Otherwise it may be that the species is particularly `small' and has a low moment of rotational inertia, leading to large spacings in molecular energy levels and therefore relatively low entropy in the population of these levels.
 
-\begin{longtable}[]{@{}cccc@{}}
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
+  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
+  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
+  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}@{}}
 \caption{\label{tab:trouton} Thermodynamic data for the vaporisation of a range of chemical species.}\tabularnewline
 \toprule
-\begin{minipage}[b]{0.22\columnwidth}\centering
-\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
-\(\Delta_{vap} S^\ominus\) / J K\textsuperscript{−1} mol\textsuperscript{−1}\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
-\(\Delta_{vap} H^\ominus\) / kJ mol\textsuperscript{−1}\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
-\(T_b\) / K\strut
-\end{minipage}\tabularnewline
+& \(\Delta_{vap} S^\ominus\) / J K\textsuperscript{−1} mol\textsuperscript{−1} & \(\Delta_{vap} H^\ominus\) / kJ mol\textsuperscript{−1} & \(T_b\) / K \\
 \midrule
 \endfirsthead
 \toprule
-\begin{minipage}[b]{0.22\columnwidth}\centering
-\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
-\(\Delta_{vap} S^\ominus\) / J K\textsuperscript{−1} mol\textsuperscript{−1}\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
-\(\Delta_{vap} H^\ominus\) / kJ mol\textsuperscript{−1}\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
-\(T_b\) / K\strut
-\end{minipage}\tabularnewline
+& \(\Delta_{vap} S^\ominus\) / J K\textsuperscript{−1} mol\textsuperscript{−1} & \(\Delta_{vap} H^\ominus\) / kJ mol\textsuperscript{−1} & \(T_b\) / K \\
 \midrule
 \endhead
-\begin{minipage}[t]{0.22\columnwidth}\centering
-benzene\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-87.2\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-30.8\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-353.2\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-bromine\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-88.6\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-29.45\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-332.4\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-tetrachloromethane\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-85.9\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-30.00\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-349.9\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-hydrogen sulphide\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-87.9\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-18.67\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-212.8\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-mercury\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-94.2\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-59.30\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-692.7\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-ammonia\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-97.4\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-23.4\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-239.7\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-water\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-109.1\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-40.7\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-373.2\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-methane\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-73.2\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-8.18\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-111.7\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-argon\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-74.4\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-6.5\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-87.3\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-formic acid\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-61.8\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-23.1\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-373.9\strut
-\end{minipage}\tabularnewline
+benzene & 87.2 & 30.8 & 353.2 \\
+bromine & 88.6 & 29.45 & 332.4 \\
+tetrachloromethane & 85.9 & 30.00 & 349.9 \\
+hydrogen sulphide & 87.9 & 18.67 & 212.8 \\
+mercury & 94.2 & 59.30 & 692.7 \\
+ammonia & 97.4 & 23.4 & 239.7 \\
+water & 109.1 & 40.7 & 373.2 \\
+methane & 73.2 & 8.18 & 111.7 \\
+argon & 74.4 & 6.5 & 87.3 \\
+formic acid & 61.8 & 23.1 & 373.9 \\
 \bottomrule
 \end{longtable}
 
@@ -1677,12 +1540,12 @@ NH\textsubscript{4}Cl(s) → NH\textsubscript{3}(g) + HCl(g)
 
 \begin{longtable}[]{@{}cc@{}}
 \toprule
-& Sm° / J K\textsuperscript{−1} mol\textsuperscript{−1}\tabularnewline
+& Sm° / J K\textsuperscript{−1} mol\textsuperscript{−1} \\
 \midrule
 \endhead
-NH\textsubscript{4}Cl(s) & 94.85\tabularnewline
-NH3(g) & 192.77\tabularnewline
-HCl(g) & 186.90\tabularnewline
+NH\textsubscript{4}Cl(s) & 94.85 \\
+NH3(g) & 192.77 \\
+HCl(g) & 186.90 \\
 \bottomrule
 \end{longtable}
 
@@ -1755,17 +1618,17 @@ The Gibbs' equation makes it fairly clear that the Gibbs' energy depends upon te
 \begin{longtable}[]{@{}cccc@{}}
 \caption{\label{tab:Gibbstemp} The spontaneity of a reaction at different temperatures.}\tabularnewline
 \toprule
-\(\Delta H\) & \(\Delta S\) & \(\Delta G\) & Spontaneity\tabularnewline
+\(\Delta H\) & \(\Delta S\) & \(\Delta G\) & Spontaneity \\
 \midrule
 \endfirsthead
 \toprule
-\(\Delta H\) & \(\Delta S\) & \(\Delta G\) & Spontaneity\tabularnewline
+\(\Delta H\) & \(\Delta S\) & \(\Delta G\) & Spontaneity \\
 \midrule
 \endhead
-+ endothermic & + & + at low T − at high T & spontaneous at high temperature\tabularnewline
-+ endothermic & − & + & needs work to occur\tabularnewline
-− exothermic & + & − & always spontaneous\tabularnewline
-− exothermic & − & − at low T + at high T & spontaneous at low temperature\tabularnewline
++ endothermic & + & + at low T − at high T & spontaneous at high temperature \\
++ endothermic & − & + & needs work to occur \\
+− exothermic & + & − & always spontaneous \\
+− exothermic & − & − at low T + at high T & spontaneous at low temperature \\
 \bottomrule
 \end{longtable}
 
@@ -2070,12 +1933,12 @@ Ag\textsubscript{2}CO\textsubscript{3} (s) \(\leftrightharpoons\) Ag\textsubscri
 
 \begin{longtable}[]{@{}cccc@{}}
 \toprule
-& Ag\textsubscript{2}CO\textsubscript{3} & Ag\textsubscript{2}O & CO\textsubscript{2}\tabularnewline
+& Ag\textsubscript{2}CO\textsubscript{3} & Ag\textsubscript{2}O & CO\textsubscript{2} \\
 \midrule
 \endhead
-ΔH\textsuperscript{⦵} / kJ mol\textsuperscript{−1} & −501.4 & −29.07 & −393.5\tabularnewline
-S\textsubscript{m}\textsuperscript{⦵} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 167.3 & 121.7 & 213.7\tabularnewline
-C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 109.6 & 68.6 & 37.1\tabularnewline
+ΔH\textsuperscript{⦵} / kJ mol\textsuperscript{−1} & −501.4 & −29.07 & −393.5 \\
+S\textsubscript{m}\textsuperscript{⦵} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 167.3 & 121.7 & 213.7 \\
+C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 109.6 & 68.6 & 37.1 \\
 \bottomrule
 \end{longtable}
 
