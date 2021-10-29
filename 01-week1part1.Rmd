@@ -4,9 +4,9 @@ The 'content' videos are all very short, any equations or important images are c
 
 ## Why thermodynamics matters {#sec:whyjustwhy}
 
-<div style="text-align: center;"><iframe width="847" height="476" src="https://www.youtube.com/embed/6CpPo2491AA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<div style="text-align: left;">
+:::video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6CpPo2491AA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
 The laws of thermodynamics are some of the most fundamental laws of nature, and in this course I hope you will learn to understand these laws and be able to apply them to explain the world around you.
  
@@ -14,24 +14,24 @@ Thermodynamics is fundamental to the way we live, to our dream of living a bette
 
 ## State functions - (products - reactants) {#sec:state}
 
-Many properties in thermodynamics are <span style="color: deeppink;">*state functions*<span style="color: black;">, that is properties that only depend upon the current state of the system. State functions are completely independent of the path by which that final state was reached.
+Many properties in thermodynamics are *state functions*, that is properties that only depend upon the current state of the system. State functions are completely independent of the path by which that final state was reached.
 
-Enthalpy (H) is a state function, as are entropy (S), internal energy (U), Gibbs’ free energy (G), Helmholtz free energy (F), temperature (T), pressure (p), and chemical composition.
+Enthalpy ($H$) is a state function, as are entropy ($S$), internal energy ($U$), Gibbs’ free energy ($G$), Helmholtz free energy ($F$), temperature ($T$), pressure ($p$), and chemical composition.
 
 Path functions are unlike state functions in that they depend on the path taken to determine their value. 
-Heat (q) and work (w) are both examples of path functions.
+Heat ($q$) and work ($w$) are both examples of path functions.
 
-<div style="text-align: center;"><iframe width="640" height="360" src="https://www.youtube.com/embed/PiTaVpkYxek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PiTaVpkYxek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
-<div style="text-align: left;">
+- **Internal energy,** $U$ The internal energy is the sum of all of the kinetic and potential energy contributions of the molecules in the system.
 
-- <span style="color: deeppink;">Internal energy, U<span style="color: black;"> The internal energy is the sum of all of the kinetic and potential energy contributions of the molecules in the system.
+- **Enthalpy,** $H$ The enthalpy is related to the internal energy, but also takes into account any expansion work done by the system, formally ΔH = ΔU + Δ(pV).
 
-- <span style="color: deeppink;">Enthalpy, H<span style="color: black;"> The enthalpy is related to the internal energy, but also takes into account any expansion work done by the system, formally ΔH = ΔU + Δ(pV).
+- **Entropy,** $S$ The entropy is a measure of the number of possible arrangements of a system (multiplicity, $Ω$), formally $S = k_B \ln Ω$
 
-- <span style="color: deeppink;">Entropy, S<span style="color: black;"> The entropy is a measure of the number of possible arrangements of a system (multiplicity, Ω), formally S = k~B~ ln Ω
-
-- <span style="color: deeppink;">Gibbs' free energy, G<span style="color: black;"> The Gibbs’ free energy is a measure of the energy available to ‘do work’ in a reaction system. It accounts for both the enalpic and entropic contributions of the reaction. ΔG = ΔH − TΔS
+- **Gibbs' free energy,** $G$ The Gibbs’ free energy is a measure of the energy available to ‘do work’ in a reaction system. It accounts for both the enalpic and entropic contributions of the reaction. $\Delta G = \Delta H − T \Delta S$
 
 ```{r echo=FALSE, mountain, out.width='30%', fig.show='hold', fig.align='center', fig.cap='State functions - no matter how you got here, here you are… …altitude is a good analogy for a state function, whether climbing the mountain or flying on the balloon if your altitude is 1000 m it is 1000 m!.'}
 knitr::include_graphics("images/mountain.png")
@@ -68,18 +68,16 @@ As is Gibbs' free energy.
 (\#eq:Gibbsstate)
 \end{equation}
 
-The value of each of these variables is independent of the path used to form them. Hence, the same <span style="color: deeppink;">*‘products − reactants’*<span style="color: black;"> approach always works!
+The value of each of these variables is independent of the path used to form them. Hence, the same **‘products − reactants’** approach always works!
 
-
-<div style="text-align: left;">
 
 ## Types of thermodynamic system {#sec:typesofsystem}
 
 When we consider anything in thermodynamics we have to consider both the system and its surroundings. The relationship between the system and the surroundings defines the different types of thermodynamic system.
 
-<div style="text-align: center;"><iframe width="847" height="476" src="https://www.youtube.com/embed/Y1y-dg8Z6ok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<div style="text-align: left;">
+:::video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Y1y-dg8Z6ok" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
 ### Isolated system {#subsec:isolated}
 
@@ -128,19 +126,19 @@ We will learn more about both 'heat' and 'work' later in the course.
 
 The difference between extensive and intensive properties is whether the property depends upon the amount of ‘stuff’ you have.
 
-<div style="text-align: center;"><iframe width="640" height="360" src="https://www.youtube.com/embed/t8oMZXqtEDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<div style="text-align: left;">
+:::video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t8oMZXqtEDg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
 ### Intensive properties {#sec:intenstive}
 
-Properties which are *independent* of the amount of stuff are called <span style="color: deeppink;">'intensive properties'.
+Properties which are **independent** of the amount of stuff are called *'intensive properties'*.
 
 Temperature is an example of an intensive property as are all of 'molar' properties (the quantity of something 'per mole'): molar heat capacity, molar enthalpy, molar entropy, molar Gibbs' energy, *etc*... in physics the term 'specific' is often used such as specific heat capacity and specific enthalpy, these are also intensive properties based on the fixed amount of a 'gram' (g).
 
 ### Extensive properties {#sec:extensive}
 
-Conversely, properties which are *dependent* on the amount of stuff you have are called extensive properties.
+Conversely, properties which are **dependent** on the amount of stuff you have are called *extensive properties*.
 
 Many intensive properties have extensive equivalents, so whilst we have 'molar heat capacity' we also have 'heat capacity'; one looks at the amount of energy it takes to raise one mole of a thing by one kelvin, whereas the other looks at how much energy it takes to raise the temperature how ever much of a thing we have by on kelvin.
 
@@ -150,9 +148,7 @@ Other examples of extensive properties are unsurprisingly: volume, mass, amount 
 
 Whilst knowing the terms extensive and intensive isn't vital it is hugely important to recognise that sometimes terms will appear with different units to suit the particular situation.
 
-<div style="text-align: left;">
-
-## Classical vs. Statistical thermodynamics {#sec:classicalstat}
+## Classical *vs.* Statistical thermodynamics {#sec:classicalstat}
 
 Thermodynamics is quite an old subject, much of our understanding of why chemical reactions happen is based in 19th century science. This understanding was based on emperical observation of things like steam engines and battery piles. It scientists trying to understand how things work in order to make them better, make them more efficient, and make them safer.
 
@@ -164,16 +160,16 @@ Statistical thermodynamics started to be able to explain the values of what had 
 
 Consequently in this course we will look at thermodynamics from both a classical and statistical point of view.
 
-<div style="text-align: center;"><iframe width="640" height="360" src="https://www.youtube.com/embed/odOkb-NhxVI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/odOkb-NhxVI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
-<div style="text-align: left;">
+
 ## Degrees of Freedom {#sec:degreesoffreedom}
-
-NOTE - I've also added this to the week1 part1 so this section is duplicated.
 
 Perhaps unsurprisingly the structure of molecules is an important concept when we consider thermodynamics from the molecule up perspective, but perhaps surprisingly classical thermodynamics does not care at all the structure of the molecules in the system we are considering.
 
-```{r echo=FALSE, atomdegrees, out.width='80%', fig.show='hold', fig.align='center', fig.cap='Every atom has three degrees of freedom, these are movement along the x, y and z axis.'}
+```{r echo=FALSE, atomdegrees, out.width='30%', fig.show='hold', fig.align='center', fig.cap='Every atom has three degrees of freedom, these are movement along the x, y and z axis.'}
 knitr::include_graphics("images/atomdegrees.png")
 ```
 
@@ -190,7 +186,7 @@ x = 3N-5
 (\#eq:lineardof)
 \end{equation}
 
-```{r echo=FALSE, linear, out.width='80%', fig.show='hold', fig.align='center', fig.cap='In linear molecules there are only two rotational degrees of freedom as rotaion around the z-axis (the long axis of the molecule) are equivalent and therefore dont contribute to the degrees of freedom.'}
+```{r echo=FALSE, linear, out.width='50%', fig.show='hold', fig.align='center', fig.cap='In linear molecules there are only two rotational degrees of freedom as rotaion around the z-axis (the long axis of the molecule) are equivalent and therefore dont contribute to the degrees of freedom.'}
 knitr::include_graphics("images/linear.png")
 ```
 
@@ -204,14 +200,14 @@ x = 3N-6
 
 ## Example calculations
 
-
-<div style="text-align: left;">
 ### Example calculation - Hess's Law {#sec:examplehess}
 
-<span style="color: deeppink;"> How much energy is released when 4.60 g of sodium reacts with excess water to give NaOH (aq) & H~2~ (g)?
+:::question
+How much energy is released when 4.60 g of sodium reacts with excess water to give NaOH (aq) & H~2~ (g)?
 
-- <span style="color: deeppink;"> ΔH~f~^⦵^ NaOH = −425.61 kJ mol^−1^
-- <span style="color: deeppink;"> ΔH~f~^⦵^ H~2~O = −285.83 kJ mol^−1^ 
+- ΔH~f~^⦵^ NaOH = −425.61 kJ mol^−1^
+- ΔH~f~^⦵^ H~2~O = −285.83 kJ mol^−1^ 
+:::
 
 The enthalpy of formation of elements in their standard state (*e.g.* Na (s) & H~2~ (g)) is zero.
 
@@ -240,11 +236,12 @@ The ‘−’ sign indicates that heat is released (evolved) and the temperature
 
 ### Example Calculation - Kirchoff's law {#subsec:examplekirchoff}
 
-<span style="color: deeppink;">Kirchoff’s laws may be used to adjust calculated values of enthalpy and entropy of reaction to different temperatures, they use the difference in heat capacity of products and reactants to do this. Determine $ΔC_{p,m}$ for the following reaction: 
+:::question
+Kirchoff’s laws may be used to adjust calculated values of enthalpy and entropy of reaction to different temperatures, they use the difference in heat capacity of products and reactants to do this. Determine $ΔC_{p,m}$ for the following reaction: 
 
-<center>
-<span style="color: deeppink;">CH~3~CH~2~OH (aq)  + CH~3~COOH (aq) ⟶ CH~3~COOCH~2~CH~3~ (aq) + H~2~O (l) 
-
+:::center
+CH~3~CH~2~OH (aq)  + CH~3~COOH (aq) ⟶ CH~3~COOCH~2~CH~3~ (aq) + H~2~O (l) 
+:::
 
 | | $ΔC_{p,m}$ / J K$^{−1}$ mol$^{−1}$ |
 |:--------:|:--------:|
@@ -252,6 +249,8 @@ The ‘−’ sign indicates that heat is released (evolved) and the temperature
 | CH~3~COOH (aq) | 124.3 |
 | CH~3~COOCH~2~CH~3~ (aq) | 170.1 |
 | H~2~O (l) | 33.58 |
+:::
+
 
 \begin{equation*}
 ΔC_{p,m \textrm{ rxn}} = (C_{p,m} \textrm{CH$_3$COOCH$_2$CH$_3$ (aq)} + C_{p,m} \textrm{H$_2$O (l)}) − (C_{p,m} \textrm{CH$_3$CH$_2$OH (aq)} + C_{p,m} \textrm{CH$_3$COOH (aq)})
@@ -261,7 +260,19 @@ The ‘−’ sign indicates that heat is released (evolved) and the temperature
 ΔC_\textrm{p,m rxn} = (170.1 + 33.58) − (111.46 + 124.3) \textrm{ J K$^{-1}$ mol}^{−1}) = − 32.1 \textrm{ J K$^{-1}$ mol}^{−1}
 \end{equation*}
 
-<div style="text-align: left;">
+### Example Calculation - Degrees of Freedom {#subsec:exampledegreesoffreedom}
+
+:::question
+Determine the number of degrees of freedom, and types of each, of ethanol CH~3~CH~2~OH.
+:::
+
+Ethanol is non-linear molecule with 9 atoms. Therefore in total there are (3N) 27 degrees of freedom.
+
+There will be 3 translational degrees of freedom (along the x,y&z axes),
+
+there will be 3 rotational degrees of freedom (rotation around the x,y&z axes),
+
+and there will be 3N-6 (because it is non linear) or 21 vibrational degrees of freedom.
 
 ## Questions {#sec:Questions1}
 
@@ -293,9 +304,12 @@ $ΔH^⦵_{f, \textrm{CO}_2} = −393.51 \textrm{ kJ mol}^{−1}$
 
 3. Ammonium dichromate decomposes upon heating in a spectacular ‘volcano’ reaction:
 
-<div style="text-align: center;"> (NH~4~)Cr~2~O~7~ (s) ⟶ N~2~ (g) + 4 H~2~O (g) + Cr~2~O~3~ (s)
+:::center
+(NH~4~)Cr~2~O~7~ (s) ⟶ N~2~ (g) + 4 H~2~O (g) + Cr~2~O~3~ (s)
+:::
 
-<div style="text-align: left;">Determine the enthalpy of reaction for this process given the following data.
+
+Determine the enthalpy of reaction for this process given the following data.
 
 $ΔH^⦵_{f, \textrm{(NH}_4\textrm{)Cr}_2\textrm{O}_7\textrm{ (s)}} = −1810 \textrm{ kJ mol}^{−1}$ 
 
@@ -305,7 +319,6 @@ $ΔH^⦵_{f, \textrm{Cr}_2 \textrm{O}_3 \textrm{ (g)}} = −1140  \textrm{ kJ mo
 
 How would the enthalpy of reaction differ if liquid water was formed? Justify your answer.
 
-<div style="text-align: left;">                
 
 ## Answers {#sec:Answers1}
 

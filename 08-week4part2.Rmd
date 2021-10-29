@@ -23,8 +23,9 @@ If we look at this on a molecular level, we know that the population of energy l
 knitr::include_graphics("images/energyleveleq.png")
 ```
 
-
+:::video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MX3r2o-4n4k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
 ### The equilibrium constant, K
 
@@ -51,8 +52,9 @@ and the activity of a gaseous species from the equivalent expression:
 a_x =\gamma \frac{p_x}{P_{x0}}= \gamma\frac{p_x}{1 \textrm{ bar}}
 \end{equation*}
 
-
+:::video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/y2NUJwQdeJE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
 ### le Châtelier's principle
 
@@ -62,11 +64,17 @@ le Châtelier's principle states *‘if a change is made to a system in dynamic 
 
 Another example could be for a gaseous reaction where if we increase the pressure of the system at equilibrium we disturb the equilibrium and the sytem will react to reduce (if possible) the total number of moles (or move to the side of the reaction with the lowest molar volume).
 
-### Effect of catalysts.
+### Effect of catalysts
 
-Catalysts affect rate, not thermodyanamics, the presence of a catalyst will affect the rate of both forward and back reactions but the position of the equilibrium will be unchanged. (Reactions are always occuring, but at equilibrium the rate of the forward reaction and rate of back reaction are the same). 
+Catalysts affect rate, not thermodyanamics, the presence of a catalyst will affect the rate of both forward and back reactions but the position of the equilibrium will be unchanged. (Reactions are always occuring, but at equilibrium the rate of the forward reaction and rate of back reaction are the same).
 
-## Reaction quotient
+Catalysts affect the rate by affecting the height of the activation barrier, this is in effect lowering the Gibbs' free energy of the transition state (figure \@ref(fig:catalyst)).
+
+```{r echo=FALSE, catalyst, out.width='100%', fig.show='hold', fig.align='center', fig.cap='The transition state during a reaction has a higher Gibbs free energy than either the reactants or products. The presence of a catalyst lowers the energy of this transition state.'}
+knitr::include_graphics("images/catalyst.png")
+```
+
+## Reaction quotient {#sec:quotient}
 
 We can define the reaction quotient, Q,  at any point during a reaction:
 
@@ -82,7 +90,7 @@ The expression for reaction quotient is the same used as for equilibrium constan
 (\#eq:gibbsquotient)
 \end{equation}
 
-## How temperature affects K
+## How temperature affects K {#sec:tempK}
 
 We have already seen that both the enthalpy and entropy (and therefore Gibbs' free energy) depend upon temperature, and we have also seen that the equilibrium composition (and therefore equilibrium constant) also depends upon tempearture.
 
@@ -98,7 +106,9 @@ Henry van't Hoff combined two expressions for Gibbs' free energy (equations \@re
 knitr::include_graphics("images/vanthoff.png")
 ```
 
+:::video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZTJIYqEUvi8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
 ## Third Law (for completeness)
 
@@ -112,7 +122,10 @@ Another way of stating the third law is that no body may be cooled to absolute z
 knitr::include_graphics("images/cooling.png")
 ```
 
+:::video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iAq4c980TWI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
+
 
 ## Questions {#sec:w4p2question}
 

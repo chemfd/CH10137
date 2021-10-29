@@ -22,7 +22,9 @@ Since enthalpy, entropy and temperature are all state functions so is the Gibbs'
 
 The free energy of a system is a measure of a system's ability to do (non-expansion) work.
 
+:::video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mVxF8mAiuXM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
 ### Helmholtz free energy
 
@@ -60,8 +62,9 @@ We can derive an expression which shows that the Gibbs' free energy depends only
 
 This result is already known to you as it is the basis of phase diagrams (section \@ref(sec:phasegibbs)).
 
+:::video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qzL0htItknQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+:::
 
 ### Dilution
 
@@ -80,8 +83,9 @@ Consequently if the enthalpy of dilution is 0, (which is normally though not alw
 (\#eq:Gibbsdilution)
 \end{equation}
 
-
+:::video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LD3vB-DZAr4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
 ## Phase changes {#sec:phasegibbs}
 
@@ -133,8 +137,9 @@ A similar plot to figure \@ref(fig:boilingpressure) can be used to justify the d
 
 It should be noted that the temperature difference of fusion at different pressures are much smaller than for equivalent temperatures and pressures for vaporisation.
 
-
+:::video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/M03uqpvMszc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
 ## Questions {#sec:w4p1question}
 

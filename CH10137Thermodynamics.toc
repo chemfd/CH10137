@@ -1,88 +1,90 @@
-\contentsline {chapter}{Welcome}{5}{chapter*.2}%
-\contentsline {section}{Notes and Workshops for CH10137}{5}{section*.3}%
-\contentsline {section}{Recommended text}{5}{section*.4}%
-\contentsline {section}{Version history}{6}{section*.5}%
-\contentsline {chapter}{\numberline {1}Week 1 - Part 1: Preliminaries}{7}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Why thermodynamics matters}{7}{section.1.1}%
-\contentsline {section}{\numberline {1.2}State functions - (products - reactants)}{7}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Useful equations - State functions}{8}{subsection.1.2.1}%
-\contentsline {section}{\numberline {1.3}Types of thermodynamic system}{9}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Isolated system}{9}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Open system}{9}{subsection.1.3.2}%
-\contentsline {subsection}{\numberline {1.3.3}Closed system}{10}{subsection.1.3.3}%
-\contentsline {subsection}{\numberline {1.3.4}Adiabatic system}{10}{subsection.1.3.4}%
-\contentsline {section}{\numberline {1.4}Extensive and intensive properties}{11}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Intensive properties}{11}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Extensive properties}{11}{subsection.1.4.2}%
-\contentsline {section}{\numberline {1.5}Classical vs.\nobreakspace {}Statistical thermodynamics}{11}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Degrees of Freedom}{12}{section.1.6}%
-\contentsline {section}{\numberline {1.7}Example calculations}{14}{section.1.7}%
-\contentsline {subsection}{\numberline {1.7.1}Example calculation - Hess's Law}{14}{subsection.1.7.1}%
-\contentsline {subsection}{\numberline {1.7.2}Example Calculation - Kirchoff's law}{15}{subsection.1.7.2}%
-\contentsline {section}{\numberline {1.8}Questions}{15}{section.1.8}%
-\contentsline {section}{\numberline {1.9}Answers}{16}{section.1.9}%
-\contentsline {chapter}{\numberline {2}Week 1 - Part 2}{17}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Zeroth Law of Thermodynamics}{17}{section.2.1}%
-\contentsline {section}{\numberline {2.2}What is temperature?}{18}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Internal energy, U}{20}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Equipartition theory}{20}{subsection.2.3.1}%
-\contentsline {section}{\numberline {2.4}First Law of Thermodynamics}{21}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Questions}{22}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Answers}{22}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Week 2 - Part 1}{23}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Work, w}{23}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Heat, q}{25}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Isothermal reversible expansion}{26}{subsection.3.2.1}%
-\contentsline {section}{\numberline {3.3}Enthalpy, H}{26}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Hess's Law}{27}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Constant volume and constant pressure}{27}{subsection.3.4.1}%
-\contentsline {section}{\numberline {3.5}Questions}{28}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Week 2 - Part 2}{31}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Heat capacity, C\textsubscript {X}}{31}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Temperature dependance of enthalpy}{32}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Enthalpy of phase changes}{33}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Questions}{34}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Answers}{35}{section.4.5}%
-\contentsline {chapter}{\numberline {5}Week 3 - Part 1}{37}{chapter.5}%
-\contentsline {section}{\numberline {5.1}One last thing before we introduce entropy}{37}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Thermodynamic spontaneity}{38}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Second Law of Thermodyanamics}{38}{section.5.3}%
-\contentsline {section}{\numberline {5.4}The statistical nature of entropy}{39}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Macrostates}{40}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Microstates}{40}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Statistical entropy}{40}{subsection.5.4.3}%
-\contentsline {section}{\numberline {5.5}Questions}{42}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Answers}{43}{section.5.6}%
-\contentsline {chapter}{\numberline {6}Week 3 - Part 2}{45}{chapter.6}%
-\contentsline {section}{\numberline {6.1}How temperature affects entropy}{45}{section.6.1}%
-\contentsline {section}{\numberline {6.2}The entropy of phase changes}{46}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Trouton's Rule}{47}{subsection.6.2.1}%
-\contentsline {section}{\numberline {6.3}Residual entropy}{49}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Entropy changes for isothermal expansion of a gas}{49}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Questions}{52}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Answers}{53}{section.6.6}%
-\contentsline {chapter}{\numberline {7}Week 4 - Part 1}{55}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Gibbs' free energy}{55}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Helmholtz free energy}{56}{subsection.7.1.1}%
-\contentsline {subsection}{\numberline {7.1.2}Factors affecting the Gibbs free energy}{56}{subsection.7.1.2}%
-\contentsline {subsection}{\numberline {7.1.3}Dilution}{57}{subsection.7.1.3}%
-\contentsline {section}{\numberline {7.2}Phase changes}{57}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Clausius-Clapeyron equation}{57}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Clapeyron equation}{60}{subsection.7.2.2}%
-\contentsline {section}{\numberline {7.3}Questions}{62}{section.7.3}%
-\contentsline {section}{\numberline {7.4}Answers}{62}{section.7.4}%
-\contentsline {chapter}{\numberline {8}Week 4 - Part 2}{63}{chapter.8}%
-\contentsline {section}{\numberline {8.1}How ΔG relates to the equilibrium constant, K}{63}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}The equilibrium constant, K}{63}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}le Châtelier's principle}{66}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}Effect of catalysts.}{66}{subsection.8.1.3}%
-\contentsline {section}{\numberline {8.2}Reaction quotient}{67}{section.8.2}%
-\contentsline {section}{\numberline {8.3}How temperature affects K}{67}{section.8.3}%
-\contentsline {section}{\numberline {8.4}Third Law (for completeness)}{67}{section.8.4}%
-\contentsline {section}{\numberline {8.5}Questions}{68}{section.8.5}%
-\contentsline {section}{\numberline {8.6}Answers}{68}{section.8.6}%
-\contentsline {chapter}{Glossary of terms}{71}{chapter*.6}%
-\contentsline {section}{A-F}{71}{section*.7}%
-\contentsline {section}{G-M}{71}{section*.8}%
-\contentsline {section}{N-S}{72}{section*.9}%
-\contentsline {section}{T-Z}{72}{section*.10}%
+\contentsline {chapter}{Welcome}{5}{chapter*.2}% 
+\contentsline {section}{Notes and Workshops for CH10137}{5}{section*.3}% 
+\contentsline {section}{Recommended text}{5}{section*.4}% 
+\contentsline {section}{Report errors}{6}{section*.5}% 
+\contentsline {section}{Version history}{6}{section*.6}% 
+\contentsline {chapter}{\numberline {1}Week 1 - Part 1: Preliminaries}{7}{chapter.1}% 
+\contentsline {section}{\numberline {1.1}Why thermodynamics matters}{7}{section.1.1}% 
+\contentsline {section}{\numberline {1.2}State functions - (products - reactants)}{7}{section.1.2}% 
+\contentsline {subsection}{\numberline {1.2.1}Useful equations - State functions}{8}{subsection.1.2.1}% 
+\contentsline {section}{\numberline {1.3}Types of thermodynamic system}{9}{section.1.3}% 
+\contentsline {subsection}{\numberline {1.3.1}Isolated system}{9}{subsection.1.3.1}% 
+\contentsline {subsection}{\numberline {1.3.2}Open system}{9}{subsection.1.3.2}% 
+\contentsline {subsection}{\numberline {1.3.3}Closed system}{10}{subsection.1.3.3}% 
+\contentsline {subsection}{\numberline {1.3.4}Adiabatic system}{10}{subsection.1.3.4}% 
+\contentsline {section}{\numberline {1.4}Extensive and intensive properties}{11}{section.1.4}% 
+\contentsline {subsection}{\numberline {1.4.1}Intensive properties}{11}{subsection.1.4.1}% 
+\contentsline {subsection}{\numberline {1.4.2}Extensive properties}{11}{subsection.1.4.2}% 
+\contentsline {section}{\numberline {1.5}Classical \emph {vs.} Statistical thermodynamics}{11}{section.1.5}% 
+\contentsline {section}{\numberline {1.6}Degrees of Freedom}{12}{section.1.6}% 
+\contentsline {section}{\numberline {1.7}Example calculations}{13}{section.1.7}% 
+\contentsline {subsection}{\numberline {1.7.1}Example calculation - Hess's Law}{13}{subsection.1.7.1}% 
+\contentsline {subsection}{\numberline {1.7.2}Example Calculation - Kirchoff's law}{14}{subsection.1.7.2}% 
+\contentsline {subsection}{\numberline {1.7.3}Example Calculation - Degrees of Freedom}{15}{subsection.1.7.3}% 
+\contentsline {section}{\numberline {1.8}Questions}{15}{section.1.8}% 
+\contentsline {section}{\numberline {1.9}Answers}{16}{section.1.9}% 
+\contentsline {chapter}{\numberline {2}Week 1 - Part 2}{17}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Zeroth Law of Thermodynamics}{17}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}What is temperature?}{18}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}Internal energy, U}{20}{section.2.3}% 
+\contentsline {subsection}{\numberline {2.3.1}Equipartition theory}{20}{subsection.2.3.1}% 
+\contentsline {section}{\numberline {2.4}First Law of Thermodynamics}{21}{section.2.4}% 
+\contentsline {section}{\numberline {2.5}Questions}{22}{section.2.5}% 
+\contentsline {section}{\numberline {2.6}Answers}{22}{section.2.6}% 
+\contentsline {chapter}{\numberline {3}Week 2 - Part 1}{23}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Work, w}{23}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}Heat, q}{25}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Isothermal reversible expansion}{26}{subsection.3.2.1}% 
+\contentsline {section}{\numberline {3.3}Enthalpy, H}{26}{section.3.3}% 
+\contentsline {section}{\numberline {3.4}Hess's Law}{27}{section.3.4}% 
+\contentsline {subsection}{\numberline {3.4.1}Constant volume and constant pressure}{27}{subsection.3.4.1}% 
+\contentsline {section}{\numberline {3.5}Questions}{28}{section.3.5}% 
+\contentsline {chapter}{\numberline {4}Week 2 - Part 2}{31}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}Heat capacity, C\textsubscript {X}}{31}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}Temperature dependance of enthalpy}{32}{section.4.2}% 
+\contentsline {section}{\numberline {4.3}Enthalpy of phase changes}{33}{section.4.3}% 
+\contentsline {section}{\numberline {4.4}Questions}{34}{section.4.4}% 
+\contentsline {section}{\numberline {4.5}Answers}{35}{section.4.5}% 
+\contentsline {chapter}{\numberline {5}Week 3 - Part 1}{37}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}One last thing before we introduce entropy}{37}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Thermodynamic spontaneity}{38}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}Second Law of Thermodyanamics}{38}{section.5.3}% 
+\contentsline {section}{\numberline {5.4}The statistical nature of entropy}{39}{section.5.4}% 
+\contentsline {subsection}{\numberline {5.4.1}Macrostates}{40}{subsection.5.4.1}% 
+\contentsline {subsection}{\numberline {5.4.2}Microstates}{40}{subsection.5.4.2}% 
+\contentsline {subsection}{\numberline {5.4.3}Statistical entropy}{40}{subsection.5.4.3}% 
+\contentsline {section}{\numberline {5.5}Questions}{42}{section.5.5}% 
+\contentsline {section}{\numberline {5.6}Answers}{43}{section.5.6}% 
+\contentsline {chapter}{\numberline {6}Week 3 - Part 2}{45}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}How temperature affects entropy}{45}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}The entropy of phase changes}{46}{section.6.2}% 
+\contentsline {subsection}{\numberline {6.2.1}Trouton's Rule}{47}{subsection.6.2.1}% 
+\contentsline {section}{\numberline {6.3}Residual entropy}{49}{section.6.3}% 
+\contentsline {section}{\numberline {6.4}Entropy changes for isothermal expansion of a gas}{49}{section.6.4}% 
+\contentsline {section}{\numberline {6.5}Questions}{52}{section.6.5}% 
+\contentsline {section}{\numberline {6.6}Answers}{53}{section.6.6}% 
+\contentsline {chapter}{\numberline {7}Week 4 - Part 1}{55}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}Gibbs' free energy}{55}{section.7.1}% 
+\contentsline {subsection}{\numberline {7.1.1}Helmholtz free energy}{56}{subsection.7.1.1}% 
+\contentsline {subsection}{\numberline {7.1.2}Factors affecting the Gibbs free energy}{56}{subsection.7.1.2}% 
+\contentsline {subsection}{\numberline {7.1.3}Dilution}{57}{subsection.7.1.3}% 
+\contentsline {section}{\numberline {7.2}Phase changes}{57}{section.7.2}% 
+\contentsline {subsection}{\numberline {7.2.1}Clausius-Clapeyron equation}{57}{subsection.7.2.1}% 
+\contentsline {subsection}{\numberline {7.2.2}Clapeyron equation}{60}{subsection.7.2.2}% 
+\contentsline {section}{\numberline {7.3}Questions}{62}{section.7.3}% 
+\contentsline {section}{\numberline {7.4}Answers}{62}{section.7.4}% 
+\contentsline {chapter}{\numberline {8}Week 4 - Part 2}{63}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}How ΔG relates to the equilibrium constant, K}{63}{section.8.1}% 
+\contentsline {subsection}{\numberline {8.1.1}The equilibrium constant, K}{63}{subsection.8.1.1}% 
+\contentsline {subsection}{\numberline {8.1.2}le Châtelier's principle}{66}{subsection.8.1.2}% 
+\contentsline {subsection}{\numberline {8.1.3}Effect of catalysts}{66}{subsection.8.1.3}% 
+\contentsline {section}{\numberline {8.2}Reaction quotient}{68}{section.8.2}% 
+\contentsline {section}{\numberline {8.3}How temperature affects K}{68}{section.8.3}% 
+\contentsline {section}{\numberline {8.4}Third Law (for completeness)}{68}{section.8.4}% 
+\contentsline {section}{\numberline {8.5}Questions}{69}{section.8.5}% 
+\contentsline {section}{\numberline {8.6}Answers}{69}{section.8.6}% 
+\contentsline {chapter}{Glossary of terms}{71}{chapter*.7}% 
+\contentsline {section}{A-F}{71}{section*.8}% 
+\contentsline {section}{G-M}{71}{section*.9}% 
+\contentsline {section}{N-S}{72}{section*.10}% 
+\contentsline {section}{T-Z}{72}{section*.11}% 

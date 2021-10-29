@@ -4,8 +4,8 @@
 %
 \documentclass[
 ]{book}
-\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
+\usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
@@ -41,8 +41,7 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs,array}
-\usepackage{calc} % for calculating minipage widths
+\usepackage{longtable,booktabs}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -51,7 +50,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx}
+\usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -76,15 +75,12 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
-\ifluatex
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
 \title{CH10137 Thermodynamics}
 \author{Fiona Dickinson}
-\date{2021-10-27}
+\date{2021-10-29}
 
 \begin{document}
 \maketitle
@@ -125,29 +121,21 @@ There is no single recommended text for this section of the course because multi
 
 \href{https://bath-ac-primo.hosted.exlibrisgroup.com/primo-explore/search?query=any,contains,chemistry3\&tab=local\&search_scope=CSCOP_44BAT_DEEP\&sortby=date\&vid=44BAT_VU1\&facet=frbrgroupid,include,978293871\&offset=0\&pcAvailability=false}{Chemistry\textsuperscript{3}}
 
+\hypertarget{report-errors}{%
+\section*{Report errors}\label{report-errors}}
+\addcontentsline{toc}{section}{Report errors}
+
+If you spot any errors or areas of lack of clarity, please message me in Teams or preferably report on the error log below:
+
+Loading\ldots{}
+
 \hypertarget{version-history}{%
 \section*{Version history}\label{version-history}}
 \addcontentsline{toc}{section}{Version history}
 
-Week4part2 finished 181120
+21-22 version first commit 291020
 
-Week4part1 finished 161120
-
-Week3part2 finished 101120
-
-Week3part1 finished 081120
-
-Week3part1 videos added 071120
-
-Week3part1 started 051120
-
-Week2part2 finished 031120 (how is it November!)
-
-Week2part1 finished 311020
-
-Degrees of freedom section added to week1part1, week1part2 finished 29th October 2020
-
-Week1Part2 started 28th October 2020.
+Covid version finished 181120
 
 The initial commit of this book is dated 16th October 2020.
 
@@ -168,20 +156,20 @@ Thermodynamics is fundamental to the way we live, to our dream of living a bette
 
 Many properties in thermodynamics are \emph{state functions}, that is properties that only depend upon the current state of the system. State functions are completely independent of the path by which that final state was reached.
 
-Enthalpy (H) is a state function, as are entropy (S), internal energy (U), Gibbs' free energy (G), Helmholtz free energy (F), temperature (T), pressure (p), and chemical composition.
+Enthalpy (\(H\)) is a state function, as are entropy (\(S\)), internal energy (\(U\)), Gibbs' free energy (\(G\)), Helmholtz free energy (\(F\)), temperature (\(T\)), pressure (\(p\)), and chemical composition.
 
 Path functions are unlike state functions in that they depend on the path taken to determine their value.
-Heat (q) and work (w) are both examples of path functions.
+Heat (\(q\)) and work (\(w\)) are both examples of path functions.
 
 \begin{itemize}
 \item
-  Internal energy, U The internal energy is the sum of all of the kinetic and potential energy contributions of the molecules in the system.
+  \textbf{Internal energy,} \(U\) The internal energy is the sum of all of the kinetic and potential energy contributions of the molecules in the system.
 \item
-  Enthalpy, H The enthalpy is related to the internal energy, but also takes into account any expansion work done by the system, formally ΔH = ΔU + Δ(pV).
+  \textbf{Enthalpy,} \(H\) The enthalpy is related to the internal energy, but also takes into account any expansion work done by the system, formally ΔH = ΔU + Δ(pV).
 \item
-  Entropy, S The entropy is a measure of the number of possible arrangements of a system (multiplicity, Ω), formally S = k\textsubscript{B} ln Ω
+  \textbf{Entropy,} \(S\) The entropy is a measure of the number of possible arrangements of a system (multiplicity, \(Ω\)), formally \(S = k_B \ln Ω\)
 \item
-  Gibbs' free energy, G The Gibbs' free energy is a measure of the energy available to `do work' in a reaction system. It accounts for both the enalpic and entropic contributions of the reaction. ΔG = ΔH − TΔS
+  \textbf{Gibbs' free energy,} \(G\) The Gibbs' free energy is a measure of the energy available to `do work' in a reaction system. It accounts for both the enalpic and entropic contributions of the reaction. \(\Delta G = \Delta H − T \Delta S\)
 \end{itemize}
 
 \begin{figure}
@@ -224,7 +212,7 @@ As is Gibbs' free energy.
 \label{eq:Gibbsstate}
 \end{equation}
 
-The value of each of these variables is independent of the path used to form them. Hence, the same \emph{`products − reactants'} approach always works!
+The value of each of these variables is independent of the path used to form them. Hence, the same \textbf{`products − reactants'} approach always works!
 
 \hypertarget{sec:typesofsystem}{%
 \section{Types of thermodynamic system}\label{sec:typesofsystem}}
@@ -305,14 +293,14 @@ The difference between extensive and intensive properties is whether the propert
 \hypertarget{sec:intenstive}{%
 \subsection{Intensive properties}\label{sec:intenstive}}
 
-Properties which are \emph{independent} of the amount of stuff are called `intensive properties'.
+Properties which are \textbf{independent} of the amount of stuff are called \emph{`intensive properties'}.
 
 Temperature is an example of an intensive property as are all of `molar' properties (the quantity of something `per mole'): molar heat capacity, molar enthalpy, molar entropy, molar Gibbs' energy, \emph{etc}\ldots{} in physics the term `specific' is often used such as specific heat capacity and specific enthalpy, these are also intensive properties based on the fixed amount of a `gram' (g).
 
 \hypertarget{sec:extensive}{%
 \subsection{Extensive properties}\label{sec:extensive}}
 
-Conversely, properties which are \emph{dependent} on the amount of stuff you have are called extensive properties.
+Conversely, properties which are \textbf{dependent} on the amount of stuff you have are called \emph{extensive properties}.
 
 Many intensive properties have extensive equivalents, so whilst we have `molar heat capacity' we also have `heat capacity'; one looks at the amount of energy it takes to raise one mole of a thing by one kelvin, whereas the other looks at how much energy it takes to raise the temperature how ever much of a thing we have by on kelvin.
 
@@ -323,7 +311,7 @@ Other examples of extensive properties are unsurprisingly: volume, mass, amount 
 Whilst knowing the terms extensive and intensive isn't vital it is hugely important to recognise that sometimes terms will appear with different units to suit the particular situation.
 
 \hypertarget{sec:classicalstat}{%
-\section{Classical vs.~Statistical thermodynamics}\label{sec:classicalstat}}
+\section{\texorpdfstring{Classical \emph{vs.} Statistical thermodynamics}{Classical vs. Statistical thermodynamics}}\label{sec:classicalstat}}
 
 Thermodynamics is quite an old subject, much of our understanding of why chemical reactions happen is based in 19th century science. This understanding was based on emperical observation of things like steam engines and battery piles. It scientists trying to understand how things work in order to make them better, make them more efficient, and make them safer.
 
@@ -338,13 +326,11 @@ Consequently in this course we will look at thermodynamics from both a classical
 \hypertarget{sec:degreesoffreedom}{%
 \section{Degrees of Freedom}\label{sec:degreesoffreedom}}
 
-NOTE - I've also added this to the week1 part1 so this section is duplicated.
-
 Perhaps unsurprisingly the structure of molecules is an important concept when we consider thermodynamics from the molecule up perspective, but perhaps surprisingly classical thermodynamics does not care at all the structure of the molecules in the system we are considering.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{images/atomdegrees} 
+{\centering \includegraphics[width=0.3\linewidth]{images/atomdegrees} 
 
 }
 
@@ -371,7 +357,7 @@ x = 3N-5
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{images/linear} 
+{\centering \includegraphics[width=0.5\linewidth]{images/linear} 
 
 }
 
@@ -435,13 +421,13 @@ CH\textsubscript{3}CH\textsubscript{2}OH (aq) + CH\textsubscript{3}COOH (aq) ⟶
 
 \begin{longtable}[]{@{}cc@{}}
 \toprule
-& \(ΔC_{p,m}\) / J K\(^{−1}\) mol\(^{−1}\) \\
+& \(ΔC_{p,m}\) / J K\(^{−1}\) mol\(^{−1}\)\tabularnewline
 \midrule
 \endhead
-CH\textsubscript{3}CH\textsubscript{2}OH (aq) & 111.46 \\
-CH\textsubscript{3}COOH (aq) & 124.3 \\
-CH\textsubscript{3}COOCH\textsubscript{2}CH\textsubscript{3} (aq) & 170.1 \\
-H\textsubscript{2}O (l) & 33.58 \\
+CH\textsubscript{3}CH\textsubscript{2}OH (aq) & 111.46\tabularnewline
+CH\textsubscript{3}COOH (aq) & 124.3\tabularnewline
+CH\textsubscript{3}COOCH\textsubscript{2}CH\textsubscript{3} (aq) & 170.1\tabularnewline
+H\textsubscript{2}O (l) & 33.58\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -452,6 +438,19 @@ H\textsubscript{2}O (l) & 33.58 \\
 \begin{equation*}
 ΔC_\textrm{p,m rxn} = (170.1 + 33.58) − (111.46 + 124.3) \textrm{ J K$^{-1}$ mol}^{−1}) = − 32.1 \textrm{ J K$^{-1}$ mol}^{−1}
 \end{equation*}
+
+\hypertarget{subsec:exampledegreesoffreedom}{%
+\subsection{Example Calculation - Degrees of Freedom}\label{subsec:exampledegreesoffreedom}}
+
+Determine the number of degrees of freedom, and types of each, of ethanol CH\textsubscript{3}CH\textsubscript{2}OH.
+
+Ethanol is non-linear molecule with 9 atoms. Therefore in total there are (3N) 27 degrees of freedom.
+
+There will be 3 translational degrees of freedom (along the x,y\&z axes),
+
+there will be 3 rotational degrees of freedom (rotation around the x,y\&z axes),
+
+and there will be 3N-6 (because it is non linear) or 21 vibrational degrees of freedom.
 
 \hypertarget{sec:Questions1}{%
 \section{Questions}\label{sec:Questions1}}
@@ -658,7 +657,12 @@ where \(q\) is the energy exchanged in the form of heat and \(w\) the energy exc
 \hypertarget{questions}{%
 \section{Questions}\label{questions}}
 
-1. Determine the number of degrees of freedom in each of the following molecules, and consequently predict the molar internal energy at 25 ºC.
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Determine the number of degrees of freedom in each of the following molecules, and consequently predict the molar internal energy at 25 ºC.
+\end{enumerate}
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi}.}
@@ -689,7 +693,6 @@ where \(q\) is the energy exchanged in the form of heat and \(w\) the energy exc
 \def\labelenumi{\arabic{enumi}.}
 \item
   \begin{itemize}
-  \tightlist
   \item
   \end{itemize}
 \end{enumerate}
@@ -1094,13 +1097,13 @@ c\(_{p,m} O_2 = 29.37\) J K\(^{-1}\) mol\(^{-1}\)
 
 \begin{longtable}[]{@{}cc@{}}
 \toprule
-& C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1} \\
+& C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1}\tabularnewline
 \midrule
 \endhead
-C\textsubscript{2}H\textsubscript{6} & 52.6 \\
-O\textsubscript{2} & 29.4 \\
-CO\textsubscript{2} & 37.1 \\
-H\textsubscript{2}O & 75.3 \\
+C\textsubscript{2}H\textsubscript{6} & 52.6\tabularnewline
+O\textsubscript{2} & 29.4\tabularnewline
+CO\textsubscript{2} & 37.1\tabularnewline
+H\textsubscript{2}O & 75.3\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -1425,30 +1428,122 @@ Trouton's rule is an empirical relationship which found that \(\frac{\Delta_{vap
 
 Equally some species have a lower than predicted entropy of vapourisation. These species may still have intermolecular bonding in the gas phase, such as formic acid which forms a molecular dimer at temperatures just above the boiling temperature (you can then see a `phase change' as this dimer dissociates at even higher temperatures). Otherwise it may be that the species is particularly `small' and has a low moment of rotational inertia, leading to large spacings in molecular energy levels and therefore relatively low entropy in the population of these levels.
 
-\begin{longtable}[]{@{}
-  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
-  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
-  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
-  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}@{}}
+\begin{longtable}[]{@{}cccc@{}}
 \caption{\label{tab:trouton} Thermodynamic data for the vaporisation of a range of chemical species.}\tabularnewline
 \toprule
-& \(\Delta_{vap} S^\ominus\) / J K\textsuperscript{−1} mol\textsuperscript{−1} & \(\Delta_{vap} H^\ominus\) / kJ mol\textsuperscript{−1} & \(T_b\) / K \\
+\begin{minipage}[b]{0.22\columnwidth}\centering
+\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
+\(\Delta_{vap} S^\ominus\) / J K\textsuperscript{−1} mol\textsuperscript{−1}\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
+\(\Delta_{vap} H^\ominus\) / kJ mol\textsuperscript{−1}\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
+\(T_b\) / K\strut
+\end{minipage}\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-& \(\Delta_{vap} S^\ominus\) / J K\textsuperscript{−1} mol\textsuperscript{−1} & \(\Delta_{vap} H^\ominus\) / kJ mol\textsuperscript{−1} & \(T_b\) / K \\
+\begin{minipage}[b]{0.22\columnwidth}\centering
+\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
+\(\Delta_{vap} S^\ominus\) / J K\textsuperscript{−1} mol\textsuperscript{−1}\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
+\(\Delta_{vap} H^\ominus\) / kJ mol\textsuperscript{−1}\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
+\(T_b\) / K\strut
+\end{minipage}\tabularnewline
 \midrule
 \endhead
-benzene & 87.2 & 30.8 & 353.2 \\
-bromine & 88.6 & 29.45 & 332.4 \\
-tetrachloromethane & 85.9 & 30.00 & 349.9 \\
-hydrogen sulphide & 87.9 & 18.67 & 212.8 \\
-mercury & 94.2 & 59.30 & 692.7 \\
-ammonia & 97.4 & 23.4 & 239.7 \\
-water & 109.1 & 40.7 & 373.2 \\
-methane & 73.2 & 8.18 & 111.7 \\
-argon & 74.4 & 6.5 & 87.3 \\
-formic acid & 61.8 & 23.1 & 373.9 \\
+\begin{minipage}[t]{0.22\columnwidth}\centering
+benzene\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+87.2\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+30.8\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+353.2\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+bromine\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+88.6\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+29.45\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+332.4\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+tetrachloromethane\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+85.9\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+30.00\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+349.9\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+hydrogen sulphide\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+87.9\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+18.67\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+212.8\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+mercury\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+94.2\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+59.30\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+692.7\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+ammonia\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+97.4\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+23.4\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+239.7\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+water\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+109.1\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+40.7\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+373.2\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+methane\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+73.2\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+8.18\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+111.7\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+argon\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+74.4\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+6.5\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+87.3\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+formic acid\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+61.8\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+23.1\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+373.9\strut
+\end{minipage}\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -1540,12 +1635,12 @@ NH\textsubscript{4}Cl(s) → NH\textsubscript{3}(g) + HCl(g)
 
 \begin{longtable}[]{@{}cc@{}}
 \toprule
-& Sm° / J K\textsuperscript{−1} mol\textsuperscript{−1} \\
+& Sm° / J K\textsuperscript{−1} mol\textsuperscript{−1}\tabularnewline
 \midrule
 \endhead
-NH\textsubscript{4}Cl(s) & 94.85 \\
-NH3(g) & 192.77 \\
-HCl(g) & 186.90 \\
+NH\textsubscript{4}Cl(s) & 94.85\tabularnewline
+NH3(g) & 192.77\tabularnewline
+HCl(g) & 186.90\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -1618,17 +1713,17 @@ The Gibbs' equation makes it fairly clear that the Gibbs' energy depends upon te
 \begin{longtable}[]{@{}cccc@{}}
 \caption{\label{tab:Gibbstemp} The spontaneity of a reaction at different temperatures.}\tabularnewline
 \toprule
-\(\Delta H\) & \(\Delta S\) & \(\Delta G\) & Spontaneity \\
+\(\Delta H\) & \(\Delta S\) & \(\Delta G\) & Spontaneity\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-\(\Delta H\) & \(\Delta S\) & \(\Delta G\) & Spontaneity \\
+\(\Delta H\) & \(\Delta S\) & \(\Delta G\) & Spontaneity\tabularnewline
 \midrule
 \endhead
-+ endothermic & + & + at low T − at high T & spontaneous at high temperature \\
-+ endothermic & − & + & needs work to occur \\
-− exothermic & + & − & always spontaneous \\
-− exothermic & − & − at low T + at high T & spontaneous at low temperature \\
++ endothermic & + & + at low T − at high T & spontaneous at high temperature\tabularnewline
++ endothermic & − & + & needs work to occur\tabularnewline
+− exothermic & + & − & always spontaneous\tabularnewline
+− exothermic & − & − at low T + at high T & spontaneous at low temperature\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -1838,13 +1933,24 @@ le Châtelier's principle states \emph{`if a change is made to a system in dynam
 
 Another example could be for a gaseous reaction where if we increase the pressure of the system at equilibrium we disturb the equilibrium and the sytem will react to reduce (if possible) the total number of moles (or move to the side of the reaction with the lowest molar volume).
 
-\hypertarget{effect-of-catalysts.}{%
-\subsection{Effect of catalysts.}\label{effect-of-catalysts.}}
+\hypertarget{effect-of-catalysts}{%
+\subsection{Effect of catalysts}\label{effect-of-catalysts}}
 
 Catalysts affect rate, not thermodyanamics, the presence of a catalyst will affect the rate of both forward and back reactions but the position of the equilibrium will be unchanged. (Reactions are always occuring, but at equilibrium the rate of the forward reaction and rate of back reaction are the same).
 
-\hypertarget{reaction-quotient}{%
-\section{Reaction quotient}\label{reaction-quotient}}
+Catalysts affect the rate by affecting the height of the activation barrier, this is in effect lowering the Gibbs' free energy of the transition state (figure \ref{fig:catalyst}).
+
+\begin{figure}
+
+{\centering \includegraphics[width=1\linewidth]{images/catalyst} 
+
+}
+
+\caption{The transition state during a reaction has a higher Gibbs free energy than either the reactants or products. The presence of a catalyst lowers the energy of this transition state.}\label{fig:catalyst}
+\end{figure}
+
+\hypertarget{sec:quotient}{%
+\section{Reaction quotient}\label{sec:quotient}}
 
 We can define the reaction quotient, Q, at any point during a reaction:
 
@@ -1860,8 +1966,8 @@ The expression for reaction quotient is the same used as for equilibrium constan
 \label{eq:gibbsquotient}
 \end{equation}
 
-\hypertarget{how-temperature-affects-k}{%
-\section{How temperature affects K}\label{how-temperature-affects-k}}
+\hypertarget{sec:tempK}{%
+\section{How temperature affects K}\label{sec:tempK}}
 
 We have already seen that both the enthalpy and entropy (and therefore Gibbs' free energy) depend upon temperature, and we have also seen that the equilibrium composition (and therefore equilibrium constant) also depends upon tempearture.
 
@@ -1933,12 +2039,12 @@ Ag\textsubscript{2}CO\textsubscript{3} (s) \(\leftrightharpoons\) Ag\textsubscri
 
 \begin{longtable}[]{@{}cccc@{}}
 \toprule
-& Ag\textsubscript{2}CO\textsubscript{3} & Ag\textsubscript{2}O & CO\textsubscript{2} \\
+& Ag\textsubscript{2}CO\textsubscript{3} & Ag\textsubscript{2}O & CO\textsubscript{2}\tabularnewline
 \midrule
 \endhead
-ΔH\textsuperscript{⦵} / kJ mol\textsuperscript{−1} & −501.4 & −29.07 & −393.5 \\
-S\textsubscript{m}\textsuperscript{⦵} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 167.3 & 121.7 & 213.7 \\
-C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 109.6 & 68.6 & 37.1 \\
+ΔH\textsuperscript{⦵} / kJ mol\textsuperscript{−1} & −501.4 & −29.07 & −393.5\tabularnewline
+S\textsubscript{m}\textsuperscript{⦵} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 167.3 & 121.7 & 213.7\tabularnewline
+C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 109.6 & 68.6 & 37.1\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -1963,6 +2069,8 @@ C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 109.6
 \item
   K = 0.01053
 \end{enumerate}
+
+Additional questions
 
 \hypertarget{glossary-of-terms}{%
 \chapter*{Glossary of terms}\label{glossary-of-terms}}

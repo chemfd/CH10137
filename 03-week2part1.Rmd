@@ -6,7 +6,10 @@ The unit of energy is joule, this is named after one of the pioneers of thermody
 
 *The following video has been added for some context to the material, it is not core to the course and the material in it is not examinable.*
 
-<iframe width="847" height="476" src="https://www.youtube.com/embed/cNTvhqEj7AE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cNTvhqEj7AE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
+
 
 ## Work, w {#sec:work}
 
@@ -44,7 +47,9 @@ w=-n\textrm{R}T \ln {\frac{V_\textrm{f}}{V_\textrm{i}}}
 (\#eq:revexpansion)
 \end{equation}
 
-<iframe width="847" height="476" src="https://www.youtube.com/embed/lpi76wGjEJc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lpi76wGjEJc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
 For the same increase in volume at the temperature of the system increases then the work needed in a reversible expansion also increases.
 
@@ -64,7 +69,9 @@ knitr::include_graphics("images/heat.png")
 
 - When a reaction is endothermic energy in the form of heat is transferred from the surroundings to the system  and the internal energy of the system increases (q = +ve).
 
-<iframe width="847" height="476" src="https://www.youtube.com/embed/kIDmAO6SMow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kIDmAO6SMow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
 ### Isothermal reversible expansion
 
@@ -130,9 +137,11 @@ Therefore:
 
 Consequtnly at 25 ºC the molar enthalpy of an ideal gas is about 2.5 kJ mol^−1^
 
+:::video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vqGXc-i5thQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
-<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/vqGXc-i5thQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
-</iframe><div style="text-align: left;">
+
 ## Hess's Law
 
 Just like internal energy, enthalpy is a state function, and the relationship between the enthalpy of a reaction is just the difference in enthalpy of the final and initial states.

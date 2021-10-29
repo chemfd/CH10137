@@ -28,9 +28,10 @@ For any chemical process we can now work out the enthalpy change for the reactio
 (\#eq:entropyrxntemp)
 \end{equation}
 
-<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/oV6b3iGfwIU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
+:::video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oV6b3iGfwIU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
-<div style="text-align: left;">
 ## The entropy of phase changes
 
 If we look at how the heat capacity divided by temperature changes as a function of temperature we see clear breaks in function where the phase changes are (figure \@ref(fig:Cpphase)).
@@ -51,9 +52,9 @@ S_m(T) = S_m(0)+ \int_0^{T_f}\frac{C_p(s)}{T}\textrm{d}T+ \frac{\Delta _{fus} H}
 (\#eq:entropyphase)
 \end{equation}
 
-<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/6M27Y8A3e7o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
-
-<div style="text-align: left;">
+:::video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6M27Y8A3e7o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
 From equation \@ref(eq:clausius) we can relate the enthalpy of phase change and entropy of phase change at constant pressure because phase changes are reversible processes.
 
@@ -109,14 +110,16 @@ knitr::include_graphics("images/CO.png")
 
 We can calculate the residual entropy using the statistical definition of entropy (equation \@ref(eq:boltzmann)).
 
-<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/2h52VrudtWw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
+:::video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2h52VrudtWw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
-<div style="text-align: left;">
+
 ## Entropy changes for isothermal expansion of a gas
 
-<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/WKGH-rZF6WA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
-
-<div style="text-align: left;">
+:::video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WKGH-rZF6WA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
 If we think about entropy of the probabiity of a given state being achieved then as the 'box' gets bigger the probability of a particle being in any position falls and so the entropy of the system increases.
 

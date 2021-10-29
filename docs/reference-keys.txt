@@ -80,6 +80,7 @@ eq:Gibbsequilibrium
 fig:gibbsequilibrium
 fig:energyleveleq
 eq:equilibrium
+fig:catalyst
 eq:quotient
 eq:gibbsquotient
 eq:vanthoff
@@ -102,6 +103,7 @@ sec:degreesoffreedom
 example-calculations
 sec:examplehess
 subsec:examplekirchoff
+subsec:exampledegreesoffreedom
 sec:Questions1
 sec:Answers1
 ch:Part2
@@ -158,9 +160,9 @@ ch:Part8
 how-δg-relates-to-the-equilibrium-constant-k
 the-equilibrium-constant-k
 le-châteliers-principle
-effect-of-catalysts.
-reaction-quotient
-how-temperature-affects-k
+effect-of-catalysts
+sec:quotient
+sec:tempK
 third-law-for-completeness
 sec:w4p2question
 sec:w4p2answer

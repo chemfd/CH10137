@@ -12,3 +12,36 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+div.video{
+  align:centre;
+}
+
+div.eqhigh{
+   text-align:center;
+   background-color: #FBE2E2;
+}
+
+div.center{
+   text-align:center;
+}
+
+div.question {
+    margin-top: 1rem;
+    position: relative;
+    padding: .75rem 1.25rem;
+    padding-left: 100px;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #000000;
+    background-color: #EEEEEE;
+    border-color: #808080;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #808080;
+    background-image: url("images/question.png");
+    background-position: 15px top;
+    background-size: 70px;
+    background-repeat: no-repeat;
+}

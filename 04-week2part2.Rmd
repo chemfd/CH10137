@@ -21,8 +21,11 @@ C_{p,n}=\textrm{a}+\textrm{b}T+\frac{\textrm{c}}{T^2}
 
 the constants, a, b and c are measured emperically and are known for a wide range of materials.
 
-<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/e563NzK5r2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
-<div style="text-align: left;">
+:::video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/e563NzK5r2g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
+
+
 Previously in section \@ref{subsec:equipartition} we have seen how equipartition theory predicts the heat capacity of ideal gases. Like the internal energy only degrees of freedom which are active contribute to heat capacity of a material, and this consideration needs to be made. 
 
 - Every translational degree of freedom contributes $\frac{1}{2}R$ to the heat capacity
@@ -37,9 +40,9 @@ We can see the heat capacity of molecules changing as the different degrees of f
 ```{r echo=FALSE, H2heatcapacity, out.width='70%', fig.show='hold', fig.align='center', fig.cap='The heat capacity of molecular hydrogen varies with temperature, showing clear steps as each type of degree of freedom are activated. At very high temperatures dissociation occurs before the final plateau is observed.'}
 knitr::include_graphics("images/H2heatcapacity.png")
 ```
-<div style="text-align: left;">
+
 ## Temperature dependance of enthalpy
-<div style="text-align: left;">
+
 The enthalpy of reaction is dependent upon the temperature of reaction (figure \@ref(fig:enthalpytemp)), the relationship between the enthalpies at two tempeartures are given in equation \@ref(eq:kirchoff). Standard enthalpies of fromation are defined usually at exactly 25 ºC.
 
 \begin{equation}
@@ -52,15 +55,15 @@ The enthalpy of reaction is dependent upon the temperature of reaction (figure \
 knitr::include_graphics("images/enthalpytemp.png")
 ```
 
-<div style="text-align: left;">
+
 The value $\Delta_r C_p^{\ominus}$ is the difference in heat capacity of the products and reactants at constant pressure. You have already seen this equation in equation \@ref(eq:heatcapacitystate) in section \@ref(sec:equations1).
 
-<div style="text-align: center;"><iframe width="560" height="315" src="https://www.youtube.com/embed/uOzg89whp0g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
+:::video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uOzg89whp0g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
-<div style="text-align: left;">
 For moderate changes in temperature we can assume that the heat capacity is a linear function and we can use Kirchoff's law (equation \@ref(eq:kirchoff)), but at larger temperature differences this function should really be integrated to account for the temperature dependance of heat capacity.
 
-<div style="text-align: left;">
 ## Enthalpy of phase changes
 
 You are no doubt already familiar with the concepts of phase changes, and they are an increadibly important concept in thermodynamics which I will cover more than once during this course.
@@ -73,14 +76,14 @@ The enthalpy of the phase change is a measure of the energy required (or release
 knitr::include_graphics("images/enthalpyphasechange.png")
 ```
 
+:::video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/I4DDJs3OqnM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+:::
 
-<div style="text-align: center;"><iframe width="847" height="476" src="https://www.youtube.com/embed/I4DDJs3OqnM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><div style="text-align: left;">
 
 
-<div style="text-align: left;">
 We will meet phase changes later in the course when we consider both enthalpy and Gibbs' free energy so this is intentially just a very quick introduction.
 
-<div style="text-align: left;">
 ## Questions
 
 1. The constant pressure specific heat capacity of copper is 0.3850 kJ kg^–1^ K^–1^ at 298 K. Calculate the constant pressure heat capacity of 0.559 mol of copper at this temperature.
@@ -106,8 +109,6 @@ c$_{p,m} O_2 = 29.37$ J K$^{-1}$ mol$^{-1}$
 
 5. Calculate the enthalpy of formation of liquid mercury at 0 ºC. (C~p~ = 27.98 J K^−1^ mol^−1^)
 
-
-<div style="text-align: left;">
 
 ## Answers {#sec:w2p2ans}
 

@@ -37,28 +37,19 @@ There is no single recommended text for this section of the course because multi
 
 [Chemistry^3^](https://bath-ac-primo.hosted.exlibrisgroup.com/primo-explore/search?query=any,contains,chemistry3&tab=local&search_scope=CSCOP_44BAT_DEEP&sortby=date&vid=44BAT_VU1&facet=frbrgroupid,include,978293871&offset=0&pcAvailability=false)
 
+## Report errors {-}
+
+If you spot any errors or areas of lack of clarity, please message me in Teams or preferably report on the error log below:
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc83b-C0FsgDr5eQxvT-2NWwEtvOEwYU1WbLE4j53wWfUDIXQ/viewform?embedded=true" width="640" height="1242" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+
 
 ## Version history {-}
 
-Week4part2 finished 181120
+21-22 version first commit 291020
 
-Week4part1 finished 161120
-
-Week3part2 finished 101120
-
-Week3part1 finished 081120
-
-Week3part1 videos added 071120
-
-Week3part1 started 051120
-
-Week2part2 finished 031120 (how is it November!)
-
-Week2part1 finished 311020
-
-Degrees of freedom section added to week1part1, week1part2 finished 29th October 2020
-
-Week1Part2 started 28th October 2020.
+Covid version finished 181120
 
 The initial commit of this book is dated 16th October 2020.
 
