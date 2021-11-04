@@ -18,7 +18,7 @@ knitr::include_graphics("images/thermalequilibrium.png")
 <iframe width="560" height="315" src="https://www.youtube.com/embed/exynAqHlHyA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 :::
 
-The thermal equilibrium used in figure @\ref(fig:zerothlaw) basically says that if A and B are in thermal equilibrium then they must have the same temperature. Therefore the first thermodynamic concept we meet is temperature, which has the unit K (kelvin).
+The thermal equilibrium used in figure \@ref(fig:zerothlaw) basically says that if A and B are in thermal equilibrium then they must have the same temperature. Therefore the first thermodynamic concept we meet is temperature, which has the unit K (kelvin).
 
 *The following video is for context and interest only*
 
@@ -132,7 +132,7 @@ a. acetylene HCCH
 
 2. Why can't you use equipartition theory to determine the internal energy of ethanol at room temperature?
 
-3. If a system looses 250 J of energy from loss of heat, and 600 J of energy is added to the sytem in the form of work what is the change in internal enery of the system, and the universe?
+3. If a system looses 250 J of energy from loss of heat, and 600 J of energy is added to the system in the form of work what is the change in internal energy of the system, and the universe?
 
 4. How does changing the spacing of energy levels change the distribution of population of energy levels in a system?
 
@@ -145,6 +145,6 @@ a. 6.194 kJ mol^−1^
 
 2. It's a liquid at room temperature, equipartition theory tells us about ideal gases.
 
-3. $\Delta U_{system}=$ +350 J, $\Delta U_{universe}=$0J
+3. $\Delta U_{system}=$ +350 J, $\Delta U_{universe}=$ 0J
 
-4. It shouldn't they will respace, so if the population of levels is higher when the space is bigger, but you are just distributing the energy differently.
+4. It shouldn't they will re-space, so if the population of levels is higher when the space is bigger, but you are just distributing the energy differently.
