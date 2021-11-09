@@ -28,7 +28,7 @@ The thermal equilibrium used in figure \@ref(fig:zerothlaw) basically says that 
 
 ## What is temperature?
 
-You are already familiar with teh Maxwell-Boltzmann distribution, and have seen that the mean speed of a gas particle depends only upon the mass of that particle and the temperature (figure \@ref(fig:boltzmann)).
+You are already familiar with the Maxwell-Boltzmann distribution, and have seen that the mean speed of a gas particle depends only upon the mass of that particle and the temperature (figure \@ref(fig:boltzmann)).
 
 ```{r echo=FALSE, boltzmann, out.width='80%', fig.show='hold', fig.align='center', fig.cap='The distribution of speeds of a gas depends only upon temperature and molecular mass. At low temperatures the mean speeds of particles are lower than those at high temperatures.'}
 knitr::include_graphics("images/boltzmann.png")

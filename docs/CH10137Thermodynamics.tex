@@ -4,8 +4,8 @@
 %
 \documentclass[
 ]{book}
-\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
+\usepackage{amssymb,amsmath}
 \usepackage{ifxetex,ifluatex}
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
@@ -41,8 +41,7 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs,array}
-\usepackage{calc} % for calculating minipage widths
+\usepackage{longtable,booktabs}
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -51,7 +50,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx}
+\usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -76,15 +75,12 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
-\ifluatex
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
 
 \title{CH10137 Thermodynamics}
 \author{Fiona Dickinson}
-\date{2021-11-04}
+\date{2021-11-09}
 
 \begin{document}
 \maketitle
@@ -306,7 +302,7 @@ Temperature is an example of an intensive property as are all of `molar' propert
 
 Conversely, properties which are \textbf{dependent} on the amount of stuff you have are called \emph{extensive properties}.
 
-Many intensive properties have extensive equivalents, so whilst we have `molar heat capacity' we also have `heat capacity'; one looks at the amount of energy it takes to raise one mole of a thing by one kelvin, whereas the other looks at how much energy it takes to raise the temperature how ever much of a thing we have by on kelvin.
+Many intensive properties have extensive equivalents, so whilst we have the intensive property `molar heat capacity' we also have extensive equivalent `heat capacity'; one looks at the amount of energy it takes to raise one mole of a thing by one kelvin, whereas the other looks at how much energy it takes to raise the temperature of how ever much of a thing we have by one kelvin.
 
 Consequently extensive properties have different units to their `equivalent' intensive property.
 
@@ -425,13 +421,13 @@ CH\textsubscript{3}CH\textsubscript{2}OH (aq) + CH\textsubscript{3}COOH (aq) ⟶
 
 \begin{longtable}[]{@{}cc@{}}
 \toprule
-& \(ΔC_{p,m}\) / J K\(^{−1}\) mol\(^{−1}\) \\
+& \(ΔC_{p,m}\) / J K\(^{−1}\) mol\(^{−1}\)\tabularnewline
 \midrule
 \endhead
-CH\textsubscript{3}CH\textsubscript{2}OH (aq) & 111.46 \\
-CH\textsubscript{3}COOH (aq) & 124.3 \\
-CH\textsubscript{3}COOCH\textsubscript{2}CH\textsubscript{3} (aq) & 170.1 \\
-H\textsubscript{2}O (l) & 33.58 \\
+CH\textsubscript{3}CH\textsubscript{2}OH (aq) & 111.46\tabularnewline
+CH\textsubscript{3}COOH (aq) & 124.3\tabularnewline
+CH\textsubscript{3}COOCH\textsubscript{2}CH\textsubscript{3} (aq) & 170.1\tabularnewline
+H\textsubscript{2}O (l) & 33.58\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -459,7 +455,7 @@ and there will be 3N-6 (because it is non linear) or 21 vibrational degrees of f
 \hypertarget{sec:Questions1}{%
 \section{Questions}\label{sec:Questions1}}
 
-Later in this course you will learn about the origin of these equations, for now it is enough to be able to balance chemical equations and use the fact that each of the variables in teh following equations are state functions.
+Later in this course you will learn about the origin of these equations, for now it is enough to be able to balance chemical equations and use the fact that each of the variables in the following equations are state functions.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -504,7 +500,7 @@ Given the enthalpies of formation required are listed below determine the amount
   Ammonium dichromate decomposes upon heating in a spectacular `volcano' reaction:
 \end{enumerate}
 
-(NH\textsubscript{4})Cr\textsubscript{2}O\textsubscript{7} (s) ⟶ N\textsubscript{2} (g) + 4 H\textsubscript{2}O (g) + Cr\textsubscript{2}O\textsubscript{3} (s)
+(NH\textsubscript{4})\textsubscript{2}Cr\textsubscript{2}O\textsubscript{7} (s) ⟶ N\textsubscript{2} (g) + 4 H\textsubscript{2}O (g) + Cr\textsubscript{2}O\textsubscript{3} (s)
 
 Determine the enthalpy of reaction for this process given the following data.
 
@@ -560,7 +556,7 @@ The thermal equilibrium used in figure \ref{fig:zerothlaw} basically says that i
 \hypertarget{what-is-temperature}{%
 \section{What is temperature?}\label{what-is-temperature}}
 
-You are already familiar with teh Maxwell-Boltzmann distribution, and have seen that the mean speed of a gas particle depends only upon the mass of that particle and the temperature (figure \ref{fig:boltzmann}).
+You are already familiar with the Maxwell-Boltzmann distribution, and have seen that the mean speed of a gas particle depends only upon the mass of that particle and the temperature (figure \ref{fig:boltzmann}).
 
 \begin{figure}
 
@@ -697,7 +693,6 @@ where \(q\) is the energy exchanged in the form of heat and \(w\) the energy exc
 \def\labelenumi{\arabic{enumi}.}
 \item
   \begin{itemize}
-  \tightlist
   \item
   \end{itemize}
 \end{enumerate}
@@ -787,7 +782,7 @@ w=-n\textrm{R}T \ln {\frac{V_\textrm{f}}{V_\textrm{i}}}
 
 For the same increase in volume at the temperature of the system increases then the work needed in a reversible expansion also increases.
 
-There are many types of work, but they may all be modeled by expansion work. Other types of work include things like surgace expansion, extension of a spring or electrical work.
+There are many types of work, but they may all be modeled by expansion work. Other types of work include things like surface expansion, extension of a spring or electrical work.
 
 \hypertarget{sec:heat}{%
 \section{Heat, q}\label{sec:heat}}
@@ -826,7 +821,7 @@ If a gas is allowed to expand and no heat is transferred then the work done by t
 \caption{In the case of an isothermal reversible expansion the work done by the system and the heat transferred to the system exactly balance.}\label{fig:isothermalexpansion}
 \end{figure}
 
-There is a special case where we can consider the expansion of a gas but energy is transferred from the surroundings to the system in the form of heat. In this isothermal reversible expansion the work done by the system is exactly equal an opposite to the heat transferred to the system, and so the net change in internal energy is zero.
+There is a special case where we can consider the expansion of a gas but energy is transferred from the surroundings to the system in the form of heat. In this isothermal reversible expansion the work done by the system is exactly equal and opposite to the heat transferred to the system, and so the net change in internal energy is zero.
 
 Therefore, by applying this to equation \eqref{eq:revexpansion}, we can see for an isothermal reversible expansion:
 
@@ -946,9 +941,9 @@ At constant pressure the work done, \(-p \Delta V\) means that the change in ent
 \def\labelenumi{\arabic{enumi}.}
 \setcounter{enumi}{4}
 \item
-  Calculate the expansion work done on the system when 9.576 g of solid ammonium chloride, NH\textsubscript{4}Cl, decomposes completely to yield gaseous ammonia, NH3 and hydrogen chloride, HCl at a temperature of 1,410 K. Treat the expansion as irreversible and the gases formed as perfect.
+  Calculate the expansion work done on the system when 9.576 g of solid ammonium chloride, NH\textsubscript{4}Cl, decomposes completely to yield gaseous ammonia, NH\textsubscript{3} and hydrogen chloride, HCl at a temperature of 1,410 K. Treat the expansion as irreversible and the gases formed as perfect.
 \item
-  What is the maximum amount of work available when 1 mole of a gas doubles in volume at 25\(^\circ\)C?
+  What is the maximum amount of work available when 1 mole of a gas doubles in volume at 25 \(^\circ\)C?
 \end{enumerate}
 
 \begin{itemize}
@@ -957,8 +952,10 @@ At constant pressure the work done, \(-p \Delta V\) means that the change in ent
   How does this change with increasing temperature?
 \item
   If the expansion is isothermal how much heat is added to the system?
-  \#\# Answers
 \end{itemize}
+
+\hypertarget{answers-1}{%
+\section{Answers}\label{answers-1}}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -1102,13 +1099,13 @@ c\(_{p,m} O_2 = 29.37\) J K\(^{-1}\) mol\(^{-1}\)
 
 \begin{longtable}[]{@{}cc@{}}
 \toprule
-& C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1} \\
+& C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1}\tabularnewline
 \midrule
 \endhead
-C\textsubscript{2}H\textsubscript{6} & 52.6 \\
-O\textsubscript{2} & 29.4 \\
-CO\textsubscript{2} & 37.1 \\
-H\textsubscript{2}O & 75.3 \\
+C\textsubscript{2}H\textsubscript{6} & 52.6\tabularnewline
+O\textsubscript{2} & 29.4\tabularnewline
+CO\textsubscript{2} & 37.1\tabularnewline
+H\textsubscript{2}O & 75.3\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -1433,30 +1430,122 @@ Trouton's rule is an empirical relationship which found that \(\frac{\Delta_{vap
 
 Equally some species have a lower than predicted entropy of vapourisation. These species may still have intermolecular bonding in the gas phase, such as formic acid which forms a molecular dimer at temperatures just above the boiling temperature (you can then see a `phase change' as this dimer dissociates at even higher temperatures). Otherwise it may be that the species is particularly `small' and has a low moment of rotational inertia, leading to large spacings in molecular energy levels and therefore relatively low entropy in the population of these levels.
 
-\begin{longtable}[]{@{}
-  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
-  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
-  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
-  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}@{}}
+\begin{longtable}[]{@{}cccc@{}}
 \caption{\label{tab:trouton} Thermodynamic data for the vaporisation of a range of chemical species.}\tabularnewline
 \toprule
-& \(\Delta_{vap} S^\ominus\) / J K\textsuperscript{−1} mol\textsuperscript{−1} & \(\Delta_{vap} H^\ominus\) / kJ mol\textsuperscript{−1} & \(T_b\) / K \\
+\begin{minipage}[b]{0.22\columnwidth}\centering
+\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
+\(\Delta_{vap} S^\ominus\) / J K\textsuperscript{−1} mol\textsuperscript{−1}\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
+\(\Delta_{vap} H^\ominus\) / kJ mol\textsuperscript{−1}\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
+\(T_b\) / K\strut
+\end{minipage}\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-& \(\Delta_{vap} S^\ominus\) / J K\textsuperscript{−1} mol\textsuperscript{−1} & \(\Delta_{vap} H^\ominus\) / kJ mol\textsuperscript{−1} & \(T_b\) / K \\
+\begin{minipage}[b]{0.22\columnwidth}\centering
+\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
+\(\Delta_{vap} S^\ominus\) / J K\textsuperscript{−1} mol\textsuperscript{−1}\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
+\(\Delta_{vap} H^\ominus\) / kJ mol\textsuperscript{−1}\strut
+\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
+\(T_b\) / K\strut
+\end{minipage}\tabularnewline
 \midrule
 \endhead
-benzene & 87.2 & 30.8 & 353.2 \\
-bromine & 88.6 & 29.45 & 332.4 \\
-tetrachloromethane & 85.9 & 30.00 & 349.9 \\
-hydrogen sulphide & 87.9 & 18.67 & 212.8 \\
-mercury & 94.2 & 59.30 & 692.7 \\
-ammonia & 97.4 & 23.4 & 239.7 \\
-water & 109.1 & 40.7 & 373.2 \\
-methane & 73.2 & 8.18 & 111.7 \\
-argon & 74.4 & 6.5 & 87.3 \\
-formic acid & 61.8 & 23.1 & 373.9 \\
+\begin{minipage}[t]{0.22\columnwidth}\centering
+benzene\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+87.2\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+30.8\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+353.2\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+bromine\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+88.6\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+29.45\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+332.4\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+tetrachloromethane\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+85.9\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+30.00\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+349.9\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+hydrogen sulphide\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+87.9\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+18.67\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+212.8\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+mercury\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+94.2\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+59.30\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+692.7\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+ammonia\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+97.4\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+23.4\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+239.7\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+water\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+109.1\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+40.7\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+373.2\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+methane\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+73.2\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+8.18\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+111.7\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+argon\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+74.4\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+6.5\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+87.3\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\centering
+formic acid\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+61.8\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+23.1\strut
+\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
+373.9\strut
+\end{minipage}\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -1548,12 +1637,12 @@ NH\textsubscript{4}Cl(s) → NH\textsubscript{3}(g) + HCl(g)
 
 \begin{longtable}[]{@{}cc@{}}
 \toprule
-& Sm° / J K\textsuperscript{−1} mol\textsuperscript{−1} \\
+& Sm° / J K\textsuperscript{−1} mol\textsuperscript{−1}\tabularnewline
 \midrule
 \endhead
-NH\textsubscript{4}Cl(s) & 94.85 \\
-NH3(g) & 192.77 \\
-HCl(g) & 186.90 \\
+NH\textsubscript{4}Cl(s) & 94.85\tabularnewline
+NH3(g) & 192.77\tabularnewline
+HCl(g) & 186.90\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -1626,17 +1715,17 @@ The Gibbs' equation makes it fairly clear that the Gibbs' energy depends upon te
 \begin{longtable}[]{@{}cccc@{}}
 \caption{\label{tab:Gibbstemp} The spontaneity of a reaction at different temperatures.}\tabularnewline
 \toprule
-\(\Delta H\) & \(\Delta S\) & \(\Delta G\) & Spontaneity \\
+\(\Delta H\) & \(\Delta S\) & \(\Delta G\) & Spontaneity\tabularnewline
 \midrule
 \endfirsthead
 \toprule
-\(\Delta H\) & \(\Delta S\) & \(\Delta G\) & Spontaneity \\
+\(\Delta H\) & \(\Delta S\) & \(\Delta G\) & Spontaneity\tabularnewline
 \midrule
 \endhead
-+ endothermic & + & + at low T − at high T & spontaneous at high temperature \\
-+ endothermic & − & + & needs work to occur \\
-− exothermic & + & − & always spontaneous \\
-− exothermic & − & − at low T + at high T & spontaneous at low temperature \\
++ endothermic & + & + at low T − at high T & spontaneous at high temperature\tabularnewline
++ endothermic & − & + & needs work to occur\tabularnewline
+− exothermic & + & − & always spontaneous\tabularnewline
+− exothermic & − & − at low T + at high T & spontaneous at low temperature\tabularnewline
 \bottomrule
 \end{longtable}
 
@@ -1952,12 +2041,12 @@ Ag\textsubscript{2}CO\textsubscript{3} (s) \(\leftrightharpoons\) Ag\textsubscri
 
 \begin{longtable}[]{@{}cccc@{}}
 \toprule
-& Ag\textsubscript{2}CO\textsubscript{3} & Ag\textsubscript{2}O & CO\textsubscript{2} \\
+& Ag\textsubscript{2}CO\textsubscript{3} & Ag\textsubscript{2}O & CO\textsubscript{2}\tabularnewline
 \midrule
 \endhead
-ΔH\textsuperscript{⦵} / kJ mol\textsuperscript{−1} & −501.4 & −29.07 & −393.5 \\
-S\textsubscript{m}\textsuperscript{⦵} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 167.3 & 121.7 & 213.7 \\
-C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 109.6 & 68.6 & 37.1 \\
+ΔH\textsuperscript{⦵} / kJ mol\textsuperscript{−1} & −501.4 & −29.07 & −393.5\tabularnewline
+S\textsubscript{m}\textsuperscript{⦵} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 167.3 & 121.7 & 213.7\tabularnewline
+C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 109.6 & 68.6 & 37.1\tabularnewline
 \bottomrule
 \end{longtable}
 

@@ -53,7 +53,7 @@ w=-n\textrm{R}T \ln {\frac{V_\textrm{f}}{V_\textrm{i}}}
 
 For the same increase in volume at the temperature of the system increases then the work needed in a reversible expansion also increases.
 
-There are many types of work, but they may all be modeled by expansion work. Other types of work include things like surgace expansion, extension of a spring or electrical work.
+There are many types of work, but they may all be modeled by expansion work. Other types of work include things like surface expansion, extension of a spring or electrical work.
 
 ## Heat, q {#sec:heat}
 
@@ -81,7 +81,7 @@ If a gas is allowed to expand and no heat is transferred then the work done by t
 knitr::include_graphics("images/isothermalexpansion.png")
 ```
 
-There is a special case where we can consider the expansion of a gas but energy is transferred from the surroundings to the system in the form of heat. In this isothermal reversible expansion the work done by the system is exactly equal an opposite to the heat transferred to the system, and so the net change in internal energy is zero.
+There is a special case where we can consider the expansion of a gas but energy is transferred from the surroundings to the system in the form of heat. In this isothermal reversible expansion the work done by the system is exactly equal and opposite to the heat transferred to the system, and so the net change in internal energy is zero.
 
 Therefore, by applying this to equation \@ref(eq:revexpansion), we can see for an isothermal reversible expansion:
 
@@ -176,17 +176,23 @@ At constant pressure the work done, $-p \Delta V$ means that the change in entha
 
 4. Calculate the standard enthalpy of formation of $N_2 O_5$ from the following data:
 
+:::center
+
 $2 NO_{(g)} + O_{2(g)} \longrightarrow 2 NO_{2(g)}$   $\Delta _r H^\ominus = -114.1$ kJ mol$^{-1}$
 
 $4 NO_{2(g)} + O_{2(g)} \longrightarrow 2 N_2 O_{5(g)}$   $\Delta _r H^\ominus = -110.2$ kJ mol$^{-1}$
 
 $N_{2(g)} + O_{2(g)} \longrightarrow 2 NO_{(g)}$   $\Delta _r H^\ominus = +180.5$ kJ mol$^{-1}$
 
-5. Calculate the expansion work done on the system when 9.576 g of solid ammonium chloride, NH~4~Cl, decomposes completely to yield gaseous ammonia, NH3 and hydrogen chloride, HCl at a temperature of 1,410 K. Treat the expansion as irreversible and the gases formed as perfect.
+:::
 
-6. What is the maximum amount of work available when 1 mole of a gas doubles in volume at 25$^\circ$C?
+5. Calculate the expansion work done on the system when 9.576 g of solid ammonium chloride, NH~4~Cl, decomposes completely to yield gaseous ammonia, NH~3~ and hydrogen chloride, HCl at a temperature of 1,410 K. Treat the expansion as irreversible and the gases formed as perfect.
+
+6. What is the maximum amount of work available when 1 mole of a gas doubles in volume at 25 $^\circ$C?
 - How does this change with increasing temperature?
 - If the expansion is isothermal how much heat is added to the system?
+
+
 ## Answers
 
 1. + 1.50 kJ
