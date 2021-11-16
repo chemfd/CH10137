@@ -160,7 +160,7 @@ knitr::include_graphics("images/tempentropy.png")
 1. Consider a system with two bulbs and 20 particles. What is the probability that all 20 atoms will be found in a single bulb?
 
 1. When 1 mol of trichloromethane is heated from 5°C to 20°C at constant pressure, the
-change of entropy is + 6.00 J K^−1^ mol^−1^ . When the solvent is heated further from 20 °C to 35°C, the change in entropy will also be + 6.00 J K^−1^ mol^−1^ your reasoning. You may assume C~p~ is constant over this range.
+change of entropy is + 6.00 J K^−1^ mol^−1^ . When the solvent is heated further from 20 °C to 35°C, the change in entropy will also be + 6.00 J K^−1^ mol^−1^. State whether this is true and justify your reasoning. You may assume C~p~ is constant over this range.
 
 ## Answers {#sec:w3p1ans}
 
