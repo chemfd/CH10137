@@ -2,7 +2,7 @@
 
 ## Heat capacity, C~X~
 
-The heat capacity of a material is the amount of energy required to raise the temperature of that material by 1 K, however there are many different versions of heat capacity, covering both entensive an intensive properties.
+The heat capacity of a material is the amount of energy required to raise the temperature of that material by 1 K, however there are many different versions of heat capacity, covering both extensive an intensive properties.
 
 Perhaps more confusingly when looking at gases we have to consider whether the heat capacity of a material is at constant pressure or constant volume. This is because if we are at consant pressure the gas has to do work in expanding, and so heat capacitites at constant volume are always smaller than those at constant pressure.
 
@@ -92,11 +92,13 @@ We will meet phase changes later in the course when we consider both enthalpy an
 
 3. What is the enthalpy of formation of water at 100 ºC if $\Delta H_f = -241.82$ kJ mol$^{-1}$ at 25 ºC? What assumptions have you made?
 
+:::centre
 c$_{p,m} H_2 O = 33.58$ J K$^{-1}$ mol$^{-1}$
 
 c$_{p,m} H_2 = 28.84$ J K$^{-1}$ mol$^{-1}$ 
 
 c$_{p,m} O_2 = 29.37$ J K$^{-1}$ mol$^{-1}$
+:::
 
 4. The complete combustion of ethane (C~2~H~6~) releases 1558.8 kJ mol^−1^ at 25 ºC. Calculate the enthalpy of combustion at 90 ºC.
 

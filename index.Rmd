@@ -47,7 +47,9 @@ If you spot any errors or areas of lack of clarity, please message me in Teams o
 
 ## Version history {-}
 
-21-22 version first commit 291020
+Typos fixed 191121
+
+21-22 version first commit 291021
 
 Covid version finished 181120
 
