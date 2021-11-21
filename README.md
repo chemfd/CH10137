@@ -1,2 +1,1 @@
-# PhotochemistryWorkshop
- Workshop questions for the LOILS in CH30129
+# CH10137 Thermodynamics lecture notes
