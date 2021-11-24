@@ -142,16 +142,16 @@ knitr::include_graphics("images/cooling.png")
 
 3. Silver carbonate decomposes on heating. Calculate the equilibrium constant at 110°C for the reaction:
 
-Ag~2~CO~3~ (s) $\leftrightharpoons$ Ag~2~O + CO~2~
+Ag~2~CO~3~ (s) $\leftrightharpoons$ Ag~2~O (s) + CO~2~ (g)
 
 || Ag~2~CO~3~ | Ag~2~O | CO~2~ |
 |:----:|:----:|:----:|:----:|
-|ΔH^⦵^ / kJ mol^−1^ | −501.4 | −29.07 | −393.5 |
+|Δ~f~H^⦵^ / kJ mol^−1^ | −501.4 | −29.07 | −393.5 |
 |S~m~^⦵^ / J K^−1^ mol^−1^ | 167.3 | 121.7 | 213.7 |
 | C~p~ / J K^−1^ mol^−1^ | 109.6 | 68.6 | 37.1 |
 
 ## Answers {#sec:w4p2answer}
-1. $K = \frac{a_{NO_2}^4 a_{H_2O}^6}{a_{NH_3}^4 a_{O_2}^7}$
+1. $K = \frac{a_{NO_2}^4 }{a_{NH_3}^4 a_{O_2}^7}$
 
 2.  a. Δ~r~H^⦵^ = +57.8 kJ mol^−1^
     b. Δ~r~H^⦵^ is constant over the temperature range

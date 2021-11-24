@@ -147,7 +147,7 @@ It should be noted that the temperature difference of fusion at different pressu
 
 1. Calculate the melting temperature of benzene at exactly 100 bar. ($\Delta _{fus} H$ = + 10.59 kJ mol^-1^, $T_m$ = 278.7 K, $V_m$ (l)= 88.86 cm^3^ mol^−1^, $V_m$ (s)= 87.67 cm^3^ mol^−1^).
 
-1. The standard Gibbs energy for a reaction is -332.9 kJ mol^−1^ at 298 K and -339.5 kJ mol^−1^ at 500 K. Estimate the standard entropy change for the reaction. You may assume that H and S do not vary in this temperature range. 
+1. The standard Gibbs energy for a reaction is -332.9 kJ mol^−1^ at 298 K and -339.5 kJ mol^−1^ at 500 K. Estimate the standard ethalpy and entropy change for the reaction. You may assume that H and S do not vary in this temperature range. 
 
 1. The saturated vapour pressure of a compound is 2.339 kPa at 20 °C and 19.948 kPa at  60 °C. Calculate the enthalpy change of vaporization.
 
@@ -157,6 +157,6 @@ It should be noted that the temperature difference of fusion at different pressu
 
 1. T~fus~ (100 bar) = 279.0 K
 
-1. $\Delta H$ = −323.2 kJ mol^-1^
+1. $\Delta S$ = 33 J K^-1^ mol^-1^, $\Delta H$ = −323.2 kJ mol^-1^
 
 1. $\Delta_{vap} H$ = 43.5 kJ mol^-1^
