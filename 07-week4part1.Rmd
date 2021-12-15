@@ -157,6 +157,6 @@ It should be noted that the temperature difference of fusion at different pressu
 
 1. T~fus~ (100 bar) = 279.0 K
 
-1. $\Delta S$ = 33 J K^-1^ mol^-1^, $\Delta H$ = −323.2 kJ mol^-1^
+1. $\Delta S$ = 33 J K^-1^ mol^-1^, $\Delta H$ = −323.2 kJ mol^-1^ [worked solution](https://youtu.be/scaI8nTFaAo) [Handwritten notes](http://workitoutwithapencil.xyz/wp-content/uploads/2021/12/Week-4-part-2-Q3.pdf)
 
 1. $\Delta_{vap} H$ = 43.5 kJ mol^-1^
