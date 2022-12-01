@@ -157,4 +157,4 @@ Ag~2~CO~3~ (s) $\leftrightharpoons$ Ag~2~O (s) + CO~2~ (g)
     b. Δ~r~H^⦵^ is constant over the temperature range
     c. p(NO~2~) = 1.00 bar (the reaction goes to near completion)
 
-3. K = 0.01053
+3. K = 0.011 [Video workthrough of solution](https://youtu.be/7gEkEwPtqws) [Notes from video](http://workitoutwithapencil.xyz/wp-content/uploads/2022/11/Week-4-Part-2-Q3.pdf)
