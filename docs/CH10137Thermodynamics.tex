@@ -4,10 +4,10 @@
 %
 \documentclass[
 ]{book}
+\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex}
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+\usepackage{iftex}
+\ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
@@ -33,15 +33,8 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\hypersetup{
-  pdftitle={CH10137 Thermodynamics},
-  pdfauthor={Fiona Dickinson},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
-\usepackage{longtable,booktabs}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
 \makeatletter
@@ -50,7 +43,7 @@
 % Allow footnotes in longtable head/foot
 \IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
 \makesavenoteenv{longtable}
-\usepackage{graphicx,grffile}
+\usepackage{graphicx}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -75,12 +68,23 @@
   \thm@postskip=\thm@preskip
 }
 \makeatother
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={CH10137 Thermodynamics},
+  pdfauthor={Fiona Dickinson},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
 
 \title{CH10137 Thermodynamics}
 \author{Fiona Dickinson}
-\date{2021-12-10}
+\date{2022-12-02}
 
 \begin{document}
 \maketitle
@@ -95,7 +99,7 @@
 
 The notes have been prepared in a package called BookDown for RStudio so that the equations are accessible to screen readers. However, by providing the notes as a .html webpage I can also embed short videos to further describe some of the topics. If you want videos on any topic please ask and I will do my best to produce the most requested ones.
 
-Further you can download the notes in a format that suits you (either pdf or epub) to view offline, or change the way this document appears for ease of reading.
+Further you can download the notes in a format that suits you (either pdf or epub) to view offline, or change the way this document appears for ease of reading (dark mode/light mode, font size, font style).
 
 This document is written in markdown, and particularly in equations typos can creep in. If you spot any typos or think there are any errors please let me know and I will do my best to fix them.
 
@@ -103,11 +107,11 @@ This document is written in markdown, and particularly in equations typos can cr
 \section*{Notes and Workshops for CH10137}\label{notes-and-workshops-for-ch10137}}
 \addcontentsline{toc}{section}{Notes and Workshops for CH10137}
 
-This `book' will be updated weekly with content and embedded `micro lecture' video content.
+This `book' will be updated periodically with content and embedded `micro lecture' video content.
 
 Questions and answers will be provided and some answers will include `process' as well as answer. Please contact me if you need help. Questions on later topics will rely on earlier knowledge.
 
-I am using this format as it is an accessible format. However I have moved over to this format this year and so I would appreciate you pointing out any areas of confusion or where error may have crept in.
+I am using this format as it is an accessible format. However I have moved over to this format recently and so I would appreciate you pointing out any areas of confusion or where error may have crept in.
 
 \hypertarget{recommended-text}{%
 \section*{Recommended text}\label{recommended-text}}
@@ -132,6 +136,8 @@ Loading\ldots{}
 \hypertarget{version-history}{%
 \section*{Version history}\label{version-history}}
 \addcontentsline{toc}{section}{Version history}
+
+Updates with worked solutions first commit 011222
 
 Typos fixed 191121
 
@@ -422,15 +428,15 @@ Kirchoff's laws may be used to adjust calculated values of enthalpy and entropy 
 CH\textsubscript{3}CH\textsubscript{2}OH (aq) + CH\textsubscript{3}COOH (aq) ⟶ CH\textsubscript{3}COOCH\textsubscript{2}CH\textsubscript{3} (aq) + H\textsubscript{2}O (l)
 
 \begin{longtable}[]{@{}cc@{}}
-\toprule
-& \(ΔC_{p,m}\) / J K\(^{−1}\) mol\(^{−1}\)\tabularnewline
-\midrule
+\toprule()
+& \(ΔC_{p,m}\) / J K\(^{−1}\) mol\(^{−1}\) \\
+\midrule()
 \endhead
-CH\textsubscript{3}CH\textsubscript{2}OH (aq) & 111.46\tabularnewline
-CH\textsubscript{3}COOH (aq) & 124.3\tabularnewline
-CH\textsubscript{3}COOCH\textsubscript{2}CH\textsubscript{3} (aq) & 170.1\tabularnewline
-H\textsubscript{2}O (l) & 33.58\tabularnewline
-\bottomrule
+CH\textsubscript{3}CH\textsubscript{2}OH (aq) & 111.46 \\
+CH\textsubscript{3}COOH (aq) & 124.3 \\
+CH\textsubscript{3}COOCH\textsubscript{2}CH\textsubscript{3} (aq) & 170.1 \\
+H\textsubscript{2}O (l) & 33.58 \\
+\bottomrule()
 \end{longtable}
 
 \begin{equation*}
@@ -695,6 +701,7 @@ where \(q\) is the energy exchanged in the form of heat and \(w\) the energy exc
 \def\labelenumi{\arabic{enumi}.}
 \item
   \begin{itemize}
+  \tightlist
   \item
   \end{itemize}
 \end{enumerate}
@@ -1100,15 +1107,15 @@ c\(_{p,m} O_2 = 29.37\) J K\(^{-1}\) mol\(^{-1}\)
 \end{enumerate}
 
 \begin{longtable}[]{@{}cc@{}}
-\toprule
-& C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1}\tabularnewline
-\midrule
+\toprule()
+& C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1} \\
+\midrule()
 \endhead
-C\textsubscript{2}H\textsubscript{6} & 52.6\tabularnewline
-O\textsubscript{2} & 29.4\tabularnewline
-CO\textsubscript{2} & 37.1\tabularnewline
-H\textsubscript{2}O & 75.3\tabularnewline
-\bottomrule
+C\textsubscript{2}H\textsubscript{6} & 52.6 \\
+O\textsubscript{2} & 29.4 \\
+CO\textsubscript{2} & 37.1 \\
+H\textsubscript{2}O & 75.3 \\
+\bottomrule()
 \end{longtable}
 
 \begin{enumerate}
@@ -1432,123 +1439,45 @@ Trouton's rule is an empirical relationship which found that \(\frac{\Delta_{vap
 
 Equally some species have a lower than predicted entropy of vapourisation. These species may still have intermolecular bonding in the gas phase, such as formic acid which forms a molecular dimer at temperatures just above the boiling temperature (you can then see a `phase change' as this dimer dissociates at even higher temperatures). Otherwise it may be that the species is particularly `small' and has a low moment of rotational inertia, leading to large spacings in molecular energy levels and therefore relatively low entropy in the population of these levels.
 
-\begin{longtable}[]{@{}cccc@{}}
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}@{}}
 \caption{\label{tab:trouton} Thermodynamic data for the vaporisation of a range of chemical species.}\tabularnewline
-\toprule
-\begin{minipage}[b]{0.22\columnwidth}\centering
-\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
-\(\Delta_{vap} S^\ominus\) / J K\textsuperscript{−1} mol\textsuperscript{−1}\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
-\(\Delta_{vap} H^\ominus\) / kJ mol\textsuperscript{−1}\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
-\(T_b\) / K\strut
-\end{minipage}\tabularnewline
-\midrule
+\toprule()
+\begin{minipage}[b]{\linewidth}\centering
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+\(\Delta_{vap} S^\ominus\) / J K\textsuperscript{−1} mol\textsuperscript{−1}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+\(\Delta_{vap} H^\ominus\) / kJ mol\textsuperscript{−1}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+\(T_b\) / K
+\end{minipage} \\
+\midrule()
 \endfirsthead
-\toprule
-\begin{minipage}[b]{0.22\columnwidth}\centering
-\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
-\(\Delta_{vap} S^\ominus\) / J K\textsuperscript{−1} mol\textsuperscript{−1}\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
-\(\Delta_{vap} H^\ominus\) / kJ mol\textsuperscript{−1}\strut
-\end{minipage} & \begin{minipage}[b]{0.22\columnwidth}\centering
-\(T_b\) / K\strut
-\end{minipage}\tabularnewline
-\midrule
+\toprule()
+\begin{minipage}[b]{\linewidth}\centering
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+\(\Delta_{vap} S^\ominus\) / J K\textsuperscript{−1} mol\textsuperscript{−1}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+\(\Delta_{vap} H^\ominus\) / kJ mol\textsuperscript{−1}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+\(T_b\) / K
+\end{minipage} \\
+\midrule()
 \endhead
-\begin{minipage}[t]{0.22\columnwidth}\centering
-benzene\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-87.2\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-30.8\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-353.2\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-bromine\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-88.6\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-29.45\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-332.4\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-tetrachloromethane\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-85.9\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-30.00\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-349.9\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-hydrogen sulphide\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-87.9\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-18.67\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-212.8\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-mercury\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-94.2\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-59.30\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-692.7\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-ammonia\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-97.4\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-23.4\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-239.7\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-water\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-109.1\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-40.7\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-373.2\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-methane\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-73.2\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-8.18\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-111.7\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-argon\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-74.4\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-6.5\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-87.3\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.22\columnwidth}\centering
-formic acid\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-61.8\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-23.1\strut
-\end{minipage} & \begin{minipage}[t]{0.22\columnwidth}\centering
-373.9\strut
-\end{minipage}\tabularnewline
-\bottomrule
+benzene & 87.2 & 30.8 & 353.2 \\
+bromine & 88.6 & 29.45 & 332.4 \\
+tetrachloromethane & 85.9 & 30.00 & 349.9 \\
+hydrogen sulphide & 87.9 & 18.67 & 212.8 \\
+mercury & 94.2 & 59.30 & 692.7 \\
+ammonia & 97.4 & 23.4 & 239.7 \\
+water & 109.1 & 40.7 & 373.2 \\
+methane & 73.2 & 8.18 & 111.7 \\
+argon & 74.4 & 6.5 & 87.3 \\
+formic acid & 61.8 & 23.1 & 373.9 \\
+\bottomrule()
 \end{longtable}
 
 \hypertarget{residual-entropy}{%
@@ -1638,14 +1567,14 @@ This equation is derived from our expression of work done in a reversible expans
 NH\textsubscript{4}Cl(s) → NH\textsubscript{3}(g) + HCl(g)
 
 \begin{longtable}[]{@{}cc@{}}
-\toprule
-& Sm° / J K\textsuperscript{−1} mol\textsuperscript{−1}\tabularnewline
-\midrule
+\toprule()
+& Sm° / J K\textsuperscript{−1} mol\textsuperscript{−1} \\
+\midrule()
 \endhead
-NH\textsubscript{4}Cl(s) & 94.85\tabularnewline
-NH3(g) & 192.77\tabularnewline
-HCl(g) & 186.90\tabularnewline
-\bottomrule
+NH\textsubscript{4}Cl(s) & 94.85 \\
+NH3(g) & 192.77 \\
+HCl(g) & 186.90 \\
+\bottomrule()
 \end{longtable}
 
 \begin{enumerate}
@@ -1714,21 +1643,41 @@ There is an equivalent function called the Helmholtz free energy (\(A\) and \(\D
 
 The Gibbs' equation makes it fairly clear that the Gibbs' energy depends upon temperature.
 
-\begin{longtable}[]{@{}cccc@{}}
+\begin{longtable}[]{@{}
+  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}
+  >{\centering\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2500}}@{}}
 \caption{\label{tab:Gibbstemp} The spontaneity of a reaction at different temperatures.}\tabularnewline
-\toprule
-\(\Delta H\) & \(\Delta S\) & \(\Delta G\) & Spontaneity\tabularnewline
-\midrule
+\toprule()
+\begin{minipage}[b]{\linewidth}\centering
+\(\Delta H\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+\(\Delta S\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+\(\Delta G\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Spontaneity
+\end{minipage} \\
+\midrule()
 \endfirsthead
-\toprule
-\(\Delta H\) & \(\Delta S\) & \(\Delta G\) & Spontaneity\tabularnewline
-\midrule
+\toprule()
+\begin{minipage}[b]{\linewidth}\centering
+\(\Delta H\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+\(\Delta S\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+\(\Delta G\)
+\end{minipage} & \begin{minipage}[b]{\linewidth}\centering
+Spontaneity
+\end{minipage} \\
+\midrule()
 \endhead
-+ endothermic & + & + at low T − at high T & spontaneous at high temperature\tabularnewline
-+ endothermic & − & + & needs work to occur\tabularnewline
-− exothermic & + & − & always spontaneous\tabularnewline
-− exothermic & − & − at low T + at high T & spontaneous at low temperature\tabularnewline
-\bottomrule
++ endothermic & + & + at low T − at high T & spontaneous at high temperature \\
++ endothermic & − & + & needs work to occur \\
+− exothermic & + & − & always spontaneous \\
+− exothermic & − & − at low T + at high T & spontaneous at low temperature \\
+\bottomrule()
 \end{longtable}
 
 \begin{figure}
@@ -2042,14 +1991,14 @@ Another way of stating the third law is that no body may be cooled to absolute z
 Ag\textsubscript{2}CO\textsubscript{3} (s) \(\leftrightharpoons\) Ag\textsubscript{2}O (s) + CO\textsubscript{2} (g)
 
 \begin{longtable}[]{@{}cccc@{}}
-\toprule
-& Ag\textsubscript{2}CO\textsubscript{3} & Ag\textsubscript{2}O & CO\textsubscript{2}\tabularnewline
-\midrule
+\toprule()
+& Ag\textsubscript{2}CO\textsubscript{3} & Ag\textsubscript{2}O & CO\textsubscript{2} \\
+\midrule()
 \endhead
-Δ\textsubscript{f}H\textsuperscript{⦵} / kJ mol\textsuperscript{−1} & −501.4 & −29.07 & −393.5\tabularnewline
-S\textsubscript{m}\textsuperscript{⦵} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 167.3 & 121.7 & 213.7\tabularnewline
-C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 109.6 & 68.6 & 37.1\tabularnewline
-\bottomrule
+Δ\textsubscript{f}H\textsuperscript{⦵} / kJ mol\textsuperscript{−1} & −501.4 & −29.07 & −393.5 \\
+S\textsubscript{m}\textsuperscript{⦵} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 167.3 & 121.7 & 213.7 \\
+C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 109.6 & 68.6 & 37.1 \\
+\bottomrule()
 \end{longtable}
 
 \hypertarget{sec:w4p2answer}{%
@@ -2071,7 +2020,7 @@ C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1} & 109.6
     p(NO\textsubscript{2}) = 1.00 bar (the reaction goes to near completion)
   \end{enumerate}
 \item
-  K = 0.01053
+  K = 0.011 \href{https://youtu.be/7gEkEwPtqws}{Video workthrough of solution} \href{http://workitoutwithapencil.xyz/wp-content/uploads/2022/11/Week-4-Part-2-Q3.pdf}{Notes from video}
 \end{enumerate}
 
 \hypertarget{additional-questions}{%
@@ -2093,15 +2042,15 @@ It is always important to learn how to solve questions out of the original conte
 MgO (s) + CO (g) ⟶ Mg (s) + CO\textsubscript{2} (g)
 
 \begin{longtable}[]{@{}cccc@{}}
-\toprule
-& Δ\textsubscript{f}H\textsuperscript{⦵} & S\textsuperscript{⦵}\textsubscript{m} J K\textsuperscript{−1} mol\textsuperscript{−1} & C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1}\tabularnewline
-\midrule
+\toprule()
+& Δ\textsubscript{f}H\textsuperscript{⦵} & S\textsuperscript{⦵}\textsubscript{m} J K\textsuperscript{−1} mol\textsuperscript{−1} & C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1} \\
+\midrule()
 \endhead
-MgO (s) & -601.7 & 26.9 & 37.2\tabularnewline
-CO (g) & -110.5 & 197.7 & 29.1\tabularnewline
-Mg (s) & 0 & 32.7 & 24.9\tabularnewline
-CO\textsubscript{2} (g) & -393.5 & 213.7 & 37.1\tabularnewline
-\bottomrule
+MgO (s) & -601.7 & 26.9 & 37.2 \\
+CO (g) & -110.5 & 197.7 & 29.1 \\
+Mg (s) & 0 & 32.7 & 24.9 \\
+CO\textsubscript{2} (g) & -393.5 & 213.7 & 37.1 \\
+\bottomrule()
 \end{longtable}
 
 State what assumptions you have made.
@@ -2134,21 +2083,21 @@ Given the data for ethyl acetate (Table \ref{tab:ethylacetatedata}), determine t
 
 \begin{longtable}[]{@{}cc@{}}
 \caption{\label{tab:ethylacetatedata} The equilibrium vapour pressure of ethyl acetate at differing temperatures.}\tabularnewline
-\toprule
-T / ºC & p / 10\textsuperscript{3} Pa\tabularnewline
-\midrule
+\toprule()
+T / ºC & p / 10\textsuperscript{3} Pa \\
+\midrule()
 \endfirsthead
-\toprule
-T / ºC & p / 10\textsuperscript{3} Pa\tabularnewline
-\midrule
+\toprule()
+T / ºC & p / 10\textsuperscript{3} Pa \\
+\midrule()
 \endhead
-9.1 & 5.304\tabularnewline
-27.4 & 13.33\tabularnewline
-59.3 & 53.31\tabularnewline
-77.1 & 101.32\tabularnewline
-100.6 & 202.6\tabularnewline
-136.6 & 506.7\tabularnewline
-\bottomrule
+9.1 & 5.304 \\
+27.4 & 13.33 \\
+59.3 & 53.31 \\
+77.1 & 101.32 \\
+100.6 & 202.6 \\
+136.6 & 506.7 \\
+\bottomrule()
 \end{longtable}
 
 \begin{enumerate}
@@ -2163,15 +2112,15 @@ T / ºC & p / 10\textsuperscript{3} Pa\tabularnewline
 \end{enumerate}
 
 \begin{longtable}[]{@{}cccc@{}}
-\toprule
-& Δ\textsubscript{f}H\textsuperscript{⦵} & S\textsuperscript{⦵}\textsubscript{m} J K\textsuperscript{−1} mol\textsuperscript{−1} & C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1}\tabularnewline
-\midrule
+\toprule()
+& Δ\textsubscript{f}H\textsuperscript{⦵} & S\textsuperscript{⦵}\textsubscript{m} J K\textsuperscript{−1} mol\textsuperscript{−1} & C\textsubscript{p} / J K\textsuperscript{−1} mol\textsuperscript{−1} \\
+\midrule()
 \endhead
-NO (g) & +90.25 & 210.76 & 29.844\tabularnewline
-NO\textsubscript{2} (g) & +33.18 & 240.06 & 37.20\tabularnewline
-N\textsubscript{2}O\textsubscript{5} (g) & +11.3 & 355.7 & 84.5\tabularnewline
-O\textsubscript{2} & - & 205.138 & 29.355\tabularnewline
-\bottomrule
+NO (g) & +90.25 & 210.76 & 29.844 \\
+NO\textsubscript{2} (g) & +33.18 & 240.06 & 37.20 \\
+N\textsubscript{2}O\textsubscript{5} (g) & +11.3 & 355.7 & 84.5 \\
+O\textsubscript{2} & - & 205.138 & 29.355 \\
+\bottomrule()
 \end{longtable}
 
 \begin{enumerate}

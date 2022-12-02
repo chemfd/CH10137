@@ -4,7 +4,7 @@ author: "Fiona Dickinson"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: 
-    bookdown::gitbook
+    bookdown::gitbook:
         split_by: rmd
 documentclass: book
 bibliography: [book.bib, packages.bib]
